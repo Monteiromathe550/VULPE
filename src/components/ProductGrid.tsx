@@ -33,21 +33,26 @@ export function ProductGrid() {
   return (
     <section id="produtos" className="py-16 lg:py-32 bg-background transition-colors duration-500">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center mb-10 lg:mb-16">
-          <div className="inline-block mb-8">
-            <span className="text-[11px] font-black uppercase tracking-[0.5em] text-primary/80">
-              Tabela Oficial • Fevereiro/2026
+        <div className="max-w-4xl mx-auto text-center mb-12 lg:mb-20">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="inline-block mb-6 lg:mb-8"
+          >
+            <span className="text-[10px] lg:text-[11px] font-black uppercase tracking-[0.4em] text-primary/90">
+              Tabela Oficial
             </span>
-            <div className="h-[1px] w-full bg-primary/20 mt-2" />
-          </div>
-          <h2 className="mb-8 text-foreground tracking-tighter">
-            O que você procura?<br />
-            <span className="text-primary/90 font-light italic text-lg block mt-2 tracking-normal">
-              iPhones e Apple Watch a pronta entrega. Tudo original e com garantia.
-            </span>
+            <div className="h-[1px] w-full bg-primary/30 mt-3" />
+          </motion.div>
+
+          <h2 className="text-4xl lg:text-6xl font-black text-foreground tracking-tighter leading-[0.9] uppercase mb-6">
+            Escolha o seu<br />
+            <span className="text-black/10">Próximo Nível.</span>
           </h2>
-          <p className="text-muted-foreground text-lg lg:text-xl font-light max-w-2xl mx-auto">
-            Dispositivos Apple selecionados e verificados por especialistas.
+
+          <p className="text-muted-foreground text-base lg:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
+            A linha mais cobiçada de iPhones e Apple Watch a pronta entrega, <br className="hidden md:block" />
+            com garantia Vulp e procedência garantida.
           </p>
         </div>
 
