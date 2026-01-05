@@ -6,7 +6,7 @@ import logoDark from '../assets/logo-dark.png';
 
 export function Footer() {
   return (
-    <footer className="bg-white text-foreground pt-16 pb-12 lg:pt-32 lg:pb-16 border-t border-black/5 overflow-hidden">
+    <footer className="bg-white text-foreground pt-32 pb-12 lg:pt-32 lg:pb-16 border-t border-black/5 overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Massive Reference Style CTA */}
         <div className="mb-12 lg:mb-24 text-center relative">
@@ -79,7 +79,7 @@ export function Footer() {
               <img
                 src={logoDark}
                 alt="Logo"
-                className="h-16 w-auto object-contain"
+                className="h-10 lg:h-12 w-auto object-contain"
               />
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs font-bold uppercase tracking-widest opacity-80">
@@ -96,11 +96,11 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[14px] font-black uppercase tracking-[0.3em] mb-8 flex items-center gap-2">
+            <h4 className="text-base font-black uppercase tracking-[0.3em] mb-8 flex items-center gap-2">
               Navegação
               <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-4 text-muted-foreground text-sm font-bold uppercase tracking-widest">
+            <ul className="space-y-4 text-muted-foreground text-base font-bold uppercase tracking-widest">
               {['Vitrine de Produtos', 'Processo de Compra', 'Segurança & Contrato', 'Acompanhar Pedido'].map((item) => (
                 <li key={item}>
                   <a href="#" className="hover:text-primary transition-colors flex items-center gap-2 group">
@@ -113,11 +113,11 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[14px] font-black uppercase tracking-[0.3em] mb-8 flex items-center gap-2">
+            <h4 className="text-base font-black uppercase tracking-[0.3em] mb-8 flex items-center gap-2">
               Categorias
               <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-4 text-muted-foreground text-sm font-bold uppercase tracking-widest">
+            <ul className="space-y-4 text-muted-foreground text-base font-bold uppercase tracking-widest">
               {['iPhones', 'MacBooks', 'iPads & Apple Watch', 'Acessórios Originais'].map((item) => (
                 <li key={item}>
                   <a href="#" className="hover:text-primary transition-colors flex items-center gap-2 group">
@@ -130,11 +130,11 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[14px] font-black uppercase tracking-[0.3em] mb-8 flex items-center gap-2">
+            <h4 className="text-base font-black uppercase tracking-[0.3em] mb-8 flex items-center gap-2">
               Contato
               <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-6 text-muted-foreground text-sm font-bold uppercase tracking-widest">
+            <ul className="space-y-6 text-muted-foreground text-base font-bold uppercase tracking-widest">
               <li className="flex items-start gap-4 group">
                 <div className="w-8 h-8 rounded-xl bg-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                   <MapPin className="w-4 h-4" />
