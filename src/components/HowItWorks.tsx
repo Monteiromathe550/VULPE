@@ -58,7 +58,7 @@ export function HowItWorks() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="lg:w-1/2 flex flex-col justify-end"
           >
-            <p className="text-muted-foreground max-w-lg mb-8 leading-relaxed font-medium uppercase tracking-widest text-[13px] md:text-[16px]">
+            <p className="text-muted-foreground max-w-lg mb-8 leading-relaxed font-medium uppercase tracking-widest text-base md:text-[16px]">
               Descubra a jornada da sua compra, desde a escolha do hardware até a entrega segura em suas mãos.
             </p>
             <button
@@ -104,7 +104,7 @@ export function HowItWorks() {
                 </div>
               </div>
               <h3 className="text-xl md:text-2xl font-black mb-4 tracking-tightest uppercase">{step.title}</h3>
-              <p className="text-muted-foreground leading-relaxed max-w-full text-[13px] md:text-[15px] font-bold uppercase tracking-widest opacity-80">
+              <p className="text-muted-foreground leading-relaxed max-w-full text-sm md:text-[15px] font-bold uppercase tracking-widest opacity-80">
                 {step.description}
               </p>
             </motion.div>

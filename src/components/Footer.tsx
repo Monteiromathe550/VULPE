@@ -14,12 +14,12 @@ export function Footer() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 text-primary rounded-full text-sm font-black uppercase tracking-[0.3em] mb-8 lg:mb-12"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 text-primary rounded-full text-sm font-black uppercase tracking-[0.3em] mb-12 lg:mb-16"
           >
             Atendimento Personalizado
           </motion.div>
 
-          <h2 className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[1.1] lg:leading-[0.85] mb-8 lg:mb-12 tracking-tighter uppercase relative z-10">
+          <h2 className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[1.3] lg:leading-[0.85] mb-10 lg:mb-16 tracking-tight lg:tracking-tighter uppercase relative z-10">
             <motion.span
               initial={{ y: 40, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -47,7 +47,7 @@ export function Footer() {
             </motion.span>
           </h2>
 
-          <p className="max-w-2xl mx-auto text-muted-foreground text-lg mb-12 font-medium">
+          <p className="max-w-2xl mx-auto text-muted-foreground text-lg mb-16 font-medium leading-relaxed px-4">
             Tô aqui pra resolver. Pode perguntar qualquer coisa antes de decidir.
           </p>
 

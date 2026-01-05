@@ -58,12 +58,12 @@ export function TrustSection() {
               <span className="text-sm font-black uppercase tracking-[0.2em] text-foreground">Compra Segura</span>
             </div>
 
-            <h2 className="mb-8 text-foreground tracking-tight lg:tracking-tightest leading-[1.2] lg:leading-[0.9] uppercase text-3xl lg:text-5xl font-black">
+            <h2 className="mb-8 text-foreground tracking-tight lg:tracking-tightest leading-[1.2] lg:leading-[0.9] uppercase text-4xl lg:text-5xl font-black">
               Tranquilidade<br />
               <span className="text-primary">Absoluta.</span>
             </h2>
 
-            <p className="text-muted-foreground text-sm font-bold uppercase tracking-widest opacity-80 leading-relaxed max-w-sm">
+            <p className="text-muted-foreground text-base font-bold uppercase tracking-widest opacity-80 leading-relaxed max-w-sm">
               Nossa missão é eliminar a ansiedade da compra online. Protocolos de segurança rigorosos e atendimento humano real em cada etapa.
             </p>
           </div>
