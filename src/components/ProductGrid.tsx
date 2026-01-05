@@ -31,7 +31,7 @@ export function ProductGrid() {
   }, [activeCategory, searchQuery, sortBy, products]);
 
   return (
-    <section id="produtos" className="pt-16 pb-24 lg:py-32 bg-background transition-colors duration-500">
+    <section id="produtos" className="pt-32 pb-24 lg:pt-48 lg:pb-32 bg-background transition-colors duration-500">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-12 lg:mb-20">
           <motion.div

@@ -37,9 +37,9 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="como-funciona" className="pt-24 pb-16 lg:py-32 bg-white text-foreground relative">
+    <section id="como-funciona" className="pt-32 pb-24 lg:pt-48 lg:pb-32 bg-white text-foreground relative">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 mb-8 lg:mb-16">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-12 lg:mb-20">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -47,8 +47,8 @@ export function HowItWorks() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="lg:w-1/2"
           >
-            <h2 className="text-4xl md:text-7xl font-black mb-0 leading-[1.1] tracking-tightest uppercase md:text-[64px]">
-              CONHEÇA NOSSO<br /><span className="text-primary italic">PROCESSO</span>
+            <h2 className="text-4xl md:text-7xl font-black mb-0 leading-[1.2] lg:leading-[1.1] tracking-tight lg:tracking-tightest uppercase md:text-[64px]">
+              CONHEÇA NOSSO<br /><span className="text-primary">PROCESSO</span>
             </h2>
           </motion.div>
           <motion.div
@@ -58,7 +58,7 @@ export function HowItWorks() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="lg:w-1/2 flex flex-col justify-end"
           >
-            <p className="text-muted-foreground max-w-lg mb-8 leading-tight font-medium uppercase tracking-widest text-[14px] md:text-[16px]">
+            <p className="text-muted-foreground max-w-lg mb-8 leading-relaxed font-medium uppercase tracking-widest text-[13px] md:text-[16px]">
               Descubra a jornada da sua compra, desde a escolha do hardware até a entrega segura em suas mãos.
             </p>
             <button

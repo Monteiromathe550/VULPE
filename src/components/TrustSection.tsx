@@ -48,7 +48,7 @@ export function TrustSection() {
       viewport={{ once: true, margin: "-100px" }}
       variants={containerVariants}
       id="seguranca"
-      className="py-16 lg:py-32 bg-white relative transition-colors duration-500"
+      className="py-32 lg:py-48 bg-white relative transition-colors duration-500"
     >
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
@@ -58,9 +58,9 @@ export function TrustSection() {
               <span className="text-sm font-black uppercase tracking-[0.2em] text-foreground">Compra Segura</span>
             </div>
 
-            <h2 className="mb-6 text-foreground tracking-tighter leading-[1.2] lg:leading-[0.9] uppercase text-3xl lg:text-5xl font-black">
+            <h2 className="mb-8 text-foreground tracking-tight lg:tracking-tightest leading-[1.2] lg:leading-[0.9] uppercase text-3xl lg:text-5xl font-black">
               Tranquilidade<br />
-              <span className="text-black/30">Absoluta.</span>
+              <span className="text-primary">Absoluta.</span>
             </h2>
 
             <p className="text-muted-foreground text-sm font-bold uppercase tracking-widest opacity-80 leading-relaxed max-w-sm">
