@@ -1,34 +1,26 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, ShieldCheck, Headphones, Truck, FileText } from 'lucide-react';
-import heroBg from '../assets/hero-bg.png';
+import { ArrowRight } from 'lucide-react';
+import heroDesktop from '../assets/hero-bg.png';
 import heroMobile from '../assets/hero-mobile.png';
 
 export function Hero() {
   return (
     <section className="relative min-h-screen lg:min-h-[900px] pt-40 pb-20 flex items-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Images for Desktop and Mobile */}
       <div className="absolute inset-0 z-0">
-        {/* Desktop Image */}
-        <img
-          src={heroMobile}
-          alt="Hero Background Desktop"
-          className="hidden md:block w-full h-full object-cover object-[center_30%]"
-        />
         {/* Mobile Image */}
-        <img
-          src={heroMobile}
-          alt="Hero Background Mobile"
-          className="md:hidden w-full h-full object-cover object-center"
-        />
+        <picture>
+          <source media="(min-width: 1024px)" srcSet={heroDesktop} />
+          <img
+            src={heroMobile}
+            alt="VULPE Apple Specialist"
+            className="w-full h-full object-cover object-center"
+          />
+        </picture>
 
-        {/* Gradient Overlay for Text Readability */}
-        {/* Mobile Overlay: Darker on bottom/left to protect white text on orange background */}
-        <div className="md:hidden absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-        <div className="md:hidden absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent" />
-
-        {/* Desktop Overlay: Orange Theme */}
-        <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-[#ff4d00]/90 via-[#ff4d00]/40 to-transparent lg:from-[#ff4d00] lg:via-[#ff4d00]/50 lg:to-transparent" />
+        {/* Neutral dark gradient to ensure text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80 lg:bg-gradient-to-r lg:from-black/90 lg:via-black/20 lg:to-transparent" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -37,9 +29,17 @@ export function Hero() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="flex-1 text-center lg:text-left max-w-2xl"
+            className="flex-1 text-center lg:text-left max-w-2xl flex flex-col items-center lg:items-start"
           >
-
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-8 backdrop-blur-sm"
+            >
+              <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+              <span className="text-primary font-black uppercase text-[10px] tracking-[0.2em]">Hardware Selecionado</span>
+            </motion.div>
 
             <h1 className="mb-8 text-white tracking-tighter text-4xl sm:text-5xl md:text-7xl drop-shadow-sm font-black leading-[1.1]">
               Seu Apple com segurança total e sem enrolação.
@@ -49,11 +49,11 @@ export function Hero() {
               Aqui na Vulp o papo é reto: contrato assinado com validade jurídica <strong>antes</strong> de você pagar. Atendimento humano, direto comigo, e garantia de entrega.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-8 justify-center lg:justify-start">
-              <button className="group text-white border-b border-white/30 hover:border-white pb-2 text-sm font-black uppercase tracking-[0.2em] transition-all flex items-center gap-4 mx-auto lg:mx-0 relative overflow-hidden">
+            <div className="flex flex-col sm:flex-row gap-8 justify-center lg:justify-start w-full">
+              <button className="group text-white border-b-2 border-primary hover:border-primary/50 pb-2 text-sm font-black uppercase tracking-[0.2em] transition-all flex items-center gap-4 mx-auto lg:mx-0 relative overflow-hidden">
                 <span className="relative z-10">Chamar no WhatsApp</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform relative z-10" />
-                <div className="absolute inset-0 bg-white/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform relative z-10 text-primary" />
+                <div className="absolute inset-0 bg-primary/5 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
               </button>
             </div>
           </motion.div>
