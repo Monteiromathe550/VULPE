@@ -11,9 +11,9 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         {/* Desktop Image */}
         <img
-          src={heroBg}
+          src={heroMobile}
           alt="Hero Background Desktop"
-          className="hidden md:block w-full h-full object-cover object-right"
+          className="hidden md:block w-full h-full object-cover object-[center_30%]"
         />
         {/* Mobile Image */}
         <img
@@ -27,8 +27,8 @@ export function Hero() {
         <div className="md:hidden absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
         <div className="md:hidden absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent" />
 
-        {/* Desktop Overlay: Deep Navy */}
-        <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-[#0a192f] lg:via-[#0a192f]/60 lg:to-transparent" />
+        {/* Desktop Overlay: Orange Theme */}
+        <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-[#ff4d00]/90 via-[#ff4d00]/40 to-transparent lg:from-[#ff4d00] lg:via-[#ff4d00]/50 lg:to-transparent" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
