@@ -2,19 +2,31 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, ShieldCheck, Headphones, Truck, FileText } from 'lucide-react';
 import heroBg from '../assets/hero-bg.png';
+import heroMobile from '../assets/hero-mobile.png';
 
 export function Hero() {
   return (
     <section className="relative min-h-screen lg:min-h-[900px] pt-40 pb-20 flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
+        {/* Desktop Image */}
         <img
           src={heroBg}
-          alt="Hero Background"
-          className="w-full h-full object-cover object-center lg:object-right"
+          alt="Hero Background Desktop"
+          className="hidden lg:block w-full h-full object-cover object-right"
         />
-        {/* Gradient Overlay for Text Readability - Updated to Deep Navy Blue */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a192f]/95 via-[#0a192f]/80 to-black/30 lg:from-[#0a192f] lg:via-[#0a192f]/60 lg:to-transparent" />
+        {/* Mobile Image */}
+        <img
+          src={heroMobile}
+          alt="Hero Background Mobile"
+          className="lg:hidden w-full h-full object-cover object-center"
+        />
+
+        {/* Desktop Overlay (Navy Blue) */}
+        <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-[#0a192f] via-[#0a192f]/60 to-transparent" />
+
+        {/* Mobile Overlay (Subtle Darken for orange background) */}
+        <div className="lg:hidden absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">

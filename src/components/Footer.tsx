@@ -157,9 +157,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-8 text-muted-foreground/70 text-sm font-black uppercase tracking-[0.4em]">
+        <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-8 text-muted-foreground/70 text-[10px] md:text-sm font-black uppercase tracking-[0.2em] md:tracking-[0.4em] text-center md:text-left">
           <p>© 2026 VULP. Hardware de elite selecionado.</p>
-          <div className="flex gap-12">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-12">
             <a href="#" className="hover:text-primary transition-colors">Termos</a>
             <a href="#" className="hover:text-foreground transition-colors">Privacidade</a>
             <a href="#" className="hover:text-foreground transition-colors">Cookies</a>
