@@ -8,15 +8,15 @@ export function ProductGrid() {
   const [activeCategory, setActiveCategory] = useState(CATEGORIES[0]);
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<'featured' | 'price-asc' | 'price-desc'>('featured');
-  
+
   // Use local data directly
   const products = PRODUCTS;
 
   const filteredProducts = useMemo(() => {
     let result = products.filter(p => p.category === activeCategory);
-    
+
     if (searchQuery) {
-      result = result.filter(p => 
+      result = result.filter(p =>
         p.name.toLowerCase().includes(searchQuery.toLowerCase())
       );
     }
@@ -41,8 +41,10 @@ export function ProductGrid() {
             <div className="h-[1px] w-full bg-primary/20 mt-2" />
           </div>
           <h2 className="mb-8 text-foreground tracking-tighter">
-            Hardware Selecionado.<br />
-            <span className="text-primary/90 font-light italic">Estética Apple.</span>
+            Escolha sua máquina<br />
+            <span className="text-primary/90 font-light italic text-2xl lg:text-3xl block mt-2">
+              Seleção premium de iPhones e Apple Watch a pronta entrega.
+            </span>
           </h2>
           <p className="text-muted-foreground text-lg lg:text-xl font-light max-w-2xl mx-auto">
             Uma seleção precisa dos melhores dispositivos Apple, validados por especialistas para garantir o seu próximo salto tecnológico.
@@ -64,13 +66,12 @@ export function ProductGrid() {
                         setActiveCategory(category);
                         setSearchQuery('');
                       }}
-                      className={`relative py-2 text-[11px] font-black uppercase tracking-[0.2em] transition-colors ${
-                        isActive ? 'text-foreground' : 'text-muted-foreground/50 hover:text-foreground'
-                      }`}
+                      className={`relative py-2 text-[11px] font-black uppercase tracking-[0.2em] transition-colors ${isActive ? 'text-foreground' : 'text-muted-foreground/50 hover:text-foreground'
+                        }`}
                     >
                       {category.replace('iPhone ', '').replace(' (Modelos Anteriores e 16)', ' 16').replace(' Linha 17', ' 17')}
                       {isActive && (
-                        <motion.div 
+                        <motion.div
                           layoutId="activeCategoryTab"
                           className="absolute bottom-0 left-0 right-0 h-[2px] bg-primary"
                         />
@@ -85,18 +86,18 @@ export function ProductGrid() {
             <div className="flex flex-col sm:flex-row items-center justify-end gap-6 w-full">
               <div className="relative w-full sm:w-64 group">
                 <Search className="absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground/40 group-focus-within:text-primary transition-colors" />
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   placeholder="BUSCAR..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-full bg-transparent border-b border-black/10 focus:border-primary py-2 pl-7 pr-4 text-[11px] font-bold text-foreground placeholder:text-muted-foreground/30 focus:outline-none uppercase tracking-widest transition-all rounded-none"
                 />
               </div>
-              
+
               <div className="relative flex items-center w-full sm:w-auto min-w-[160px]">
                 <SlidersHorizontal className="absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground/40 pointer-events-none z-10" />
-                <select 
+                <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value as any)}
                   className="w-full appearance-none bg-transparent py-2 pl-7 pr-8 text-[11px] font-bold text-foreground uppercase tracking-widest focus:outline-none cursor-pointer border-b border-black/10 focus:border-primary transition-all rounded-none"
@@ -120,21 +121,21 @@ export function ProductGrid() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.98 }}
-                  transition={{ 
-                    duration: 0.8, 
+                  transition={{
+                    duration: 0.8,
                     delay: index * 0.05,
-                    ease: [0.21, 0.45, 0.32, 0.9] 
+                    ease: [0.21, 0.45, 0.32, 0.9]
                   }}
                 >
                   <ProductCard product={product} />
                 </motion.div>
               ))}
             </AnimatePresence>
-            
+
             {filteredProducts.length === 0 && (
-               <div className="col-span-full py-20 text-center opacity-50">
-                  <p className="text-xl font-medium">Nenhum produto encontrado nesta categoria.</p>
-               </div>
+              <div className="col-span-full py-20 text-center opacity-50">
+                <p className="text-xl font-medium">Nenhum produto encontrado nesta categoria.</p>
+              </div>
             )}
           </div>
         </div>

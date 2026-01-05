@@ -4,34 +4,34 @@ import { motion } from 'motion/react';
 
 const steps = [
   {
-    icon: <Smartphone className="w-8 h-8" />,
-    title: "Escolha do produto",
-    description: "Navegue pela nossa vitrine e escolha o modelo Apple dos seus sonhos."
-  },
-  {
     icon: <MessageCircle className="w-8 h-8" />,
-    title: "Atendimento WhatsApp",
-    description: "Tire todas as suas dúvidas com um atendimento humano e especializado."
-  },
-  {
-    icon: <FileSignature className="w-8 h-8" />,
-    title: "Assinatura de contrato",
-    description: "Formalizamos a negociação através de um contrato digital para sua segurança."
+    title: "Conversa Real",
+    description: "Nada de robôs. Você fala direto comigo e alinhamos sua necessidade e orçamento."
   },
   {
     icon: <UserCheck className="w-8 h-8" />,
-    title: "Compra com fornecedor",
-    description: "Adquirimos seu produto diretamente com fornecedores homologados."
+    title: "Curadoria",
+    description: "Consultoria para escolher o modelo ideal para o seu uso, sem empurrar produto."
+  },
+  {
+    icon: <FileSignature className="w-8 h-8" />,
+    title: "Contrato Jurídico",
+    description: "O grande diferencial. Redijo contrato com validade legal antes do pagamento."
+  },
+  {
+    icon: <Smartphone className="w-8 h-8" />,
+    title: "Pagamento Seguro",
+    description: "Pix com desconto ou Cartão em até 12x. Tudo transparente e documentado."
   },
   {
     icon: <Box className="w-8 h-8" />,
-    title: "Personalização do envio",
-    description: "Preparamos o seu aparelho com todo cuidado e proteção necessária."
+    title: "Transparência",
+    description: "Receba fotos reais do produto sendo embalado e rastreio passo a passo."
   },
   {
     icon: <Truck className="w-8 h-8" />,
-    title: "Entrega ao cliente",
-    description: "Você recebe seu produto e acompanha todo o trajeto via rastreamento."
+    title: "Entrega Assegurada",
+    description: "Seguro total no envio. Se houver extravio, seu reembolso é 100% garantido."
   }
 ];
 
@@ -40,7 +40,7 @@ export function HowItWorks() {
     <section id="como-funciona" className="py-24 lg:py-32 bg-white text-foreground relative">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-12 mb-12 lg:mb-16">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -51,7 +51,7 @@ export function HowItWorks() {
               CONHEÇA NOSSO<br /><span className="text-primary italic">PROCESSO</span>
             </h2>
           </motion.div>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -61,7 +61,7 @@ export function HowItWorks() {
             <p className="text-muted-foreground max-w-lg mb-8 leading-tight font-medium uppercase tracking-widest text-[14px] md:text-[16px]">
               Descubra a jornada da sua compra, desde a escolha do hardware até a entrega segura em suas mãos.
             </p>
-            <button 
+            <button
               onClick={() => {
                 const element = document.getElementById('detalhes-processo');
                 element?.scrollIntoView({ behavior: 'smooth' });
@@ -74,7 +74,7 @@ export function HowItWorks() {
           </motion.div>
         </div>
 
-        <motion.div 
+        <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
@@ -90,8 +90,8 @@ export function HowItWorks() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 bg-black/5 border border-black/5 rounded-[2rem] md:rounded-[3rem] overflow-hidden"
         >
           {steps.map((step, index) => (
-            <motion.div 
-              key={index} 
+            <motion.div
+              key={index}
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
@@ -112,37 +112,43 @@ export function HowItWorks() {
         </motion.div>
 
         <div className="mt-12 md:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="bg-white rounded-[2rem] md:rounded-[3rem] p-8 md:p-12 border border-black/5 shadow-sm flex flex-col md:flex-row gap-8 md:gap-12 items-center"
           >
-             <div className="w-full md:w-1/2 aspect-square rounded-[1.5rem] md:rounded-[2rem] overflow-hidden bg-[#F5F5F7]">
-                <img src="https://images.unsplash.com/photo-1537183673931-f890242dbaef" alt="Productivity" className="w-full h-full object-cover mix-blend-multiply opacity-80 hover:scale-105 transition-transform duration-700" />
-             </div>
-             <div className="w-full md:w-1/2">
-                <p className="text-primary text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em] mb-4">Acompanhamento</p>
-                <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">STATUS EM TEMPO REAL</h4>
-                <p className="text-muted-foreground leading-relaxed text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70">Receba atualizações constantes diretamente no seu WhatsApp, desde o faturamento até a entrega.</p>
-             </div>
+            <div className="w-full md:w-1/2 aspect-square rounded-[1.5rem] md:rounded-[2rem] overflow-hidden bg-[#F5F5F7]">
+              <img src="https://images.unsplash.com/photo-1537183673931-f890242dbaef" alt="Productivity" className="w-full h-full object-cover mix-blend-multiply opacity-80 hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div className="w-full md:w-1/2">
+              <p className="text-primary text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em] mb-4">Experiência</p>
+              <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">O UNBOXING PERFEITO</h4>
+              <p className="text-muted-foreground leading-relaxed text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70 mb-8">Não é só uma caixa. É uma experiência preparada com cuidado, proteção e pronta para seus stories.</p>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary text-[10px] md:text-[11px] font-black uppercase tracking-[0.2em] border-b border-primary/30 pb-1 hover:border-primary transition-colors">
+                Ver no Instagram
+              </a>
+            </div>
           </motion.div>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="bg-white rounded-[2rem] md:rounded-[3rem] p-8 md:p-12 border border-black/5 shadow-sm flex flex-col md:flex-row-reverse gap-8 md:gap-12 items-center"
           >
-             <div className="w-full md:w-1/2 aspect-square rounded-[1.5rem] md:rounded-[2rem] overflow-hidden bg-[#F5F5F7]">
-                <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0" alt="Content" className="w-full h-full object-cover mix-blend-multiply opacity-80 hover:scale-105 transition-transform duration-700" />
-             </div>
-             <div className="w-full md:w-1/2">
-                <p className="text-primary text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em] mb-4">Logística</p>
-                <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">ENVIO PERSONALIZADO</h4>
-                <p className="text-muted-foreground text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70 leading-relaxed">Cada pacote é preparado com máxima proteção e seguro total para garantir que sua tecnologia chegue intacta.</p>
-             </div>
+            <div className="w-full md:w-1/2 aspect-square rounded-[1.5rem] md:rounded-[2rem] overflow-hidden bg-[#F5F5F7]">
+              <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0" alt="Content" className="w-full h-full object-cover mix-blend-multiply opacity-80 hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div className="w-full md:w-1/2">
+              <p className="text-primary text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em] mb-4">Logística</p>
+              <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">LOGÍSTICA DE ELITE</h4>
+              <p className="text-muted-foreground text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70 leading-relaxed mb-8">SP Capital recebe no mesmo dia. Sul e Sudeste em até 1 dia útil com seguro total.</p>
+              <a href="#" className="inline-flex items-center gap-2 text-primary text-[10px] md:text-[11px] font-black uppercase tracking-[0.2em] border-b border-primary/30 pb-1 hover:border-primary transition-colors">
+                Consultar meu CEP
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

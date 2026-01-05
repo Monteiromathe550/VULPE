@@ -1,27 +1,27 @@
 import React from 'react';
-import { ShieldCheck, Lock, FileText, UserCheck } from 'lucide-react';
+import { ShieldCheck, MapPin, CreditCard, RefreshCw } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const trustItems = [
   {
+    icon: <MapPin />,
+    title: "Onde Atendemos",
+    description: "SP, RJ, MG, ES, PR, SC, RS, BA, DF e GO. Foco total em rotas seguras."
+  },
+  {
     icon: <ShieldCheck />,
-    title: "Transparência Real",
-    description: "Cada pedido é acompanhado de um contrato digital. Você sabe exatamente o que está comprando."
+    title: "Garantia Apple",
+    description: "Garantia mundial Apple de 1 ano para produtos novos."
   },
   {
-    icon: <Lock />,
-    title: "Segurança de Amigo",
-    description: "Tratamos seu investimento com o respeito que ele merece, utilizando as melhores tecnologias de proteção."
+    icon: <CreditCard />,
+    title: "Pagamento",
+    description: "Pix à vista (condição especial) ou Cartão em até 12x."
   },
   {
-    icon: <FileText />,
-    title: "Garantia de Verdade",
-    description: "Emitimos termo de procedência em todos os equipamentos. Originalidade é a nossa base."
-  },
-  {
-    icon: <UserCheck />,
-    title: "Sempre com Você",
-    description: "Não é um robô. É uma consultoria humana pronta para ajudar você a configurar seu novo Apple."
+    icon: <RefreshCw />,
+    title: "Trocas",
+    description: "Seguimos o código de defesa do consumidor. Sua satisfação é lei."
   }
 ];
 
@@ -42,12 +42,12 @@ export function TrustSection() {
   };
 
   return (
-    <motion.section 
+    <motion.section
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
       variants={containerVariants}
-      id="seguranca" 
+      id="seguranca"
       className="py-24 lg:py-32 bg-white relative transition-colors duration-500"
     >
       <div className="container mx-auto px-6 relative z-10">
@@ -57,21 +57,21 @@ export function TrustSection() {
               <ShieldCheck className="w-4 h-4 text-primary" />
               <span className="text-sm font-black uppercase tracking-[0.2em] text-foreground">Compra Segura</span>
             </div>
-            
+
             <h2 className="mb-6 text-foreground tracking-tighter leading-[0.9] uppercase text-4xl lg:text-5xl font-black">
               Tranquilidade<br />
               <span className="text-black/10">Absoluta.</span>
             </h2>
-            
+
             <p className="text-muted-foreground text-sm font-bold uppercase tracking-widest opacity-60 leading-relaxed max-w-sm">
               Nossa missão é eliminar a ansiedade da compra online. Protocolos de segurança rigorosos e atendimento humano real em cada etapa.
             </p>
           </div>
-          
+
           <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4">
             {trustItems.map((item, index) => (
-              <motion.div 
-                key={index} 
+              <motion.div
+                key={index}
                 variants={itemVariants}
                 whileHover={{ y: -5, backgroundColor: "rgba(0,0,0,0.03)" }}
                 transition={{ duration: 0.3 }}

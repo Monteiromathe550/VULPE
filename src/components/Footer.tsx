@@ -16,7 +16,7 @@ export function Footer() {
             viewport={{ once: true }}
             className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 text-primary rounded-full text-sm font-black uppercase tracking-[0.3em] mb-8 lg:mb-12"
           >
-            Garanta sua tecnologia original
+            Atendimento Personalizado
           </motion.div>
 
           <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[0.85] mb-8 lg:mb-12 tracking-tighter uppercase relative z-10">
@@ -27,7 +27,7 @@ export function Footer() {
               transition={{ duration: 0.8 }}
               className="block"
             >
-              VAMOS
+              AINDA TEM
             </motion.span>
             <motion.span
               initial={{ y: 40, opacity: 0 }}
@@ -36,7 +36,7 @@ export function Footer() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="block text-primary italic relative"
             >
-              CONVERSAR?
+              ALGUMA DÚVIDA?
               <motion.div
                 className="absolute -right-4 md:-right-8 top-0 text-primary/20 text-[0.4em]"
                 animate={{ rotate: 360 }}
@@ -46,6 +46,10 @@ export function Footer() {
               </motion.div>
             </motion.span>
           </h2>
+
+          <p className="max-w-2xl mx-auto text-muted-foreground text-lg mb-12 font-medium">
+            Não existe pergunta boba. Me chame agora para entender o processo e garantir seu Apple com segurança máxima.
+          </p>
 
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -58,8 +62,8 @@ export function Footer() {
               className="inline-flex items-center gap-4 md:gap-6 bg-foreground text-background rounded-full font-black uppercase tracking-[0.2em] md:tracking-[0.4em] hover:bg-primary hover:text-white transition-all text-sm md:text-sm group px-6 py-4 md:px-10 md:py-5 relative overflow-hidden"
             >
               <span className="relative z-10">
-                <span className="md:hidden">Falar no WhatsApp</span>
-                <span className="hidden md:inline">Escolher aparelho no WhatsApp</span>
+                <span className="md:hidden">Falar Agora no WhatsApp</span>
+                <span className="hidden md:inline">Falar Agora no WhatsApp</span>
               </span>
               <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-all duration-500 -mr-2 scale-90 group-hover:scale-100 relative z-10">
                 <Send className="w-4 h-4" />

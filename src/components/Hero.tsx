@@ -13,8 +13,8 @@ export function Hero() {
           alt="Hero Background"
           className="w-full h-full object-cover object-center lg:object-right"
         />
-        {/* Gradient Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent lg:from-black/40 lg:via-transparent" />
+        {/* Gradient Overlay for Text Readability - Updated to Deep Navy Blue */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a192f]/95 via-[#0a192f]/80 to-black/30 lg:from-[#0a192f] lg:via-[#0a192f]/60 lg:to-transparent" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -43,19 +43,19 @@ export function Hero() {
             </div>
 
             <h1 className="mb-8 text-white tracking-tighter text-3xl sm:text-5xl md:text-7xl drop-shadow-sm font-bold">
-              A Excelência Apple.<br />
+              Seu novo Apple.<br />
               <span className="text-white/90 font-light italic relative">
-                Pura e Simples.
+                Com contrato, segurança e zero risco.
               </span>
             </h1>
 
             <p className="mb-12 text-white/80 text-lg lg:text-xl font-light max-w-lg mx-auto lg:mx-0 leading-relaxed drop-shadow-sm">
-              Curadoria de hardware de alto desempenho e atendimento personalizado. Onde o minimalismo encontra a potência.
+              Compre com quem garante sua segurança jurídica através de contrato assinado <strong>antes</strong> do pagamento. Atendimento humano, envio assegurado e a experiência premium que você merece.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-8 justify-center lg:justify-start">
               <button className="group text-white border-b border-white/30 hover:border-white pb-2 text-sm font-black uppercase tracking-[0.4em] transition-all flex items-center gap-4 mx-auto lg:mx-0 relative overflow-hidden">
-                <span className="relative z-10">Ver Coleção</span>
+                <span className="relative z-10">Cotar meu aparelho no WhatsApp</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform relative z-10" />
                 <div className="absolute inset-0 bg-white/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
               </button>
