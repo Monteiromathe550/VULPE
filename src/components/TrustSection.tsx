@@ -60,10 +60,10 @@ export function TrustSection() {
 
             <h2 className="mb-6 text-foreground tracking-tighter leading-[1.2] lg:leading-[0.9] uppercase text-3xl lg:text-5xl font-black">
               Tranquilidade<br />
-              <span className="text-black/10">Absoluta.</span>
+              <span className="text-black/30">Absoluta.</span>
             </h2>
 
-            <p className="text-muted-foreground text-sm font-bold uppercase tracking-widest opacity-60 leading-relaxed max-w-sm">
+            <p className="text-muted-foreground text-sm font-bold uppercase tracking-widest opacity-80 leading-relaxed max-w-sm">
               Nossa missão é eliminar a ansiedade da compra online. Protocolos de segurança rigorosos e atendimento humano real em cada etapa.
             </p>
           </div>
@@ -81,7 +81,7 @@ export function TrustSection() {
                   {React.cloneElement(item.icon as React.ReactElement, { size: 20, strokeWidth: 1.5 })}
                 </div>
                 <h3 className="text-[14px] font-black text-foreground mb-3 uppercase tracking-widest group-hover:text-primary transition-colors">{item.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed font-bold uppercase tracking-wide opacity-50">{item.description}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed font-bold uppercase tracking-wide opacity-70">{item.description}</p>
               </motion.div>
             ))}
           </div>

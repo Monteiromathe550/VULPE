@@ -41,7 +41,7 @@ export function ProductCard({ product }: ProductCardProps) {
       className={`group relative flex flex-col h-full bg-transparent ${isOutOfStock ? 'opacity-60 grayscale cursor-not-allowed' : ''}`}
     >
       {/* Image Showcase */}
-      <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-[#F5F5F7] transition-all duration-300 ease-out border border-transparent group-hover:border-black/5 group-hover:shadow-2xl group-hover:shadow-black/10">
+      <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-[#F5F5F7] transition-all duration-300 ease-out border border-transparent group-hover:border-black/5 group-hover:shadow-2xl group-hover:shadow-black/10 mb-4">
         <div className="absolute inset-0 bg-radial-gradient(circle_at_center,var(--color-primary)_0%,transparent_100%) opacity-0 group-hover:opacity-[0.03] transition-opacity duration-500" />
 
         <motion.div
@@ -93,7 +93,7 @@ export function ProductCard({ product }: ProductCardProps) {
       </div>
 
       {/* Content Details */}
-      <div className="pt-5 flex flex-col flex-1 gap-2">
+      <div className="pt-6 flex flex-col flex-1 gap-4">
         {/* Category */}
         <div className="flex items-center gap-3 mb-1">
           <div className={`w-6 h-[1px] shrink-0 transition-colors duration-300 ${isOutOfStock ? 'bg-gray-300' : 'bg-primary/50'}`} />
@@ -118,10 +118,10 @@ export function ProductCard({ product }: ProductCardProps) {
 
               {(product.priceTotalInstallment && product.installmentValue) && (
                 <div className="flex flex-col gap-0.5">
-                  <p className="text-sm font-medium text-muted-foreground/80 tracking-wide tabular-nums">
+                  <p className="text-sm font-medium text-muted-foreground tracking-wide tabular-nums">
                     {formatCurrency(product.priceTotalInstallment)} parcelado
                   </p>
-                  <p className="text-sm font-medium text-muted-foreground/50 tracking-wide tabular-nums">
+                  <p className="text-sm font-medium text-muted-foreground/80 tracking-wide tabular-nums">
                     ou 12x de {formatCurrency(product.installmentValue)}
                   </p>
                 </div>
@@ -129,7 +129,7 @@ export function ProductCard({ product }: ProductCardProps) {
             </div>
           ) : (
             <div className="flex flex-col gap-1 py-2">
-              <span className="text-[18px] font-black text-muted-foreground/40 uppercase tracking-widest">
+              <span className="text-[18px] font-black text-muted-foreground/70 uppercase tracking-widest">
                 Consulte Valor
               </span>
             </div>

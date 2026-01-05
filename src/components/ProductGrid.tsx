@@ -47,7 +47,7 @@ export function ProductGrid() {
 
           <h2 className="text-4xl lg:text-6xl font-black text-foreground tracking-tighter leading-[1.2] lg:leading-[0.9] uppercase mb-10">
             Escolha o seu<br />
-            <span className="text-black/10">Próximo Nível.</span>
+            <span className="text-black/30">Próximo Nível.</span>
           </h2>
 
           <p className="text-muted-foreground text-base lg:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
@@ -117,7 +117,7 @@ export function ProductGrid() {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 lg:gap-x-12 lg:gap-y-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-32 lg:gap-x-12 lg:gap-y-24 pb-20">
             <AnimatePresence mode="popLayout">
               {filteredProducts.map((product, index) => (
                 <motion.div
@@ -131,6 +131,7 @@ export function ProductGrid() {
                     delay: index * 0.05,
                     ease: [0.21, 0.45, 0.32, 0.9]
                   }}
+                  className="pb-12"
                 >
                   <ProductCard product={product} />
                 </motion.div>

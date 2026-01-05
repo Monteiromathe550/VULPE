@@ -33,7 +33,7 @@ export function Testimonials() {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center text-center mb-16 lg:mb-20">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -43,7 +43,7 @@ export function Testimonials() {
             <div className="h-[1px] w-full bg-primary/20 mt-2" />
           </motion.div>
 
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -54,7 +54,7 @@ export function Testimonials() {
             <span className="text-primary italic font-light">APROVOU.</span>
           </motion.h2>
 
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -76,14 +76,14 @@ export function Testimonials() {
               className="group relative"
             >
               <div className="h-full bg-white rounded-[2.5rem] p-10 lg:p-12 border border-black/5 hover:border-primary/20 hover:shadow-2xl hover:shadow-black/5 transition-all duration-500 flex flex-col justify-between">
-                
+
                 <div className="mb-10">
                   <div className="flex gap-1 mb-8">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <Star key={star} className="w-4 h-4 text-primary fill-primary" />
                     ))}
                   </div>
-                  <Quote className="w-8 h-8 text-black/10 mb-6 rotate-180" />
+                  <Quote className="w-8 h-8 text-black/30 mb-6 rotate-180" />
                   <p className="text-foreground text-[16px] leading-relaxed font-medium">
                     "{item.text}"
                   </p>
@@ -92,7 +92,7 @@ export function Testimonials() {
                 <div className="flex flex-col gap-4 border-t border-black/5 pt-8">
                   <div>
                     <h4 className="font-black uppercase tracking-widest text-[18px] mb-1">{item.name}</h4>
-                    <p className="text-[14px] text-muted-foreground uppercase tracking-wider">{item.location}</p>
+                    <p className="text-[14px] text-muted-foreground/80 uppercase tracking-wider">{item.location}</p>
                   </div>
                   <div className="self-start text-[10px] font-black uppercase tracking-widest text-primary/80 bg-primary/5 px-3 py-1.5 rounded-full">
                     {item.product}
