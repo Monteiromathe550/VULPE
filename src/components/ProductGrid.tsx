@@ -31,9 +31,9 @@ export function ProductGrid() {
   }, [activeCategory, searchQuery, sortBy, products]);
 
   return (
-    <section id="produtos" className="py-24 lg:py-32 bg-background transition-colors duration-500">
+    <section id="produtos" className="py-16 lg:py-32 bg-background transition-colors duration-500">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center mb-16">
+        <div className="max-w-4xl mx-auto text-center mb-10 lg:mb-16">
           <div className="inline-block mb-8">
             <span className="text-[11px] font-black uppercase tracking-[0.5em] text-primary/80">
               Tabela Oficial • Fevereiro/2026
@@ -42,7 +42,7 @@ export function ProductGrid() {
           </div>
           <h2 className="mb-8 text-foreground tracking-tighter">
             O que você procura?<br />
-            <span className="text-primary/90 font-light italic text-2xl lg:text-3xl block mt-2 tracking-wide">
+            <span className="text-primary/90 font-light italic text-lg block mt-2 tracking-normal">
               iPhones e Apple Watch a pronta entrega. Tudo original e com garantia.
             </span>
           </h2>
@@ -51,7 +51,7 @@ export function ProductGrid() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-10 lg:gap-16">
           {/* Controls - Search and Sort */}
           <div className="flex flex-col gap-6 pb-6 border-b border-black/5">
             {/* Categories - Minimal Tabs */}
@@ -112,7 +112,7 @@ export function ProductGrid() {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 lg:gap-x-12 lg:gap-y-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 lg:gap-x-12 lg:gap-y-20">
             <AnimatePresence mode="popLayout">
               {filteredProducts.map((product, index) => (
                 <motion.div

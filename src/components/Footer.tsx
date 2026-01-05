@@ -6,10 +6,10 @@ import logoDark from '../assets/logo-dark.png';
 
 export function Footer() {
   return (
-    <footer className="bg-white text-foreground pt-24 pb-12 lg:pt-32 lg:pb-16 border-t border-black/5 overflow-hidden">
+    <footer className="bg-white text-foreground pt-16 pb-12 lg:pt-32 lg:pb-16 border-t border-black/5 overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Massive Reference Style CTA */}
-        <div className="mb-16 lg:mb-24 text-center relative">
+        <div className="mb-12 lg:mb-24 text-center relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -19,7 +19,7 @@ export function Footer() {
             Atendimento Personalizado
           </motion.div>
 
-          <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[0.85] mb-8 lg:mb-12 tracking-tighter uppercase relative z-10">
+          <h2 className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[0.85] mb-8 lg:mb-12 tracking-tighter uppercase relative z-10">
             <motion.span
               initial={{ y: 40, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -62,8 +62,8 @@ export function Footer() {
               className="inline-flex items-center gap-4 md:gap-6 bg-foreground text-background rounded-full font-black uppercase tracking-[0.2em] md:tracking-[0.4em] hover:bg-primary hover:text-white transition-all text-sm md:text-sm group px-6 py-4 md:px-10 md:py-5 relative overflow-hidden"
             >
               <span className="relative z-10">
-                <span className="md:hidden">Falar com a Vulpe agora</span>
-                <span className="hidden md:inline">Falar com a Vulpe agora</span>
+                <span className="md:hidden">Falar com o Especialista Vulp</span>
+                <span className="hidden md:inline">Falar com o Especialista Vulp</span>
               </span>
               <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-all duration-500 -mr-2 scale-90 group-hover:scale-100 relative z-10">
                 <Send className="w-4 h-4" />
@@ -73,7 +73,7 @@ export function Footer() {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-20 border-b border-black/5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 pb-12 lg:pb-20 border-b border-black/5">
           <div className="space-y-8">
             <div className="flex items-center gap-3">
               <img
@@ -151,14 +151,14 @@ export function Footer() {
                 <div className="w-8 h-8 rounded-xl bg-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span className="lowercase">vendas@vulpe.com.br</span>
+                <span className="lowercase">vendas@vulp.com.br</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-8 text-muted-foreground/40 text-sm font-black uppercase tracking-[0.4em]">
-          <p>© 2026 VULPE. Hardware de elite selecionado.</p>
+          <p>© 2026 VULP. Hardware de elite selecionado.</p>
           <div className="flex gap-12">
             <a href="#" className="hover:text-primary transition-colors">Termos</a>
             <a href="#" className="hover:text-foreground transition-colors">Privacidade</a>

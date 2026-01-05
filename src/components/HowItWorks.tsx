@@ -37,9 +37,9 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="como-funciona" className="py-24 lg:py-32 bg-white text-foreground relative">
+    <section id="como-funciona" className="py-16 lg:py-32 bg-white text-foreground relative">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row gap-12 mb-12 lg:mb-16">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-8 lg:mb-16">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -66,7 +66,7 @@ export function HowItWorks() {
                 const element = document.getElementById('detalhes-processo');
                 element?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="group relative bg-black/5 border border-black/10 px-10 py-5 rounded-full text-[10px] font-black uppercase tracking-[0.3em] overflow-hidden transition-all hover:border-primary/50 self-start cursor-pointer"
+              className="group relative bg-black/5 border border-black/10 px-8 py-4 md:px-10 md:py-5 rounded-full text-[10px] font-black uppercase tracking-[0.3em] overflow-hidden transition-all hover:border-primary/50 self-start cursor-pointer"
             >
               <span className="relative z-10 text-foreground group-hover:text-white transition-colors text-[12px]">Ver detalhes do fluxo</span>
               <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
@@ -96,7 +96,7 @@ export function HowItWorks() {
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
               }}
-              className="bg-white p-8 md:p-12 group hover:bg-[#F5F5F7] transition-colors"
+              className="bg-white p-6 md:p-12 group hover:bg-[#F5F5F7] transition-colors"
             >
               <div className="mb-8 md:mb-10">
                 <div className="w-12 h-12 rounded-2xl bg-foreground flex items-center justify-center text-white shadow-lg shadow-black/10 group-hover:scale-110 transition-transform duration-500">
