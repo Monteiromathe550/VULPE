@@ -11,10 +11,10 @@ export function Hero() {
         <img
           src={heroBg}
           alt="Hero Background"
-          className="w-full h-full object-cover object-center lg:object-right"
+          className="w-full h-full object-cover object-right"
         />
-        {/* Gradient Overlay for Text Readability - Updated to Deep Navy Blue */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a192f]/95 via-[#0a192f]/80 to-black/30 lg:from-[#0a192f] lg:via-[#0a192f]/60 lg:to-transparent" />
+        {/* Gradient Overlay for Text Readability - Adjusted for mobile visibility */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a192f]/95 via-[#0a192f]/50 to-transparent lg:from-[#0a192f] lg:via-[#0a192f]/60 lg:to-transparent" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
