@@ -42,7 +42,7 @@ export function ProductGrid() {
           </div>
           <h2 className="mb-8 text-foreground tracking-tighter">
             O que você procura?<br />
-            <span className="text-primary/90 font-light italic text-2xl lg:text-3xl block mt-2 tracking-normal">
+            <span className="text-primary/90 font-light italic text-2xl lg:text-3xl block mt-2 tracking-wide">
               iPhones e Apple Watch a pronta entrega. Tudo original e com garantia.
             </span>
           </h2>
