@@ -39,7 +39,7 @@ export function HowItWorks() {
   return (
     <section id="como-funciona" className="pt-24 pb-16 lg:py-32 bg-white text-foreground relative">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-8 lg:mb-16">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 mb-8 lg:mb-16">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -47,7 +47,7 @@ export function HowItWorks() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="lg:w-1/2"
           >
-            <h2 className="text-4xl md:text-7xl font-black mb-4 leading-[1.1] tracking-tightest uppercase md:text-[64px]">
+            <h2 className="text-4xl md:text-7xl font-black mb-0 leading-[1.1] tracking-tightest uppercase md:text-[64px]">
               CONHEÇA NOSSO<br /><span className="text-primary italic">PROCESSO</span>
             </h2>
           </motion.div>

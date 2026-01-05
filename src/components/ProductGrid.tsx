@@ -117,7 +117,7 @@ export function ProductGrid() {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-32 lg:gap-x-12 lg:gap-y-24 pb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-20 lg:gap-x-12 lg:gap-y-24 pb-24">
             <AnimatePresence mode="popLayout">
               {filteredProducts.map((product, index) => (
                 <motion.div

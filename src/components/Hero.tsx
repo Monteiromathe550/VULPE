@@ -31,7 +31,7 @@ export function Hero() {
               Seu Apple com segurança total e sem enrolação.
             </h1>
 
-            <p className="mb-8 text-white/80 text-lg lg:text-xl font-light max-w-lg mx-auto lg:mx-0 leading-relaxed drop-shadow-sm">
+            <p className="mb-8 text-white text-lg lg:text-xl font-light max-w-lg mx-auto lg:mx-0 leading-relaxed drop-shadow-sm opacity-90">
               Aqui na Vulp o papo é reto: contrato assinado com validade jurídica <strong>antes</strong> de você pagar. Atendimento humano, direto comigo, e garantia de entrega.
             </p>
 

@@ -82,7 +82,7 @@ export function Footer() {
                 className="h-16 w-auto object-contain"
               />
             </div>
-            <p className="text-muted-foreground text-sm leading-relaxed max-w-xs font-bold uppercase tracking-widest opacity-60">
+            <p className="text-muted-foreground text-sm leading-relaxed max-w-xs font-bold uppercase tracking-widest opacity-80">
               Especialistas em ecossistema Apple com foco em transparência, segurança jurídica e atendimento humanizado.
             </p>
             <div className="flex gap-4">
@@ -157,7 +157,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-8 text-muted-foreground/40 text-sm font-black uppercase tracking-[0.4em]">
+        <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-8 text-muted-foreground/70 text-sm font-black uppercase tracking-[0.4em]">
           <p>© 2026 VULP. Hardware de elite selecionado.</p>
           <div className="flex gap-12">
             <a href="#" className="hover:text-primary transition-colors">Termos</a>

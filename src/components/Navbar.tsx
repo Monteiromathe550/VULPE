@@ -43,7 +43,7 @@ export function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className={`text-[12px] font-black transition-all tracking-[0.3em] relative group/link ${scrolled ? 'text-foreground hover:text-primary' : 'text-white/80 hover:text-white'}`}
+              className={`text-[12px] font-black transition-all tracking-[0.3em] relative group/link ${scrolled ? 'text-foreground hover:text-primary' : 'text-white/90 hover:text-white'}`}
             >
               {link.name}
               <span className={`absolute -bottom-1 left-0 w-0 h-[1.5px] transition-all duration-500 group-hover/link:w-full ${scrolled ? 'bg-primary' : 'bg-white'}`} />
