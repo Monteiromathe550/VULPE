@@ -31,7 +31,7 @@ export function ProductGrid() {
   }, [activeCategory, searchQuery, sortBy, products]);
 
   return (
-    <section id="produtos" className="py-16 lg:py-32 bg-background transition-colors duration-500">
+    <section id="produtos" className="pt-16 pb-24 lg:py-32 bg-background transition-colors duration-500">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-12 lg:mb-20">
           <motion.div
@@ -45,7 +45,7 @@ export function ProductGrid() {
             <div className="h-[1px] w-full bg-primary/30 mt-3" />
           </motion.div>
 
-          <h2 className="text-4xl lg:text-6xl font-black text-foreground tracking-tighter leading-[0.9] uppercase mb-6">
+          <h2 className="text-4xl lg:text-6xl font-black text-foreground tracking-tighter leading-[1.2] lg:leading-[0.9] uppercase mb-10">
             Escolha o seu<br />
             <span className="text-black/10">Próximo Nível.</span>
           </h2>
@@ -117,7 +117,7 @@ export function ProductGrid() {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 lg:gap-x-12 lg:gap-y-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 lg:gap-x-12 lg:gap-y-20">
             <AnimatePresence mode="popLayout">
               {filteredProducts.map((product, index) => (
                 <motion.div

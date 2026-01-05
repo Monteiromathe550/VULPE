@@ -5,7 +5,7 @@ import heroBg from '../assets/hero-bg.png';
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen lg:min-h-[900px] pt-32 pb-20 flex items-center overflow-hidden">
+    <section className="relative min-h-screen lg:min-h-[900px] pt-40 pb-20 flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -27,7 +27,7 @@ export function Hero() {
           >
 
 
-            <h1 className="mb-8 text-white tracking-tighter text-3xl sm:text-5xl md:text-7xl drop-shadow-sm font-bold">
+            <h1 className="mb-8 text-white tracking-tighter text-4xl sm:text-5xl md:text-7xl drop-shadow-sm font-black leading-[1.1]">
               Seu Apple com segurança total e sem enrolação.
             </h1>
 

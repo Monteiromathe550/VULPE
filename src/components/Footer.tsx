@@ -19,7 +19,7 @@ export function Footer() {
             Atendimento Personalizado
           </motion.div>
 
-          <h2 className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[0.85] mb-8 lg:mb-12 tracking-tighter uppercase relative z-10">
+          <h2 className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[1.1] lg:leading-[0.85] mb-8 lg:mb-12 tracking-tighter uppercase relative z-10">
             <motion.span
               initial={{ y: 40, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}

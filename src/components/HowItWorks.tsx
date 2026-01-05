@@ -37,7 +37,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="como-funciona" className="py-16 lg:py-32 bg-white text-foreground relative">
+    <section id="como-funciona" className="pt-24 pb-16 lg:py-32 bg-white text-foreground relative">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-8 lg:mb-16">
           <motion.div
@@ -47,7 +47,7 @@ export function HowItWorks() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="lg:w-1/2"
           >
-            <h2 className="text-4xl md:text-7xl font-black mb-8 leading-none tracking-tightest uppercase md:text-[64px]">
+            <h2 className="text-4xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tightest uppercase md:text-[64px]">
               CONHEÇA NOSSO<br /><span className="text-primary italic">PROCESSO</span>
             </h2>
           </motion.div>
@@ -96,7 +96,7 @@ export function HowItWorks() {
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
               }}
-              className="bg-white p-6 md:p-12 group hover:bg-[#F5F5F7] transition-colors"
+              className="bg-white p-10 md:p-12 group hover:bg-[#F5F5F7] transition-colors"
             >
               <div className="mb-8 md:mb-10">
                 <div className="w-12 h-12 rounded-2xl bg-foreground flex items-center justify-center text-white shadow-lg shadow-black/10 group-hover:scale-110 transition-transform duration-500">
@@ -104,7 +104,7 @@ export function HowItWorks() {
                 </div>
               </div>
               <h3 className="text-xl md:text-2xl font-black mb-4 tracking-tightest uppercase">{step.title}</h3>
-              <p className="text-muted-foreground leading-relaxed max-w-[280px] text-[13px] md:text-[15px] font-bold uppercase tracking-widest opacity-60">
+              <p className="text-muted-foreground leading-relaxed max-w-full text-[13px] md:text-[15px] font-bold uppercase tracking-widest opacity-60">
                 {step.description}
               </p>
             </motion.div>
