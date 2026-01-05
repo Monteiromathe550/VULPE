@@ -5,33 +5,33 @@ import { motion } from 'motion/react';
 const steps = [
   {
     icon: <MessageCircle className="w-8 h-8" />,
-    title: "Conversa Real",
-    description: "Nada de robôs. Você fala direto comigo e alinhamos sua necessidade e orçamento."
+    title: "A gente troca ideia",
+    description: "Sem robô. Você me chama, diz o que precisa e eu te ajudo a escolher o melhor modelo pra você."
   },
   {
     icon: <UserCheck className="w-8 h-8" />,
-    title: "Curadoria",
-    description: "Consultoria para escolher o modelo ideal para o seu uso, sem empurrar produto."
+    title: "Zero empurroterapia",
+    description: "Eu entendo seu orçamento e uso. Só te ofereço o que faz sentido."
   },
   {
     icon: <FileSignature className="w-8 h-8" />,
-    title: "Contrato Jurídico",
-    description: "O grande diferencial. Redijo contrato com validade legal antes do pagamento."
+    title: "Segurança no Papel",
+    description: "O contrato vem antes do pix. Documento com validade jurídica pra você ficar tranquilo."
   },
   {
     icon: <Smartphone className="w-8 h-8" />,
-    title: "Pagamento Seguro",
-    description: "Pix com desconto ou Cartão em até 12x. Tudo transparente e documentado."
+    title: "Pagamento Transparente",
+    description: "Pix com desconto ou cartão em até 12x. Sem letras miúdas."
   },
   {
     icon: <Box className="w-8 h-8" />,
-    title: "Transparência",
-    description: "Receba fotos reais do produto sendo embalado e rastreio passo a passo."
+    title: "Você acompanha tudo",
+    description: "Te mando foto e vídeo do seu pedido sendo embalado e o rastreio na hora."
   },
   {
     icon: <Truck className="w-8 h-8" />,
-    title: "Entrega Assegurada",
-    description: "Seguro total no envio. Se houver extravio, seu reembolso é 100% garantido."
+    title: "Entrega Garantida",
+    description: "Seu pedido vai com seguro total. Qualquer B.O. no caminho, a responsabilidade é minha, não sua."
   }
 ];
 
@@ -124,10 +124,10 @@ export function HowItWorks() {
             </div>
             <div className="w-full md:w-1/2">
               <p className="text-primary text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em] mb-4">Experiência</p>
-              <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">O UNBOXING PERFEITO</h4>
-              <p className="text-muted-foreground leading-relaxed text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70 mb-8">Não é só uma caixa. É uma experiência preparada com cuidado, proteção e pronta para seus stories.</p>
+              <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">DO JEITO QUE VOCÊ MERECE</h4>
+              <p className="text-muted-foreground leading-relaxed text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70 mb-8">Caixa preparada com cuidado, proteção e carinho. Pra chegar intacto aí.</p>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary text-[10px] md:text-[11px] font-black uppercase tracking-[0.2em] border-b border-primary/30 pb-1 hover:border-primary transition-colors">
-                Ver no Instagram
+                Ver unboxing no Insta
               </a>
             </div>
           </motion.div>
@@ -143,10 +143,10 @@ export function HowItWorks() {
             </div>
             <div className="w-full md:w-1/2">
               <p className="text-primary text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em] mb-4">Logística</p>
-              <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">LOGÍSTICA DE ELITE</h4>
-              <p className="text-muted-foreground text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70 leading-relaxed mb-8">SP Capital recebe no mesmo dia. Sul e Sudeste em até 1 dia útil com seguro total.</p>
+              <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">ENTREGA RÁPIDA</h4>
+              <p className="text-muted-foreground text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70 leading-relaxed mb-8">Quem é de SP recebe no dia. Outros estados com envio expresso e seguro.</p>
               <a href="#" className="inline-flex items-center gap-2 text-primary text-[10px] md:text-[11px] font-black uppercase tracking-[0.2em] border-b border-primary/30 pb-1 hover:border-primary transition-colors">
-                Consultar meu CEP
+                Ver prazos
               </a>
             </div>
           </motion.div>

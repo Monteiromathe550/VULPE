@@ -27,7 +27,7 @@ export function Hero() {
           >
             <div className="inline-block mb-8 group cursor-default">
               <span className="relative text-sm font-black uppercase tracking-[0.5em] text-white/90 overflow-hidden">
-                Premium Apple Store
+                VULPE
                 <motion.div
                   className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full"
                   animate={{ translateX: ["-100%", "200%"] }}
@@ -43,19 +43,16 @@ export function Hero() {
             </div>
 
             <h1 className="mb-8 text-white tracking-tighter text-3xl sm:text-5xl md:text-7xl drop-shadow-sm font-bold">
-              Seu novo Apple.<br />
-              <span className="text-white/90 font-light italic relative">
-                Com contrato, segurança e zero risco.
-              </span>
+              Seu Apple com segurança total e sem enrolação.
             </h1>
 
-            <p className="mb-12 text-white/80 text-lg lg:text-xl font-light max-w-lg mx-auto lg:mx-0 leading-relaxed drop-shadow-sm">
-              Compre com quem garante sua segurança jurídica através de contrato assinado <strong>antes</strong> do pagamento. Atendimento humano, envio assegurado e a experiência premium que você merece.
+            <p className="mb-8 text-white/80 text-lg lg:text-xl font-light max-w-lg mx-auto lg:mx-0 leading-relaxed drop-shadow-sm">
+              Aqui na Vulpe o papo é reto: contrato assinado com validade jurídica <strong>antes</strong> de você pagar. Atendimento humano, direto comigo, e garantia de entrega.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-8 justify-center lg:justify-start">
-              <button className="group text-white border-b border-white/30 hover:border-white pb-2 text-sm font-black uppercase tracking-[0.4em] transition-all flex items-center gap-4 mx-auto lg:mx-0 relative overflow-hidden">
-                <span className="relative z-10">Cotar meu aparelho no WhatsApp</span>
+              <button className="group text-white border-b border-white/30 hover:border-white pb-2 text-sm font-black uppercase tracking-[0.2em] transition-all flex items-center gap-4 mx-auto lg:mx-0 relative overflow-hidden">
+                <span className="relative z-10">Chamar no WhatsApp</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform relative z-10" />
                 <div className="absolute inset-0 bg-white/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
               </button>

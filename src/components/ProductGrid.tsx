@@ -41,13 +41,13 @@ export function ProductGrid() {
             <div className="h-[1px] w-full bg-primary/20 mt-2" />
           </div>
           <h2 className="mb-8 text-foreground tracking-tighter">
-            Escolha sua máquina<br />
-            <span className="text-primary/90 font-light italic text-2xl lg:text-3xl block mt-2">
-              Seleção premium de iPhones e Apple Watch a pronta entrega.
+            O que você procura?<br />
+            <span className="text-primary/90 font-light italic text-2xl lg:text-3xl block mt-2 tracking-normal">
+              iPhones e Apple Watch a pronta entrega. Tudo original e com garantia.
             </span>
           </h2>
           <p className="text-muted-foreground text-lg lg:text-xl font-light max-w-2xl mx-auto">
-            Uma seleção precisa dos melhores dispositivos Apple, validados por especialistas para garantir o seu próximo salto tecnológico.
+            Dispositivos Apple selecionados e verificados por especialistas.
           </p>
         </div>
 

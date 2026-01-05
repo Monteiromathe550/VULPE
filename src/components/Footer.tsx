@@ -27,7 +27,7 @@ export function Footer() {
               transition={{ duration: 0.8 }}
               className="block"
             >
-              AINDA TEM
+              FICOU COM
             </motion.span>
             <motion.span
               initial={{ y: 40, opacity: 0 }}
@@ -36,7 +36,7 @@ export function Footer() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="block text-primary italic relative"
             >
-              ALGUMA DÚVIDA?
+              DÚVIDA? ME CHAMA.
               <motion.div
                 className="absolute -right-4 md:-right-8 top-0 text-primary/20 text-[0.4em]"
                 animate={{ rotate: 360 }}
@@ -48,7 +48,7 @@ export function Footer() {
           </h2>
 
           <p className="max-w-2xl mx-auto text-muted-foreground text-lg mb-12 font-medium">
-            Não existe pergunta boba. Me chame agora para entender o processo e garantir seu Apple com segurança máxima.
+            Tô aqui pra resolver. Pode perguntar qualquer coisa antes de decidir.
           </p>
 
           <motion.div
@@ -62,8 +62,8 @@ export function Footer() {
               className="inline-flex items-center gap-4 md:gap-6 bg-foreground text-background rounded-full font-black uppercase tracking-[0.2em] md:tracking-[0.4em] hover:bg-primary hover:text-white transition-all text-sm md:text-sm group px-6 py-4 md:px-10 md:py-5 relative overflow-hidden"
             >
               <span className="relative z-10">
-                <span className="md:hidden">Falar Agora no WhatsApp</span>
-                <span className="hidden md:inline">Falar Agora no WhatsApp</span>
+                <span className="md:hidden">Falar com a Vulpe agora</span>
+                <span className="hidden md:inline">Falar com a Vulpe agora</span>
               </span>
               <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-all duration-500 -mr-2 scale-90 group-hover:scale-100 relative z-10">
                 <Send className="w-4 h-4" />
@@ -151,14 +151,14 @@ export function Footer() {
                 <div className="w-8 h-8 rounded-xl bg-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span className="lowercase">contato@premiumstore.com</span>
+                <span className="lowercase">vendas@vulpe.com.br</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-8 text-muted-foreground/40 text-sm font-black uppercase tracking-[0.4em]">
-          <p>© 2026 Premium Store. Hardware de elite selecionado.</p>
+          <p>© 2026 VULPE. Hardware de elite selecionado.</p>
           <div className="flex gap-12">
             <a href="#" className="hover:text-primary transition-colors">Termos</a>
             <a href="#" className="hover:text-foreground transition-colors">Privacidade</a>

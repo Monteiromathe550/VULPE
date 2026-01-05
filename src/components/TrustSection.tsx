@@ -5,23 +5,23 @@ import { motion } from 'motion/react';
 const trustItems = [
   {
     icon: <MapPin />,
-    title: "Onde Atendemos",
-    description: "SP, RJ, MG, ES, PR, SC, RS, BA, DF e GO. Foco total em rotas seguras."
+    title: "Onde a Vulpe entrega",
+    description: "SP, RJ, MG, ES, PR, SC, RS, BA, DF e GO."
   },
   {
     icon: <ShieldCheck />,
-    title: "Garantia Apple",
-    description: "Garantia mundial Apple de 1 ano para produtos novos."
+    title: "Garantia",
+    description: "1 ano de Garantia Apple Mundial (para lacrados)."
   },
   {
     icon: <CreditCard />,
     title: "Pagamento",
-    description: "Pix à vista (condição especial) ou Cartão em até 12x."
+    description: "Pix, Cartão ou Entrada + Parcelado."
   },
   {
     icon: <RefreshCw />,
-    title: "Trocas",
-    description: "Seguimos o código de defesa do consumidor. Sua satisfação é lei."
+    title: "Sem surpresas",
+    description: "Tudo documentado e com nota/recibo."
   }
 ];
 
