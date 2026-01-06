@@ -15,7 +15,7 @@ export function Footer() {
                 className="h-8 w-auto object-contain"
               />
             </div>
-            <p className="text-xs font-bold text-muted-foreground leading-relaxed max-w-xs uppercase tracking-wide">
+            <p className="text-[14px] font-bold text-muted-foreground leading-relaxed max-w-xs uppercase tracking-wide">
               Seu pedido vai com seguro total. Qualquer B.O. no caminho, a responsabilidade é minha, não sua.
             </p>
             <div className="flex gap-3">
