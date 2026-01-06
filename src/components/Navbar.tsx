@@ -96,7 +96,7 @@ export function Navbar() {
                 href="https://wa.me/5565981274128"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-white text-center py-6 rounded-full font-black uppercase tracking-widest shadow-2xl shadow-black/20 active:scale-95 transition-all text-[14px] cursor-pointer pointer-events-auto z-50"
+                className="bg-primary text-white text-center py-6 rounded-full font-black uppercase tracking-widest shadow-2xl shadow-primary/30 active:scale-95 transition-all text-[14px] cursor-pointer pointer-events-auto z-50"
                 onClick={() => setIsOpen(false)}
               >
                 Falar no WhatsApp

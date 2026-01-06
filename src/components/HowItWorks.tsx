@@ -66,9 +66,9 @@ export function HowItWorks() {
                 const element = document.getElementById('detalhes-processo');
                 element?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="group relative bg-black text-white border border-black/10 px-8 py-4 md:px-10 md:py-5 rounded-full text-[12px] font-black uppercase tracking-[0.3em] overflow-hidden transition-all shadow-lg hover:-translate-y-1 self-start cursor-pointer"
+              className="group relative bg-black/5 border border-black/10 px-8 py-4 md:px-10 md:py-5 rounded-full text-[12px] font-black uppercase tracking-[0.3em] overflow-hidden transition-all hover:border-primary/50 self-start cursor-pointer"
             >
-              <span className="relative z-10 text-white transition-colors text-[14px]">Ver detalhes do fluxo</span>
+              <span className="relative z-10 text-foreground group-hover:text-white transition-colors text-[14px]">Ver detalhes do fluxo</span>
               <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
             </button>
           </motion.div>
