@@ -5,6 +5,7 @@ import { ProductGrid } from './components/ProductGrid';
 import { HowItWorks } from './components/HowItWorks';
 import { Testimonials } from './components/Testimonials';
 import { TrustSection } from './components/TrustSection';
+import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
 import { ProductManager } from './components/ProductManager';
 import { Toaster } from 'sonner@2.0.3';
@@ -17,12 +18,12 @@ export default function App() {
     <div className="min-h-screen bg-white">
       <Toaster position="top-center" richColors />
       <Navbar />
-      
 
 
-      <ProductManager 
-        isOpen={isAdminOpen} 
-        onClose={() => setIsAdminOpen(false)} 
+
+      <ProductManager
+        isOpen={isAdminOpen}
+        onClose={() => setIsAdminOpen(false)}
       />
 
       <main>
@@ -32,6 +33,7 @@ export default function App() {
         <Testimonials />
         <TrustSection />
       </main>
+      <CTA />
       <Footer />
     </div>
   );
