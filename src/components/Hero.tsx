@@ -32,15 +32,6 @@ export function Hero() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="flex-1 text-center lg:text-left max-w-2xl flex flex-col items-center lg:items-start"
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-8 backdrop-blur-md"
-            >
-              <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-primary font-black uppercase text-[10px] tracking-[0.2em]">Hardware Selecionado</span>
-            </motion.div>
 
             <h1 className="mb-6 text-white tracking-tighter text-4xl sm:text-5xl md:text-6xl font-black leading-[1.1] drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
               Seu Apple com segurança total e sem enrolação.
