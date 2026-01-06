@@ -56,7 +56,7 @@ export function Navbar() {
             href="https://wa.me/5565981274128"
             target="_blank"
             rel="noopener noreferrer"
-            className={`px-8 py-3.5 text-[12px] font-black rounded-full transition-all duration-500 uppercase tracking-widest group overflow-hidden relative shadow-lg ${scrolled ? 'bg-foreground text-background hover:shadow-primary/20' : 'bg-white text-black hover:bg-white/90 hover:shadow-white/20'}`}
+            className={`px-8 py-3.5 text-[12px] font-black rounded-full transition-all duration-500 uppercase tracking-widest group overflow-hidden relative shadow-lg cursor-pointer pointer-events-auto z-50 ${scrolled ? 'bg-foreground text-background hover:shadow-primary/20' : 'bg-white text-black hover:bg-white/90 hover:shadow-white/20'}`}
           >
             <span className="relative z-10">ORÇAMENTO WHATSAPP</span>
             <div className={`absolute inset-0 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out ${scrolled ? 'bg-primary' : 'bg-black/5'}`} />
@@ -94,7 +94,9 @@ export function Navbar() {
               <div className="h-px w-20 bg-black/10 mx-auto" />
               <a
                 href="https://wa.me/5565981274128"
-                className="bg-primary text-white text-center py-6 rounded-full font-black uppercase tracking-widest shadow-2xl shadow-primary/30 active:scale-95 transition-all text-[14px]"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary text-white text-center py-6 rounded-full font-black uppercase tracking-widest shadow-2xl shadow-primary/30 active:scale-95 transition-all text-[14px] cursor-pointer pointer-events-auto z-50"
                 onClick={() => setIsOpen(false)}
               >
                 Falar no WhatsApp

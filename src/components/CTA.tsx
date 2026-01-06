@@ -4,7 +4,7 @@ import { Send } from 'lucide-react';
 
 export function CTA() {
     return (
-        <section className="bg-[#FAFAFA] py-32 lg:py-56 border-t border-black/5 overflow-hidden">
+        <section className="bg-[#FAFAFA] pt-32 lg:pt-56 pb-40 lg:pb-56 border-t border-black/5 overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="text-center relative">
                     <motion.div
@@ -51,13 +51,13 @@ export function CTA() {
                     <motion.div
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        className="relative inline-block"
+                        className="relative inline-block z-20"
                     >
                         <a
                             href="https://wa.me/5565981274128"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-3 bg-foreground text-background rounded-full font-black uppercase tracking-[0.2em] hover:bg-primary transition-all text-[10px] md:text-xs group px-8 py-4 relative overflow-hidden shadow-2xl shadow-black/10 hover:shadow-primary/30"
+                            className="inline-flex items-center gap-3 bg-foreground text-background rounded-full font-black uppercase tracking-[0.2em] hover:bg-primary transition-all text-[10px] md:text-xs group px-8 py-4 relative overflow-hidden shadow-2xl shadow-black/10 hover:shadow-primary/30 cursor-pointer pointer-events-auto z-20"
                         >
                             <span className="relative z-10">
                                 Falar com o Especialista Vulp

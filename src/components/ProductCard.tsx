@@ -84,7 +84,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-out">
             <button
               onClick={handlePurchase}
-              className="w-12 h-12 rounded-full bg-foreground text-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors duration-300 shadow-lg hover:shadow-primary/25 active:scale-90"
+              className="w-12 h-12 rounded-full bg-foreground text-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors duration-300 shadow-lg hover:shadow-primary/25 active:scale-90 cursor-pointer pointer-events-auto z-10"
             >
               <ArrowUpRight className="w-5 h-5" />
             </button>
@@ -139,8 +139,8 @@ export function ProductCard({ product }: ProductCardProps) {
             onClick={handlePurchase}
             disabled={isOutOfStock}
             className={`w-full h-12 rounded-full flex items-center justify-center gap-2 text-sm font-black uppercase tracking-[0.2em] transition-all duration-300 active:scale-95 ${isOutOfStock
-              ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-              : 'bg-foreground text-background hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/20'
+              ? 'bg-gray-100 text-gray-400 cursor-not-allowed pointer-events-none'
+              : 'bg-foreground text-background hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/20 cursor-pointer pointer-events-auto'
               }`}
           >
             <span>{isOutOfStock ? 'Indisponível' : 'Comprar Agora'}</span>

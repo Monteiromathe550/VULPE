@@ -1,103 +1,104 @@
 import React from 'react';
-import { Apple, Instagram, Facebook, Mail, ArrowUpRight } from 'lucide-react';
-import logoDark from '../assets/logo-dark.png';
+import { Apple, Instagram, Facebook, MapPin, Phone, Mail, ArrowUpRight } from 'lucide-react';
 
 export function Footer() {
-    return (
-        <footer className="bg-[#FAFAFA] text-foreground border-t border-black/5 font-medium">
-            {/* Top Section: Links & Info */}
-            {/* Top Section: Links & Info */}
-            <div className="container mx-auto px-6 pt-20 pb-16 lg:pt-24 lg:pb-20">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+  return (
+    <footer className="bg-white text-foreground pt-24 pb-12 lg:pt-32 lg:pb-16 border-t border-black/5 overflow-hidden">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 pb-20 border-b border-black/5">
+          <div className="space-y-6">
+            <div className="flex items-center gap-3">
+              <Apple className="w-8 h-8 text-primary" />
+              <span className="text-2xl font-black tracking-tighter uppercase">PREMIUM</span>
+            </div>
+            <p className="text-sm font-bold text-muted-foreground leading-relaxed max-w-xs uppercase tracking-wide">
+              Seu pedido vai com seguro total. Qualquer B.O. no caminho, a responsabilidade é minha, não sua.
+            </p>
+            <div className="flex gap-3">
+              <a href="#" className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110 cursor-pointer">
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110 cursor-pointer">
+                <Facebook className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
 
-                    {/* Brand Column (Left) */}
-                    <div className="lg:col-span-5 flex flex-col justify-between h-full">
-                        <div className="space-y-8">
-                            <img
-                                src={logoDark}
-                                alt="Logo"
-                                className="h-8 lg:h-10 w-auto object-contain opacity-90"
-                            />
-                            <h3 className="text-3xl lg:text-4xl font-bold tracking-tight leading-tight max-w-sm text-foreground">
-                                Elevando sua <br />
-                                experiência Apple.
-                            </h3>
-                        </div>
-                        <p className="hidden lg:block text-muted-foreground text-sm font-medium mt-auto pt-12">
-                            VULP, 2026.
-                        </p>
-                    </div>
+          <div>
+            <h4 className="text-sm font-black uppercase tracking-[0.2em] mb-8 flex items-center gap-2">
+              Navegação
+              <div className="h-[1px] flex-1 bg-black/5" />
+            </h4>
+            <ul className="space-y-5 text-base text-muted-foreground font-medium">
+              {['Vitrine de Produtos', 'Processo de Compra', 'Segurança & Contrato', 'Acompanhar Pedido'].map((item) => (
+                <li key={item}>
+                  <a href="#" className="hover:text-primary transition-colors flex items-center gap-2 group">
+                    <ArrowUpRight className="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-                    {/* Spacer */}
-                    <div className="hidden lg:block lg:col-span-1" />
+          <div>
+            <h4 className="text-sm font-black uppercase tracking-[0.2em] mb-8 flex items-center gap-2">
+              Categorias
+              <div className="h-[1px] flex-1 bg-black/5" />
+            </h4>
+            <ul className="space-y-5 text-base text-muted-foreground font-medium">
+              {['iPhones', 'MacBooks', 'iPads & Apple Watch', 'Acessórios Originais'].map((item) => (
+                <li key={item}>
+                  <a href="#" className="hover:text-primary transition-colors flex items-center gap-2 group">
+                    <ArrowUpRight className="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-                    {/* Links Columns (Right) */}
-                    <div className="lg:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-10 lg:gap-4">
-
-                        {/* Column 1 */}
-                        <div className="space-y-6">
-                            <h4 className="text-base font-bold text-foreground">Empresa</h4>
-                            <ul className="space-y-4 text-sm font-medium text-muted-foreground/80">
-                                <li><a href="#" className="hover:text-primary transition-colors block">Vitrine</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors block">Sobre Nós</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors block">Carreiras</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors block">Contato</a></li>
-                            </ul>
-                        </div>
-
-                        {/* Column 2 */}
-                        <div className="space-y-6">
-                            <h4 className="text-base font-bold text-foreground">Recursos</h4>
-                            <ul className="space-y-4 text-sm font-medium text-muted-foreground/80">
-                                <li><a href="#" className="hover:text-primary transition-colors block">Blog & News</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors block">Segurança</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors block">Rastreio</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors block">FAQ</a></li>
-                            </ul>
-                        </div>
-
-                        {/* Column 3 (Legal) */}
-                        <div className="space-y-6">
-                            <h4 className="text-base font-bold text-foreground">Legal</h4>
-                            <ul className="space-y-4 text-sm font-medium text-muted-foreground/80">
-                                <li><a href="#" className="hover:text-primary transition-colors block">Termos de Uso</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors block">Privacidade</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors block">Cookies</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors block">Processamento de Dados</a></li>
-                            </ul>
-                        </div>
-
-                    </div>
+          <div>
+            <h4 className="text-sm font-black uppercase tracking-[0.2em] mb-8 flex items-center gap-2">
+              Contato
+              <div className="h-[1px] flex-1 bg-black/5" />
+            </h4>
+            <ul className="space-y-5 text-base text-muted-foreground font-medium">
+              <li className="flex items-start gap-4 group">
+                <div className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors mt-0.5">
+                  <MapPin className="w-4 h-4" />
                 </div>
+                <span className="leading-relaxed">Atendimento Online<br />Envio Nacional Seguro</span>
+              </li>
+              <li className="flex items-center gap-4 group">
+                <a href="https://wa.me/5565981274128" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 w-full">
+                  <div className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+                    <Phone className="w-4 h-4" />
+                  </div>
+                  <span>(65) 98127-4128</span>
+                </a>
+              </li>
+              <li className="flex items-center gap-4 group">
+                <a href="mailto:contato@premiumstore.com" className="flex items-center gap-4 w-full">
+                  <div className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+                    <Mail className="w-4 h-4" />
+                  </div>
+                  <span className="lowercase">contato@premiumstore.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-                {/* Mobile VULP Date */}
-                <p className="lg:hidden text-muted-foreground text-sm font-medium mt-12">
-                    VULP, 2026.
-                </p>
-            </div>
-
-            {/* Divider */}
-            <div className="container mx-auto px-6">
-                <div className="h-[1px] bg-black/10 w-full" />
-            </div>
-
-            {/* Bottom Bar: Copyright & Socials */}
-            <div className="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-6">
-                <p className="text-muted-foreground text-xs font-medium text-center md:text-left">
-                    © 2026 Vulp Inc. Todos os direitos reservados.
-                </p>
-                <div className="flex items-center gap-4">
-                    <a href="#" className="w-8 h-8 flex items-center justify-center rounded-md bg-black/5 hover:bg-primary/10 hover:text-primary transition-all text-muted-foreground">
-                        <Instagram className="w-4 h-4" />
-                    </a>
-                    <a href="#" className="w-8 h-8 flex items-center justify-center rounded-md bg-black/5 hover:bg-primary/10 hover:text-primary transition-all text-muted-foreground">
-                        <Facebook className="w-4 h-4" />
-                    </a>
-                    <a href="#" className="w-8 h-8 flex items-center justify-center rounded-md bg-black/5 hover:bg-primary/10 hover:text-primary transition-all text-muted-foreground">
-                        <Mail className="w-4 h-4" />
-                    </a>
-                </div>
-            </div>
-        </footer>
-    );
+        <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-muted-foreground/60 text-xs font-medium uppercase tracking-[0.3em]">
+          <p>© 2026 Premium Store. Hardware de elite selecionado.</p>
+          <div className="flex gap-8">
+            <a href="#" className="hover:text-primary transition-colors">Termos</a>
+            <a href="#" className="hover:text-foreground transition-colors">Privacidade</a>
+            <a href="#" className="hover:text-foreground transition-colors">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, Save, Plus, Trash2, Package, DollarSign, Image as ImageIcon, Loader2 } from 'lucide-react';
 import { CATEGORIES, PRODUCTS as DEFAULT_PRODUCTS } from '../lib/data';
 import { projectId, publicAnonKey } from '../utils/supabase/info';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 export function ProductManager({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   const [products, setProducts] = useState<any[]>([]);
