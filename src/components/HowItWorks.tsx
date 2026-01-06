@@ -47,7 +47,7 @@ export function HowItWorks() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="lg:w-1/2"
           >
-            <h2 className="text-4xl lg:text-8xl font-black mb-0 leading-[1.2] lg:leading-[1.1] tracking-tight lg:tracking-tightest uppercase">
+            <h2 className="text-4xl lg:text-[64px] font-black mb-0 leading-[1.2] lg:leading-[1.1] tracking-tight lg:tracking-tightest uppercase">
               CONHEÇA NOSSO<br /><span className="text-primary">PROCESSO</span>
             </h2>
           </motion.div>

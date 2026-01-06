@@ -42,7 +42,7 @@ export function Hero() {
               <span className="text-primary font-black uppercase text-[10px] tracking-[0.2em]">Hardware Selecionado</span>
             </motion.div>
 
-            <h1 className="mb-8 text-white tracking-tighter text-4xl lg:text-[80px] font-black leading-[1.1] lg:leading-[0.9] drop-shadow-[0_8px_8px_rgba(0,0,0,0.8)] lg:drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
+            <h1 className="mb-8 text-white tracking-tighter text-4xl lg:text-[96px] font-black leading-[1.1] lg:leading-[0.9] drop-shadow-[0_8px_8px_rgba(0,0,0,0.8)] lg:drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
               Seu Apple com segurança total e sem enrolação.
             </h1>
 
