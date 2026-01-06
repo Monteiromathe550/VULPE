@@ -55,7 +55,7 @@ export function Hero() {
                 href="https://wa.me/5565981274128"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-black text-white hover:border-black px-8 py-4 rounded-full text-sm font-black uppercase tracking-[0.2em] transition-all flex items-center gap-4 mx-auto lg:mx-0 relative overflow-hidden shadow-lg hover:-translate-y-1 cursor-pointer pointer-events-auto z-20"
+                className="group !bg-black text-white px-8 py-4 rounded-full text-sm font-black uppercase tracking-[0.2em] transition-all flex items-center gap-4 mx-auto lg:mx-0 relative overflow-hidden shadow-lg hover:-translate-y-1 cursor-pointer pointer-events-auto z-20"
               >
                 <span className="relative z-10 text-white">Chamar no WhatsApp</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform relative z-10 text-white" />
