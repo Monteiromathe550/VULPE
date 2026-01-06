@@ -36,14 +36,15 @@ export function Hero() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-8 backdrop-blur-md"
+              className="inline-flex items-center gap-2 bg-black/40 border border-white/20 rounded-full px-5 py-2 mb-8 backdrop-blur-md"
             >
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-primary font-black uppercase text-[10px] tracking-[0.2em]">Hardware Selecionado</span>
+              <span className="text-white font-black uppercase text-[10px] tracking-[0.3em]">Hardware Selecionado</span>
             </motion.div>
 
-            <h1 className="mb-8 text-white tracking-tighter text-4xl lg:text-[96px] font-black leading-[1.1] lg:leading-[0.9] drop-shadow-[0_8px_8px_rgba(0,0,0,0.8)] lg:drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
-              Seu Apple com segurança total e sem enrolação.
+            <h1 className="mb-8 text-white tracking-tightest text-4xl lg:text-[110px] font-black leading-[1.1] lg:leading-[0.85] uppercase drop-shadow-[0_8px_8px_rgba(0,0,0,0.8)] lg:drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
+              Seu Apple com<br className="hidden lg:block" />
+              <span className="text-primary">segurança total.</span>
             </h1>
 
             <p className="mb-8 text-white text-lg lg:text-xl font-medium max-w-lg mx-auto lg:mx-0 leading-relaxed drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] lg:drop-shadow-md">
