@@ -100,7 +100,7 @@ export function Footer() {
               Navegação
               <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-6 lg:space-y-4 text-foreground/80 text-sm font-bold uppercase tracking-widest">
+            <ul className="space-y-6 lg:space-y-4 text-foreground/80 text-base font-bold uppercase tracking-widest">
               {['Vitrine de Produtos', 'Processo de Compra', 'Segurança & Contrato', 'Acompanhar Pedido'].map((item) => (
                 <li key={item}>
                   <a href="#" className="hover:text-primary transition-colors flex items-center gap-1 group whitespace-nowrap">
@@ -117,7 +117,7 @@ export function Footer() {
               Categorias
               <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-6 lg:space-y-4 text-foreground/80 text-sm font-bold uppercase tracking-widest">
+            <ul className="space-y-6 lg:space-y-4 text-foreground/80 text-base font-bold uppercase tracking-widest">
               {['iPhones', 'MacBooks', 'iPads & Apple Watch', 'Acessórios Originais'].map((item) => (
                 <li key={item}>
                   <a href="#" className="hover:text-primary transition-colors flex items-center gap-1 group whitespace-nowrap">
@@ -134,14 +134,14 @@ export function Footer() {
               Contato
               <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-8 lg:space-y-6 text-foreground/80 text-sm font-bold uppercase tracking-widest">
+            <ul className="space-y-8 lg:space-y-6 text-foreground/80 text-base font-bold uppercase tracking-widest">
               <li className="flex items-start gap-5 group">
                 <div className="w-10 h-10 rounded-2xl bg-white shadow-sm border border-black/[0.03] flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-foreground/30 font-black">Localização</span>
-                  <span className="leading-relaxed group-hover:text-primary transition-colors">Atendimento Online<br />Envio Nacional Seguro</span>
+                  <span className="text-[10px] text-foreground/30 font-black mb-1">Localização</span>
+                  <span className="leading-relaxed group-hover:text-primary transition-colors text-base">Atendimento Online<br />Envio Nacional Seguro</span>
                 </div>
               </li>
               <li className="flex items-center gap-5 group">
@@ -149,7 +149,7 @@ export function Footer() {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-foreground/30 font-black">WhatsApp</span>
+                  <span className="text-[10px] text-foreground/30 font-black mb-1">WhatsApp</span>
                   <span className="leading-relaxed group-hover:text-primary transition-colors text-base">(65) 98127-4128</span>
                 </div>
               </li>
@@ -158,8 +158,8 @@ export function Footer() {
                   <Mail className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-foreground/30 font-black">E-mail</span>
-                  <span className="lowercase group-hover:text-primary transition-colors">vendas@vulp.com.br</span>
+                  <span className="text-[10px] text-foreground/30 font-black mb-1">E-mail</span>
+                  <span className="lowercase group-hover:text-primary transition-colors text-base">vendas@vulp.com.br</span>
                 </div>
               </li>
             </ul>

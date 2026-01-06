@@ -81,7 +81,7 @@ export function TrustSection() {
                   {React.cloneElement(item.icon as React.ReactElement, { size: 20, strokeWidth: 1.5 })}
                 </div>
                 <h3 className="text-[14px] font-black text-foreground mb-3 uppercase tracking-widest group-hover:text-primary transition-colors">{item.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed font-bold uppercase tracking-wide opacity-70">{item.description}</p>
+                <p className="text-muted-foreground text-base leading-relaxed font-bold uppercase tracking-wide opacity-70">{item.description}</p>
               </motion.div>
             ))}
           </div>

@@ -104,7 +104,7 @@ export function HowItWorks() {
                 </div>
               </div>
               <h3 className="text-xl md:text-2xl font-black mb-4 tracking-tightest uppercase">{step.title}</h3>
-              <p className="text-muted-foreground leading-relaxed max-w-full text-sm md:text-[15px] font-bold uppercase tracking-widest opacity-80">
+              <p className="text-muted-foreground leading-relaxed max-w-full text-base font-bold uppercase tracking-widest opacity-80">
                 {step.description}
               </p>
             </motion.div>
