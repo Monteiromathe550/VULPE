@@ -76,13 +76,7 @@ export function Footer() {
                 {/* Minimal Centered Footer Content */}
                 <div className="flex flex-col items-center text-center pb-12 lg:pb-16 border-b border-black/5">
                     {/* 1. Centered Logo */}
-                    <div className="mb-12">
-                        <img
-                            src={logoDark}
-                            alt="Logo"
-                            className="h-10 lg:h-12 w-auto object-contain opacity-90"
-                        />
-                    </div>
+
 
                     {/* 2. Horizontal Navigation - Stacked on Mobile */}
                     <nav className="mb-12 w-full md:w-auto">
