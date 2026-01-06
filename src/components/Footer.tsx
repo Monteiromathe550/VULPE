@@ -9,7 +9,7 @@ export function Footer() {
         <footer className="bg-[#FAFAFA] text-foreground pt-24 pb-12 lg:pt-32 lg:pb-16 border-t border-black/5 overflow-hidden">
             <div className="container mx-auto px-6">
                 {/* Massive Reference Style CTA */}
-                <div className="mb-20 lg:mb-32 text-center relative">
+                <div className="mb-32 lg:mb-48 text-center relative">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -60,7 +60,7 @@ export function Footer() {
                             href="https://wa.me/5565981274128"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-4 md:gap-6 bg-foreground text-background rounded-full font-black uppercase tracking-[0.2em] md:tracking-[0.3em] hover:bg-primary transition-all text-[11px] md:text-sm group px-10 py-5 md:px-12 md:py-6 relative overflow-hidden shadow-2xl shadow-black/10 hover:shadow-primary/30"
+                            className="inline-flex items-center gap-3 md:gap-4 bg-foreground text-background rounded-full font-black uppercase tracking-[0.2em] md:tracking-[0.3em] hover:bg-primary transition-all text-[11px] md:text-sm group px-8 py-4 md:px-10 md:py-5 relative overflow-hidden shadow-2xl shadow-black/10 hover:shadow-primary/30"
                         >
                             <span className="relative z-10">
                                 Falar com o Especialista Vulp
