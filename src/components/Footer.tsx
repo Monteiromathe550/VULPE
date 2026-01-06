@@ -1,166 +1,138 @@
 import React from 'react';
-import { Instagram, Facebook, ArrowRight, MapPin, Phone, Mail, ArrowUpRight } from 'lucide-react';
+import { Apple, Instagram, Facebook, Send, MapPin, Phone, Mail, ArrowUpRight } from 'lucide-react';
 import { motion } from 'motion/react';
+import logo from '../assets/logo.png';
 import logoDark from '../assets/logo-dark.png';
 
 export function Footer() {
-  return (
-    <footer className="bg-[#F2F2F2] text-foreground pt-20 lg:pt-32 pb-10 overflow-hidden">
-      <div className="container mx-auto px-6">
+    return (
+        <footer className="bg-[#FAFAFA] text-foreground pt-24 pb-12 lg:pt-32 lg:pb-16 border-t border-black/5 overflow-hidden">
+            <div className="container mx-auto px-6">
+                {/* Massive Reference Style CTA */}
+                <div className="mb-20 lg:mb-32 text-center relative">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 text-primary rounded-full text-[10px] font-black uppercase tracking-[0.4em] mb-10 lg:mb-12 shadow-sm"
+                    >
+                        Atendimento Personalizado
+                    </motion.div>
 
-        {/* UPPER CTA SECTION - Split Layout */}
-        <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-12 mb-20 lg:mb-32 border-b border-black/10 pb-20">
-          <div className="max-w-2xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="flex items-center gap-3 mb-8"
-            >
-              <div className="w-2 h-2 rounded-full bg-primary" />
-              <span className="text-xs font-bold uppercase tracking-[0.3em] opacity-60">
-                Atendimento Exclusivo
-              </span>
-            </motion.div>
+                    <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-[110px] font-black leading-[1.1] lg:leading-[0.8] mb-10 lg:mb-16 tracking-tight lg:tracking-tightest uppercase relative z-10">
+                        <motion.span
+                            initial={{ y: 40, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                            className="block"
+                        >
+                            FICOU COM
+                        </motion.span>
+                        <motion.span
+                            initial={{ y: 40, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
+                            className="block text-primary italic relative"
+                        >
+                            DÚVIDA? ME CHAMA.
+                            <motion.div
+                                className="absolute -right-6 md:-right-12 top-0 text-primary/30 text-[0.3em] font-normal"
+                                animate={{ rotate: 360 }}
+                                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                            >
+                                ✦
+                            </motion.div>
+                        </motion.span>
+                    </h2>
 
-            <h2 className="text-5xl sm:text-7xl lg:text-[90px] font-black leading-[0.9] tracking-tighter uppercase mb-8">
-              Tem alguma <br />
-              <span className="text-primary transparent-stroke">Dúvida?</span>
-            </h2>
+                    <p className="max-w-xl mx-auto text-muted-foreground text-sm md:text-xl md:leading-relaxed mb-12 font-medium px-4 opacity-80 uppercase tracking-widest leading-loose md:normal-case md:tracking-normal">
+                        Tô aqui pra resolver. Pode perguntar qualquer coisa antes de decidir. Nossa equipe está pronta para te guiar na melhor escolha.
+                    </p>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed font-medium">
-              Não compre com incerteza. Nossa equipe de especialistas está pronta para te guiar.
-            </p>
-          </div>
+                    <motion.div
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="relative inline-block"
+                    >
+                        <a
+                            href="https://wa.me/5565981274128"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-4 md:gap-6 bg-foreground text-background rounded-full font-black uppercase tracking-[0.2em] md:tracking-[0.3em] hover:bg-primary transition-all text-[11px] md:text-sm group px-10 py-5 md:px-12 md:py-6 relative overflow-hidden shadow-2xl shadow-black/10 hover:shadow-primary/30"
+                        >
+                            <span className="relative z-10">
+                                Falar com o Especialista Vulp
+                            </span>
+                            <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-all duration-500 -mr-2 scale-90 group-hover:scale-100 relative z-10">
+                                <Send className="w-4 h-4 md:w-5 md:h-5 text-white" />
+                            </div>
+                            <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
+                        </a>
+                    </motion.div>
+                </div>
 
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="w-full lg:w-auto"
-          >
-            <a
-              href="https://wa.me/5565981274128"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between lg:justify-center gap-8 bg-black text-white p-6 lg:px-12 lg:py-8 rounded-full group transition-all hover:bg-primary shadow-xl hover:shadow-primary/25"
-            >
-              <span className="text-sm lg:text-base font-black uppercase tracking-[0.2em] relative z-10">
-                Chamar no WhatsApp
-              </span>
-              <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-primary transition-colors">
-                <ArrowRight className="w-5 h-5 -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
-              </div>
-            </a>
-          </motion.div>
-        </div>
+                {/* Minimal Centered Footer Content */}
+                <div className="flex flex-col items-center text-center pb-12 lg:pb-16 border-b border-black/5">
+                    {/* 1. Centered Logo */}
+                    <div className="mb-12">
+                        <img
+                            src={logoDark}
+                            alt="Logo"
+                            className="h-10 lg:h-12 w-auto object-contain opacity-90"
+                        />
+                    </div>
 
-        {/* MAIN GRID SECTION */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-20">
+                    {/* 2. Horizontal Navigation */}
+                    <nav className="mb-12">
+                        <ul className="flex flex-wrap justify-center gap-x-8 gap-y-4 md:gap-12">
+                            {['Vitrine', 'Como Funciona', 'Segurança', 'Rastreio', 'Contato'].map((item) => (
+                                <li key={item}>
+                                    <a
+                                        href="#"
+                                        className="text-[11px] font-bold uppercase tracking-[0.2em] text-foreground/70 hover:text-primary transition-colors duration-300 relative group"
+                                    >
+                                        {item}
+                                        <span className="absolute -bottom-2 left-1/2 w-0 h-[1.5px] bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0" />
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
 
-          {/* Brand Column */}
-          <div className="lg:col-span-4 flex flex-col justify-between h-full space-y-8">
-            <div>
-              <img src={logoDark} alt="VULP" className="h-10 w-auto mb-8 opacity-90" />
-              <p className="text-sm font-medium leading-loose text-muted-foreground/80 max-w-xs">
-                Excelência em produtos Apple.<br />
-                Transparência total.<br />
-                Segurança jurídica garantida.
-              </p>
+                    {/* 3. Social Icons */}
+                    <div className="flex items-center gap-8">
+                        <a href="https://instagram.com" className="text-foreground/40 hover:text-primary transition-colors duration-300 transform hover:scale-110">
+                            <Instagram className="w-5 h-5" strokeWidth={1.5} />
+                        </a>
+                        <a href="https://facebook.com" className="text-foreground/40 hover:text-primary transition-colors duration-300 transform hover:scale-110">
+                            <Facebook className="w-5 h-5" strokeWidth={1.5} />
+                        </a>
+                        <a href="mailto:vendas@vulp.com.br" className="text-foreground/40 hover:text-primary transition-colors duration-300 transform hover:scale-110">
+                            <Mail className="w-5 h-5" strokeWidth={1.5} />
+                        </a>
+                    </div>
+                </div>
+
+                <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-8 text-muted-foreground/50 text-[10px] font-black uppercase tracking-[0.4em] text-center md:text-left">
+                    <p>© 2026 VULP. EXCELÊNCIA EM APPLE. TODOS OS DIREITOS RESERVADOS.</p>
+                    <div className="flex flex-wrap justify-center gap-8 md:gap-12">
+                        <a href="#" className="hover:text-primary transition-colors relative group text-[10px]">
+                            Termos
+                            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full" />
+                        </a>
+                        <a href="#" className="hover:text-primary transition-colors relative group text-[10px]">
+                            Privacidade
+                            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full" />
+                        </a>
+                        <a href="#" className="hover:text-primary transition-colors relative group text-[10px]">
+                            Cookies
+                            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full" />
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div className="flex gap-4">
-              {[Instagram, Facebook].map((Icon, i) => (
-                <a key={i} href="#" className="w-12 h-12 flex items-center justify-center rounded-full bg-white border border-black/5 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-sm">
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* Navigation Links */}
-          <div className="lg:col-span-2 lg:col-start-6">
-            <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-8 text-black/40">Menu</h4>
-            <ul className="space-y-4">
-              {['Home', 'Nossa Vitrine', 'Como Funciona', 'Depoimentos'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-sm font-bold uppercase tracking-wider hover:text-primary transition-colors flex items-center gap-2 group">
-                    {item}
-                    <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Categories Links */}
-          <div className="lg:col-span-2">
-            <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-8 text-black/40">Produtos</h4>
-            <ul className="space-y-4">
-              {['iPhones', 'MacBooks', 'iPads', 'Watch', 'Acessórios'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-sm font-bold uppercase tracking-wider hover:text-primary transition-colors block">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div className="lg:col-span-3">
-            <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-8 text-black/40">Contato</h4>
-            <ul className="space-y-6">
-              <li className="flex items-start gap-4">
-                <div className="mt-1 w-8 h-8 rounded-lg bg-white flex items-center justify-center shadow-sm shrink-0 border border-black/5">
-                  <MapPin className="w-4 h-4 text-primary" />
-                </div>
-                <div>
-                  <span className="block text-[10px] font-black uppercase tracking-wider text-black/40 mb-1">Endereço</span>
-                  <span className="text-sm font-medium leading-relaxed block">
-                    Atendimento Digital<br />para todo o Brasil
-                  </span>
-                </div>
-              </li>
-              <li className="flex items-start gap-4">
-                <div className="mt-1 w-8 h-8 rounded-lg bg-white flex items-center justify-center shadow-sm shrink-0 border border-black/5">
-                  <Phone className="w-4 h-4 text-primary" />
-                </div>
-                <div>
-                  <span className="block text-[10px] font-black uppercase tracking-wider text-black/40 mb-1">Telefone</span>
-                  <span className="text-sm font-medium leading-relaxed block">
-                    (65) 98127-4128
-                  </span>
-                </div>
-              </li>
-              <li className="flex items-start gap-4">
-                <div className="mt-1 w-8 h-8 rounded-lg bg-white flex items-center justify-center shadow-sm shrink-0 border border-black/5">
-                  <Mail className="w-4 h-4 text-primary" />
-                </div>
-                <div>
-                  <span className="block text-[10px] font-black uppercase tracking-wider text-black/40 mb-1">Email</span>
-                  <span className="text-sm font-medium leading-relaxed block">
-                    vendas@vulp.com.br
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* BOTTOM BAR */}
-        <div className="flex flex-col md:flex-row items-center justify-between pt-10 border-t border-black/10 gap-6">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground/60 text-center md:text-left">
-            © 2026 Vulp. Todos os direitos reservados.
-          </p>
-          <div className="flex items-center gap-8">
-            {['Termos', 'Privacidade', 'Cookies'].map((link) => (
-              <a key={link} href="#" className="text-[10px] font-bold uppercase tracking-widest text-foreground hover:text-primary transition-colors">
-                {link}
-              </a>
-            ))}
-          </div>
-        </div>
-
-      </div>
-    </footer>
-  );
+        </footer>
+    );
 }
