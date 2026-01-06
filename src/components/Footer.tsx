@@ -9,7 +9,7 @@ export function Footer() {
         <footer className="bg-[#FAFAFA] text-foreground pt-24 pb-12 lg:pt-32 lg:pb-16 border-t border-black/5 overflow-hidden">
             <div className="container mx-auto px-6">
                 {/* Massive Reference Style CTA */}
-                <div className="mb-32 lg:mb-48 text-center relative">
+                <div className="text-center relative mb-24 md:mb-32">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -60,13 +60,13 @@ export function Footer() {
                             href="https://wa.me/5565981274128"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-3 md:gap-4 bg-foreground text-background rounded-full font-black uppercase tracking-[0.2em] md:tracking-[0.3em] hover:bg-primary transition-all text-[11px] md:text-sm group px-8 py-4 md:px-10 md:py-5 relative overflow-hidden shadow-2xl shadow-black/10 hover:shadow-primary/30"
+                            className="inline-flex items-center gap-3 bg-foreground text-background rounded-full font-black uppercase tracking-[0.2em] hover:bg-primary transition-all text-[10px] md:text-xs group px-8 py-4 relative overflow-hidden shadow-2xl shadow-black/10 hover:shadow-primary/30"
                         >
                             <span className="relative z-10">
                                 Falar com o Especialista Vulp
                             </span>
-                            <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-all duration-500 -mr-2 scale-90 group-hover:scale-100 relative z-10">
-                                <Send className="w-4 h-4 md:w-5 md:h-5 text-white" />
+                            <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-all duration-500 -mr-2 scale-90 group-hover:scale-100 relative z-10">
+                                <Send className="w-4 h-4 text-white" />
                             </div>
                             <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
                         </a>
@@ -84,9 +84,9 @@ export function Footer() {
                         />
                     </div>
 
-                    {/* 2. Horizontal Navigation */}
-                    <nav className="mb-12">
-                        <ul className="flex flex-wrap justify-center gap-x-8 gap-y-4 md:gap-12">
+                    {/* 2. Horizontal Navigation - Stacked on Mobile */}
+                    <nav className="mb-12 w-full md:w-auto">
+                        <ul className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
                             {['Vitrine', 'Como Funciona', 'Segurança', 'Rastreio', 'Contato'].map((item) => (
                                 <li key={item}>
                                     <a
