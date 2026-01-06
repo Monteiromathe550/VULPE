@@ -6,7 +6,6 @@ import { HowItWorks } from './components/HowItWorks';
 import { Testimonials } from './components/Testimonials';
 import { TrustSection } from './components/TrustSection';
 import { CTA } from './components/CTA';
-import { Footer } from './components/Footer';
 import { ProductManager } from './components/ProductManager';
 import { Toaster } from 'sonner@2.0.3';
 import { Settings } from 'lucide-react';
@@ -34,7 +33,6 @@ export default function App() {
         <TrustSection />
       </main>
       <CTA />
-      <Footer />
     </div>
   );
 }
