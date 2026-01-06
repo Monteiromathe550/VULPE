@@ -125,10 +125,7 @@ export function HowItWorks() {
             <div className="w-full md:w-1/2">
               <p className="text-primary text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em] mb-4">Experiência</p>
               <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">DO JEITO QUE VOCÊ MERECE</h4>
-              <p className="text-muted-foreground leading-relaxed text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70 mb-8">Caixa preparada com cuidado, proteção e carinho. Pra chegar intacto aí.</p>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary text-[10px] md:text-[11px] font-black uppercase tracking-[0.2em] border-b border-primary/30 pb-1 hover:border-primary transition-colors">
-                Ver unboxing no Insta
-              </a>
+              <p className="text-muted-foreground leading-relaxed text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70">Caixa preparada com cuidado, proteção e carinho. Pra chegar intacto aí.</p>
             </div>
           </motion.div>
           <motion.div
@@ -144,10 +141,7 @@ export function HowItWorks() {
             <div className="w-full md:w-1/2">
               <p className="text-primary text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em] mb-4">Logística</p>
               <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">ENTREGA RÁPIDA</h4>
-              <p className="text-muted-foreground text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70 leading-relaxed mb-8">Quem é de SP recebe no dia. Outros estados com envio expresso e seguro.</p>
-              <a href="#" className="inline-flex items-center gap-2 text-primary text-[10px] md:text-[11px] font-black uppercase tracking-[0.2em] border-b border-primary/30 pb-1 hover:border-primary transition-colors">
-                Ver prazos
-              </a>
+              <p className="text-muted-foreground text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70 leading-relaxed">Quem é de SP recebe no dia. Outros estados com envio expresso e seguro.</p>
             </div>
           </motion.div>
         </div>
