@@ -47,7 +47,7 @@ export function HowItWorks() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="lg:w-1/2"
           >
-            <h2 className="text-4xl lg:text-[64px] font-black mb-0 leading-[1.2] lg:leading-[1.1] tracking-tight lg:tracking-tightest uppercase">
+            <h2 className="text-4xl md:text-7xl font-black mb-0 leading-[1.2] lg:leading-[1.1] tracking-tight lg:tracking-tightest uppercase md:text-[64px]">
               CONHEÇA NOSSO<br /><span className="text-primary">PROCESSO</span>
             </h2>
           </motion.div>
@@ -100,11 +100,11 @@ export function HowItWorks() {
             >
               <div className="mb-8 md:mb-10">
                 <div className="w-12 h-12 rounded-2xl bg-foreground flex items-center justify-center text-white shadow-lg shadow-black/10 group-hover:scale-110 transition-transform duration-500">
-                  {React.cloneElement(step.icon as React.ReactElement<any>, { className: "w-6 h-6" })}
+                  {React.cloneElement(step.icon as React.ReactElement, { className: "w-6 h-6" })}
                 </div>
               </div>
               <h3 className="text-xl md:text-2xl font-black mb-4 tracking-tightest uppercase">{step.title}</h3>
-              <p className="text-muted-foreground leading-relaxed max-w-full text-base md:text-[15px] font-bold uppercase tracking-widest opacity-80">
+              <p className="text-muted-foreground leading-relaxed max-w-full text-sm md:text-[15px] font-bold uppercase tracking-widest opacity-80">
                 {step.description}
               </p>
             </motion.div>

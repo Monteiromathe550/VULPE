@@ -73,36 +73,38 @@ export function Footer() {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-16 lg:gap-8 pb-16 lg:pb-24 border-b border-black/5">
-          <div className="lg:col-span-4 pr-0 lg:pr-12">
-            <img
-              src={logoDark}
-              alt="Logo"
-              className="h-7 lg:h-9 w-auto object-contain mb-10"
-            />
-            <p className="text-muted-foreground text-[12px] lg:text-[13px] leading-relaxed max-w-xs font-bold uppercase tracking-widest opacity-60 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 pb-12 lg:pb-20 border-b border-black/5">
+          <div className="space-y-8">
+            <div className="flex items-center gap-3">
+              <img
+                src={logoDark}
+                alt="Logo"
+                className="h-10 lg:h-12 w-auto object-contain"
+              />
+            </div>
+            <p className="text-muted-foreground text-sm leading-relaxed max-w-xs font-bold uppercase tracking-widest opacity-80">
               Especialistas em ecossistema Apple com foco em transparência, segurança jurídica e atendimento humanizado.
             </p>
-            <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 rounded-full bg-black/[0.03] border border-black/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-105 group">
-                <Instagram className="w-4 h-4" />
+            <div className="flex gap-4">
+              <a href="#" className="w-12 h-12 rounded-full bg-black/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110">
+                <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-black/[0.03] border border-black/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-105 group">
-                <Facebook className="w-4 h-4" />
+              <a href="#" className="w-12 h-12 rounded-full bg-black/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110">
+                <Facebook className="w-5 h-5" />
               </a>
             </div>
           </div>
 
-          <div className="lg:col-span-2">
-            <h4 className="text-[11px] font-black uppercase tracking-[0.3em] mb-10 text-foreground/30 flex items-center gap-4">
+          <div>
+            <h4 className="text-base font-black uppercase tracking-[0.3em] mb-8 flex items-center gap-2">
               Navegação
-              <div className="h-px flex-1 bg-black/5" />
+              <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-5 text-muted-foreground text-[12px] font-bold uppercase tracking-widest">
-              {['Vitrine', 'A Vulp', 'Processo', 'Segurança'].map((item) => (
+            <ul className="space-y-4 text-muted-foreground text-base font-bold uppercase tracking-widest">
+              {['Vitrine de Produtos', 'Processo de Compra', 'Segurança & Contrato', 'Acompanhar Pedido'].map((item) => (
                 <li key={item}>
-                  <a href="#" className="hover:text-primary transition-all flex items-center gap-2 group whitespace-nowrap">
-                    <div className="w-1.5 h-px bg-primary opacity-0 group-hover:opacity-100 transition-all -ml-3 group-hover:ml-0" />
+                  <a href="#" className="hover:text-primary transition-colors flex items-center gap-2 group">
+                    <ArrowUpRight className="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                     {item}
                   </a>
                 </li>
@@ -110,16 +112,16 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="lg:col-span-3">
-            <h4 className="text-[11px] font-black uppercase tracking-[0.3em] mb-10 text-foreground/30 flex items-center gap-4">
+          <div>
+            <h4 className="text-base font-black uppercase tracking-[0.3em] mb-8 flex items-center gap-2">
               Categorias
-              <div className="h-px flex-1 bg-black/5" />
+              <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-5 text-muted-foreground text-[12px] font-bold uppercase tracking-widest">
-              {['iPhones Novos', 'iPhones Seminovos', 'Linha Mac & iPad', 'Acessórios'].map((item) => (
+            <ul className="space-y-4 text-muted-foreground text-base font-bold uppercase tracking-widest">
+              {['iPhones', 'MacBooks', 'iPads & Apple Watch', 'Acessórios Originais'].map((item) => (
                 <li key={item}>
-                  <a href="#" className="hover:text-primary transition-all flex items-center gap-2 group whitespace-nowrap">
-                    <div className="w-1.5 h-px bg-primary opacity-0 group-hover:opacity-100 transition-all -ml-3 group-hover:ml-0" />
+                  <a href="#" className="hover:text-primary transition-colors flex items-center gap-2 group">
+                    <ArrowUpRight className="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                     {item}
                   </a>
                 </li>
@@ -127,32 +129,29 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="lg:col-span-3">
-            <h4 className="text-[11px] font-black uppercase tracking-[0.3em] mb-10 text-foreground/30 flex items-center gap-4">
+          <div>
+            <h4 className="text-base font-black uppercase tracking-[0.3em] mb-8 flex items-center gap-2">
               Contato
-              <div className="h-px flex-1 bg-black/5" />
+              <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-6 text-muted-foreground text-[12px] font-bold uppercase tracking-widest">
-              <li className="flex items-start gap-5 group">
-                <div className="w-10 h-10 rounded-full bg-black/[0.03] border border-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+            <ul className="space-y-6 text-muted-foreground text-base font-bold uppercase tracking-widest">
+              <li className="flex items-start gap-4 group">
+                <div className="w-8 h-8 rounded-xl bg-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                   <MapPin className="w-4 h-4" />
                 </div>
-                <div className="py-1">
-                  <span className="block text-foreground/90 mb-1">Cuiabá / MT</span>
-                  <span className="opacity-60">Atendimento Online</span>
-                </div>
+                <span className="leading-relaxed">Atendimento Online<br />Envio Nacional Seguro</span>
               </li>
-              <li className="flex items-center gap-5 group">
-                <div className="w-10 h-10 rounded-full bg-black/[0.03] border border-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+              <li className="flex items-center gap-4 group">
+                <div className="w-8 h-8 rounded-xl bg-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                   <Phone className="w-4 h-4" />
                 </div>
-                <span className="text-foreground/90">(65) 98127-4128</span>
+                <span>(65) 98127-4128</span>
               </li>
-              <li className="flex items-center gap-5 group">
-                <div className="w-10 h-10 rounded-full bg-black/[0.03] border border-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+              <li className="flex items-center gap-4 group">
+                <div className="w-8 h-8 rounded-xl bg-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span className="text-foreground/90 lowercase">vendas@vulp.com.br</span>
+                <span className="lowercase">vendas@vulp.com.br</span>
               </li>
             </ul>
           </div>

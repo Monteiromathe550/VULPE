@@ -45,7 +45,7 @@ export function ProductGrid() {
             <div className="h-[1px] w-full bg-primary/30 mt-3" />
           </motion.div>
 
-          <h2 className="text-4xl lg:text-[64px] font-black text-foreground tracking-tight lg:tracking-tightest leading-[1.3] lg:leading-[1.1] uppercase mb-8 lg:mb-12">
+          <h2 className="text-4xl lg:text-7xl font-black text-foreground tracking-tight lg:tracking-tightest leading-[1.3] lg:leading-[1.1] uppercase mb-8 lg:mb-12">
             Escolha o seu<br />
             <span className="text-primary">Próximo Nível.</span>
           </h2>
