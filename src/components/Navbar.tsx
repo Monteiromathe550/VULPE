@@ -43,7 +43,7 @@ export function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className={`text-[12px] font-black transition-all tracking-[0.3em] relative group/link ${scrolled ? 'text-foreground hover:text-primary' : 'text-white/90 hover:text-white'}`}
+              className={`text-[14px] font-black transition-all tracking-[0.3em] relative group/link ${scrolled ? 'text-foreground hover:text-primary' : 'text-white/90 hover:text-white'}`}
             >
               {link.name}
               <span className={`absolute -bottom-1 left-0 w-0 h-[1.5px] transition-all duration-500 group-hover/link:w-full ${scrolled ? 'bg-primary' : 'bg-white'}`} />
@@ -56,7 +56,7 @@ export function Navbar() {
             href="https://wa.me/5565981274128"
             target="_blank"
             rel="noopener noreferrer"
-            className={`px-8 py-3.5 text-[12px] font-black rounded-full transition-all duration-500 uppercase tracking-widest group overflow-hidden relative shadow-lg cursor-pointer pointer-events-auto z-50 ${scrolled ? 'bg-foreground text-background hover:shadow-primary/20' : 'bg-white text-black hover:bg-white/90 hover:shadow-white/20'}`}
+            className={`px-8 py-3.5 text-[14px] font-black rounded-full transition-all duration-500 uppercase tracking-widest group overflow-hidden relative shadow-lg cursor-pointer pointer-events-auto z-50 ${scrolled ? 'bg-foreground text-background hover:shadow-primary/20' : 'bg-white text-black hover:bg-white/90 hover:shadow-white/20'}`}
           >
             <span className="relative z-10">ORÇAMENTO WHATSAPP</span>
             <div className={`absolute inset-0 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out ${scrolled ? 'bg-primary' : 'bg-black/5'}`} />

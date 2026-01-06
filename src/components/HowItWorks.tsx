@@ -66,9 +66,9 @@ export function HowItWorks() {
                 const element = document.getElementById('detalhes-processo');
                 element?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="group relative bg-black/5 border border-black/10 px-8 py-4 md:px-10 md:py-5 rounded-full text-[10px] font-black uppercase tracking-[0.3em] overflow-hidden transition-all hover:border-primary/50 self-start cursor-pointer"
+              className="group relative bg-black/5 border border-black/10 px-8 py-4 md:px-10 md:py-5 rounded-full text-[12px] font-black uppercase tracking-[0.3em] overflow-hidden transition-all hover:border-primary/50 self-start cursor-pointer"
             >
-              <span className="relative z-10 text-foreground group-hover:text-white transition-colors text-[12px]">Ver detalhes do fluxo</span>
+              <span className="relative z-10 text-foreground group-hover:text-white transition-colors text-[14px]">Ver detalhes do fluxo</span>
               <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
             </button>
           </motion.div>
@@ -123,9 +123,9 @@ export function HowItWorks() {
               <img src="https://images.unsplash.com/photo-1537183673931-f890242dbaef" alt="Productivity" className="w-full h-full object-cover mix-blend-multiply opacity-80 hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="w-full md:w-1/2">
-              <p className="text-primary text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em] mb-4">Experiência</p>
+              <p className="text-primary text-[12px] md:text-[14px] font-black uppercase tracking-[0.4em] mb-4">Experiência</p>
               <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">DO JEITO QUE VOCÊ MERECE</h4>
-              <p className="text-muted-foreground leading-relaxed text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70">Caixa preparada com cuidado, proteção e carinho. Pra chegar intacto aí.</p>
+              <p className="text-muted-foreground leading-relaxed text-[14px] md:text-[16px] font-bold uppercase tracking-widest opacity-70">Caixa preparada com cuidado, proteção e carinho. Pra chegar intacto aí.</p>
             </div>
           </motion.div>
           <motion.div
@@ -139,9 +139,9 @@ export function HowItWorks() {
               <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0" alt="Content" className="w-full h-full object-cover mix-blend-multiply opacity-80 hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="w-full md:w-1/2">
-              <p className="text-primary text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em] mb-4">Logística</p>
+              <p className="text-primary text-[12px] md:text-[14px] font-black uppercase tracking-[0.4em] mb-4">Logística</p>
               <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">ENTREGA RÁPIDA</h4>
-              <p className="text-muted-foreground text-[12px] md:text-[14px] font-bold uppercase tracking-widest opacity-70 leading-relaxed">Quem é de SP recebe no dia. Outros estados com envio expresso e seguro.</p>
+              <p className="text-muted-foreground text-[14px] md:text-[16px] font-bold uppercase tracking-widest opacity-70 leading-relaxed">Quem é de SP recebe no dia. Outros estados com envio expresso e seguro.</p>
             </div>
           </motion.div>
         </div>
