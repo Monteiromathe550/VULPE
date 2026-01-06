@@ -149,13 +149,6 @@
     --color-muted-foreground: var(--muted-foreground);
     --color-border: var(--border);
     --tracking-tightest: -.05em;
-    --spacing-section-mobile: 5rem;
-    --spacing-section-desktop: 8rem;
-    --spacing-component: 2rem;
-    --spacing-element: 1rem;
-    --text-body: 1rem;
-    --text-h1-mobile: 3rem;
-    --text-h1-desktop: 4.5rem;
   }
 }
 

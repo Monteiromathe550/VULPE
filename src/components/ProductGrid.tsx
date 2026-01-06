@@ -71,7 +71,7 @@ export function ProductGrid() {
                         setActiveCategory(category);
                         setSearchQuery('');
                       }}
-                      className={`relative py-2 text-[13px] font-black uppercase tracking-[0.2em] transition-colors ${isActive ? 'text-foreground' : 'text-muted-foreground/50 hover:text-foreground'
+                      className={`relative py-2 text-[11px] font-black uppercase tracking-[0.2em] transition-colors ${isActive ? 'text-foreground' : 'text-muted-foreground/50 hover:text-foreground'
                         }`}
                     >
                       {category.replace('iPhone ', '').replace(' (Modelos Anteriores e 16)', ' 16').replace(' Linha 17', ' 17')}
@@ -90,22 +90,22 @@ export function ProductGrid() {
             {/* Controls - Minimal Inputs */}
             <div className="flex flex-col sm:flex-row items-center justify-end gap-6 w-full">
               <div className="relative w-full sm:w-64 group">
-                <Search className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground/40 group-focus-within:text-primary transition-colors" />
+                <Search className="absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground/40 group-focus-within:text-primary transition-colors" />
                 <input
                   type="text"
                   placeholder="BUSCAR..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full bg-transparent border-b border-black/10 focus:border-primary py-2 pl-8 pr-4 text-[13px] font-bold text-foreground placeholder:text-muted-foreground/30 focus:outline-none uppercase tracking-widest transition-all rounded-none"
+                  className="w-full bg-transparent border-b border-black/10 focus:border-primary py-2 pl-7 pr-4 text-[11px] font-bold text-foreground placeholder:text-muted-foreground/30 focus:outline-none uppercase tracking-widest transition-all rounded-none"
                 />
               </div>
 
               <div className="relative flex items-center w-full sm:w-auto min-w-[160px]">
-                <SlidersHorizontal className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground/40 pointer-events-none z-10" />
+                <SlidersHorizontal className="absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground/40 pointer-events-none z-10" />
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value as any)}
-                  className="w-full appearance-none bg-transparent py-2 pl-8 pr-8 text-[13px] font-bold text-foreground uppercase tracking-widest focus:outline-none cursor-pointer border-b border-black/10 focus:border-primary transition-all rounded-none"
+                  className="w-full appearance-none bg-transparent py-2 pl-7 pr-8 text-[11px] font-bold text-foreground uppercase tracking-widest focus:outline-none cursor-pointer border-b border-black/10 focus:border-primary transition-all rounded-none"
                 >
                   <option value="featured">Destaques</option>
                   <option value="price-asc">Menor Preço</option>
