@@ -1,5 +1,6 @@
 import React from 'react';
-import { Apple, Instagram, Facebook, MapPin, Phone, Mail, ArrowUpRight } from 'lucide-react';
+import { Instagram, Facebook, MapPin, Phone, Mail, ArrowUpRight } from 'lucide-react';
+import logoDark from '../assets/logo-dark.png';
 
 export function Footer() {
   return (
@@ -8,8 +9,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 pb-20 border-b border-black/5">
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <Apple className="w-8 h-8 text-primary" />
-              <span className="text-2xl font-black tracking-tighter uppercase">PREMIUM</span>
+              <img
+                src={logoDark}
+                alt="Premium Store"
+                className="h-8 w-auto object-contain"
+              />
             </div>
             <p className="text-xs font-bold text-muted-foreground leading-relaxed max-w-xs uppercase tracking-wide">
               Seu pedido vai com seguro total. Qualquer B.O. no caminho, a responsabilidade é minha, não sua.
