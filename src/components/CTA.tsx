@@ -57,7 +57,7 @@ export function CTA() {
                             href="https://wa.me/5565981274128"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-3 bg-foreground text-background rounded-full font-black uppercase tracking-[0.2em] hover:bg-primary transition-all text-[10px] md:text-xs group px-8 py-4 relative overflow-hidden shadow-2xl shadow-black/10 hover:shadow-primary/30 cursor-pointer pointer-events-auto z-20"
+                            className="inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs shadow-2xl shadow-black/10 hover:shadow-primary/30 transition-all cursor-pointer pointer-events-auto z-20 relative overflow-hidden group"
                         >
                             <span className="relative z-10">
                                 Falar com o Especialista Vulp

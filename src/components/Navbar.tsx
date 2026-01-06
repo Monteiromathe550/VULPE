@@ -56,10 +56,10 @@ export function Navbar() {
             href="https://wa.me/5565981274128"
             target="_blank"
             rel="noopener noreferrer"
-            className={`px-8 py-3.5 text-[14px] font-black rounded-full transition-all duration-500 uppercase tracking-widest group overflow-hidden relative shadow-lg cursor-pointer pointer-events-auto z-50 !bg-black text-white hover:shadow-black/20`}
+            className="px-8 py-3.5 bg-black text-white rounded-full text-[14px] font-bold uppercase tracking-widest shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300 flex items-center justify-center relative z-50 overflow-hidden group"
           >
             <span className="relative z-10">ORÇAMENTO WHATSAPP</span>
-            <div className={`absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out`} />
+            <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
           </a>
         </div>
 
@@ -96,10 +96,11 @@ export function Navbar() {
                 href="https://wa.me/5565981274128"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary text-white text-center py-6 rounded-full font-black uppercase tracking-widest shadow-2xl shadow-primary/30 active:scale-95 transition-all text-[14px] cursor-pointer pointer-events-auto z-50"
+                className="bg-black text-white text-center py-6 rounded-full font-bold uppercase tracking-widest shadow-2xl active:scale-95 transition-all text-[14px] cursor-pointer pointer-events-auto z-50 relative overflow-hidden group"
                 onClick={() => setIsOpen(false)}
               >
-                Falar no WhatsApp
+                <span className="relative z-10">Falar no WhatsApp</span>
+                <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
               </a>
             </div>
           </motion.div>

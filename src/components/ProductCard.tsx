@@ -138,13 +138,14 @@ export function ProductCard({ product }: ProductCardProps) {
           <button
             onClick={handlePurchase}
             disabled={isOutOfStock}
-            className={`w-full h-12 rounded-full flex items-center justify-center gap-2 text-sm font-black uppercase tracking-[0.2em] transition-all duration-300 active:scale-95 ${isOutOfStock
+            className={`w-full h-12 rounded-full flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-widest transition-all duration-300 active:scale-95 relative overflow-hidden group ${isOutOfStock
               ? 'bg-gray-100 text-gray-400 cursor-not-allowed pointer-events-none'
-              : 'bg-foreground text-background hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/20 cursor-pointer pointer-events-auto'
+              : 'bg-black text-white shadow-lg hover:shadow-xl cursor-pointer pointer-events-auto'
               }`}
           >
-            <span>{isOutOfStock ? 'Indisponível' : 'Comprar Agora'}</span>
-            {!isOutOfStock && <ArrowUpRight className="w-4 h-4" />}
+            <span className="relative z-10">{isOutOfStock ? 'Indisponível' : 'Comprar Agora'}</span>
+            {!isOutOfStock && <ArrowUpRight className="w-4 h-4 relative z-10" />}
+            {!isOutOfStock && <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />}
           </button>
         </div>
       </div>
