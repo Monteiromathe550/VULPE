@@ -106,7 +106,7 @@ export function ProductCard({ product }: ProductCardProps) {
           {product.name}
         </h3>
 
-        <div className="mt-auto pt-4 border-t border-black/5 space-y-4">
+        <div className="mt-auto pt-[var(--spacing-element)] border-t border-black/5 flex flex-col gap-[var(--spacing-element)]">
           {product.pricePix ? (
             <div className="flex flex-col gap-1">
               <div className="flex items-baseline gap-2">
@@ -138,9 +138,9 @@ export function ProductCard({ product }: ProductCardProps) {
           <button
             onClick={handlePurchase}
             disabled={isOutOfStock}
-            className={`w-full h-12 rounded-full flex items-center justify-center gap-2 text-sm font-black uppercase tracking-[0.2em] transition-all duration-300 active:scale-95 ${isOutOfStock
+            className={`w-full h-14 rounded-full flex items-center justify-center gap-2 text-sm font-black uppercase tracking-[0.2em] transition-all duration-300 active:scale-95 shadow-sm hover:shadow-lg ${isOutOfStock
               ? 'bg-gray-100 text-gray-400 cursor-not-allowed pointer-events-none'
-              : 'bg-foreground text-background hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/20 cursor-pointer pointer-events-auto'
+              : 'bg-black text-white hover:bg-primary hover:text-white hover:shadow-primary/20 cursor-pointer pointer-events-auto'
               }`}
           >
             <span>{isOutOfStock ? 'Indisponível' : 'Comprar Agora'}</span>

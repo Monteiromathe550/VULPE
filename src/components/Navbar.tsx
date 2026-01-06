@@ -56,10 +56,10 @@ export function Navbar() {
             href="https://wa.me/5565981274128"
             target="_blank"
             rel="noopener noreferrer"
-            className={`px-8 py-3.5 text-[14px] font-black rounded-full transition-all duration-500 uppercase tracking-widest group overflow-hidden relative shadow-lg cursor-pointer pointer-events-auto z-50 !bg-black text-white group-hover:text-black hover:shadow-black/20`}
+            className={`px-8 py-3.5 text-[14px] font-black rounded-full transition-all duration-500 uppercase tracking-widest group overflow-hidden relative shadow-lg cursor-pointer pointer-events-auto z-50 !bg-black text-white hover:shadow-black/20`}
           >
             <span className="relative z-10">ORÇAMENTO WHATSAPP</span>
-            <div className={`absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out`} />
+            <div className={`absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out`} />
           </a>
         </div>
 
