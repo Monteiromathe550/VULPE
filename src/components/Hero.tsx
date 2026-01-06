@@ -6,7 +6,7 @@ import heroMobile from '../assets/hero-mobile.png';
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen lg:min-h-[900px] pt-40 pb-20 flex items-center overflow-hidden">
+    <section className="relative min-h-screen lg:min-h-[900px] pt-48 md:pt-56 lg:pt-64 pb-20 flex items-center overflow-hidden">
       {/* Background Images for Desktop and Mobile */}
       <div className="absolute inset-0 z-0">
         {/* Mobile Image */}
