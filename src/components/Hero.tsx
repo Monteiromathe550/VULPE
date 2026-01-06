@@ -6,60 +6,85 @@ import heroMobile from '../assets/hero-mobile.png';
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen lg:min-h-[900px] pt-40 pb-20 flex items-center overflow-hidden">
-      {/* Background Images for Desktop and Mobile */}
-      <div className="absolute inset-0 z-0">
-        {/* Mobile Image */}
-        <picture>
-          <source media="(min-width: 1024px)" srcSet={heroDesktop} />
-          <img
-            src={heroMobile}
-            alt="VULPE Apple Specialist"
-            className="w-full h-full object-cover object-center"
-          />
-        </picture>
+    <section className="relative min-h-[90vh] lg:min-h-screen pt-32 lg:pt-0 flex items-center overflow-hidden bg-[#F5F5F7]">
+      {/* Background Decor - Side Layout for Desktop */}
+      <div className="absolute top-0 right-0 w-1/2 h-full hidden lg:block">
+        <div className="absolute inset-0 bg-gradient-to-l from-[#F5F5F7] via-transparent to-transparent z-10" />
+        <img
+          src={heroDesktop}
+          alt="Apple Specialist"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
 
-        {/* Neutral dark gradient to ensure text readability - Lightened for a brighter look */}
-        <div className="absolute inset-0 bg-black/25 lg:hidden" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-transparent lg:bg-gradient-to-r lg:from-black/90 lg:via-black/20 lg:to-transparent" />
+      {/* Mobile Background */}
+      <div className="absolute inset-0 lg:hidden z-0">
+        <img
+          src={heroMobile}
+          alt="Background"
+          className="w-full h-full object-cover object-center opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#F5F5F7]/80 via-transparent to-[#F5F5F7]" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-16">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            className="flex-1 text-center lg:text-left max-w-2xl flex flex-col items-center lg:items-start"
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="flex-1 text-center lg:text-left max-w-2xl"
           >
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="inline-flex items-center gap-2 bg-black/40 border border-white/20 rounded-full px-5 py-2 mb-8 backdrop-blur-md"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              className="inline-flex items-center gap-3 bg-white border border-black/5 rounded-full px-5 py-2 mb-10 shadow-sm"
             >
-              <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-white font-black uppercase text-[10px] tracking-[0.3em]">Hardware Selecionado</span>
+              <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+              <span className="text-foreground/60 font-black uppercase text-[10px] tracking-[0.3em]">Hardware de Elite</span>
             </motion.div>
 
-            <h1 className="mb-8 text-white tracking-tightest text-4xl lg:text-[110px] font-black leading-[1.1] lg:leading-[0.85] uppercase drop-shadow-[0_8px_8px_rgba(0,0,0,0.8)] lg:drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
-              Seu Apple com<br className="hidden lg:block" />
-              <span className="text-primary">segurança total.</span>
+            <h1 className="text-4xl lg:text-[72px] font-black leading-[1.1] lg:leading-[1.05] tracking-tightest text-foreground uppercase mb-10">
+              O Apple que você<br className="hidden lg:block" />
+              sempre quis, <span className="text-primary italic">sem riscos.</span>
             </h1>
 
-            <p className="mb-8 text-white text-lg lg:text-xl font-medium max-w-lg mx-auto lg:mx-0 leading-relaxed drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] lg:drop-shadow-md">
-              Aqui na Vulp o papo é reto: contrato assinado com validade jurídica <strong>antes</strong> de você pagar. Atendimento humano, direto comigo, e garantia de entrega.
+            <p className="text-foreground/60 text-lg lg:text-xl font-medium max-w-xl leading-relaxed mb-12 mx-auto lg:mx-0">
+              Segurança jurídica total, contrato assinado antes do pagamento e atendimento humano real. O próximo nível do seu setup começa aqui.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-8 justify-center lg:justify-start w-full">
-              <button className="group text-white border-b-2 border-primary hover:border-primary/50 pb-2 text-sm font-black uppercase tracking-[0.2em] transition-all flex items-center gap-4 mx-auto lg:mx-0 relative overflow-hidden">
-                <span className="relative z-10">Chamar no WhatsApp</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform relative z-10 text-primary" />
-                <div className="absolute inset-0 bg-primary/5 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
+            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
+              <motion.a
+                href="https://wa.me/5565981274128"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="inline-flex items-center justify-center gap-4 bg-foreground text-background px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-primary transition-colors text-sm shadow-2xl shadow-black/10"
+              >
+                Garantir meu Apple
+                <ArrowRight className="w-4 h-4" />
+              </motion.a>
+
+              <button
+                onClick={() => document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' })}
+                className="inline-flex items-center justify-center gap-4 bg-black/5 border border-black/5 px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-black/10 transition-all text-sm"
+              >
+                Ver Catálogo
               </button>
             </div>
           </motion.div>
+
+          {/* Placeholder for visual balance on desktop */}
+          <div className="flex-1" />
         </div>
+      </div>
+
+      {/* Scroll Decor */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-4 opacity-20">
+        <span className="text-[10px] font-black uppercase tracking-[0.5em]">Deslize</span>
+        <div className="w-px h-12 bg-gradient-to-b from-foreground to-transparent" />
       </div>
     </section>
   );
