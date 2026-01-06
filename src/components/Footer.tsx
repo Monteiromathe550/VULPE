@@ -37,7 +37,7 @@ export function Footer() {
               {['Vitrine de Produtos', 'Processo de Compra', 'Segurança & Contrato', 'Acompanhar Pedido'].map((item) => (
                 <li key={item}>
                   <a href="#" className="hover:text-primary transition-colors flex items-center gap-2 group">
-                    <ArrowUpRight className="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                    <ArrowUpRight className="w-3 h-3 text-primary" />
                     {item}
                   </a>
                 </li>
@@ -54,7 +54,7 @@ export function Footer() {
               {['iPhones', 'MacBooks', 'iPads & Apple Watch', 'Acessórios Originais'].map((item) => (
                 <li key={item}>
                   <a href="#" className="hover:text-primary transition-colors flex items-center gap-2 group">
-                    <ArrowUpRight className="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                    <ArrowUpRight className="w-3 h-3 text-primary" />
                     {item}
                   </a>
                 </li>
