@@ -11,7 +11,7 @@ export function Footer() {
               <Apple className="w-8 h-8 text-primary" />
               <span className="text-2xl font-black tracking-tighter uppercase">PREMIUM</span>
             </div>
-            <p className="text-sm font-bold text-muted-foreground leading-relaxed max-w-xs uppercase tracking-wide">
+            <p className="text-xs font-bold text-muted-foreground leading-relaxed max-w-xs uppercase tracking-wide">
               Seu pedido vai com seguro total. Qualquer B.O. no caminho, a responsabilidade é minha, não sua.
             </p>
             <div className="flex gap-3">
@@ -29,7 +29,7 @@ export function Footer() {
               Navegação
               <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-5 text-base text-muted-foreground font-medium">
+            <ul className="space-y-4 text-sm text-muted-foreground font-medium">
               {['Vitrine de Produtos', 'Processo de Compra', 'Segurança & Contrato', 'Acompanhar Pedido'].map((item) => (
                 <li key={item}>
                   <a href="#" className="hover:text-primary transition-colors flex items-center gap-2 group">
@@ -46,7 +46,7 @@ export function Footer() {
               Categorias
               <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-5 text-base text-muted-foreground font-medium">
+            <ul className="space-y-4 text-sm text-muted-foreground font-medium">
               {['iPhones', 'MacBooks', 'iPads & Apple Watch', 'Acessórios Originais'].map((item) => (
                 <li key={item}>
                   <a href="#" className="hover:text-primary transition-colors flex items-center gap-2 group">
@@ -63,7 +63,7 @@ export function Footer() {
               Contato
               <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-5 text-base text-muted-foreground font-medium">
+            <ul className="space-y-4 text-sm text-muted-foreground font-medium">
               <li className="flex items-start gap-4 group">
                 <div className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors mt-0.5">
                   <MapPin className="w-4 h-4" />
@@ -90,7 +90,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-muted-foreground/60 text-xs font-medium uppercase tracking-[0.3em]">
+        <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-muted-foreground/60 text-[10px] font-medium uppercase tracking-[0.2em]">
           <p>© 2026 Premium Store. Hardware de elite selecionado.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-primary transition-colors">Termos</a>
