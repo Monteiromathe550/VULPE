@@ -4,7 +4,7 @@ import { Send } from 'lucide-react';
 
 export function CTA() {
     return (
-        <section className="bg-[#FAFAFA] pt-20 pb-24 border-t border-black/5 overflow-hidden">
+        <section className="bg-[#FAFAFA] pt-20 pb-32 lg:pb-48 border-t border-black/5 overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="text-center relative">
                     <motion.div
