@@ -14,7 +14,7 @@ export function Footer() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 text-primary rounded-full text-[10px] md:text-xs font-black uppercase tracking-[0.4em] mb-10 lg:mb-12 shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 text-primary rounded-full text-[10px] font-black uppercase tracking-[0.4em] mb-10 lg:mb-12 shadow-sm"
           >
             Atendimento Personalizado
           </motion.div>
@@ -47,7 +47,7 @@ export function Footer() {
             </motion.span>
           </h2>
 
-          <p className="max-w-xl mx-auto text-muted-foreground text-base md:text-xl md:leading-relaxed mb-12 font-medium px-4 opacity-80">
+          <p className="max-w-xl mx-auto text-muted-foreground text-sm md:text-xl md:leading-relaxed mb-12 font-medium px-4 opacity-80 uppercase tracking-widest leading-loose md:normal-case md:tracking-normal">
             Tô aqui pra resolver. Pode perguntar qualquer coisa antes de decidir. Nossa equipe está pronta para te guiar na melhor escolha.
           </p>
 
@@ -60,7 +60,7 @@ export function Footer() {
               href="https://wa.me/5565981274128"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-4 md:gap-6 bg-foreground text-background rounded-full font-black uppercase tracking-[0.3em] hover:bg-primary transition-all text-xs md:text-sm group px-8 py-5 md:px-12 md:py-6 relative overflow-hidden shadow-2xl shadow-black/10 hover:shadow-primary/30"
+              className="inline-flex items-center gap-4 md:gap-6 bg-foreground text-background rounded-full font-black uppercase tracking-[0.2em] md:tracking-[0.3em] hover:bg-primary transition-all text-[11px] md:text-sm group px-10 py-5 md:px-12 md:py-6 relative overflow-hidden shadow-2xl shadow-black/10 hover:shadow-primary/30"
             >
               <span className="relative z-10">
                 Falar com o Especialista Vulp
@@ -79,10 +79,10 @@ export function Footer() {
               <img
                 src={logoDark}
                 alt="Logo"
-                className="h-10 lg:h-12 w-auto object-contain"
+                className="h-8 lg:h-12 w-auto object-contain"
               />
             </div>
-            <p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-sm font-medium opacity-70">
+            <p className="text-muted-foreground text-sm leading-relaxed max-w-sm font-bold uppercase tracking-widest opacity-70">
               Especialistas em ecossistema Apple com foco em transparência, segurança jurídica e atendimento humanizado. Elevando sua experiência tecnológica ao próximo nível.
             </p>
             <div className="flex gap-4">
@@ -95,12 +95,12 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="lg:col-span-2 space-y-8 lg:space-y-0">
-            <h4 className="text-base font-black uppercase tracking-[0.2em] mb-10 lg:mb-8 flex items-center gap-3 text-foreground/40">
+          <div className="lg:col-span-2 space-y-10 lg:space-y-0">
+            <h4 className="text-[11px] font-black uppercase tracking-[0.4em] mb-10 lg:mb-8 flex items-center gap-3 text-foreground/40">
               Navegação
               <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-6 lg:space-y-4 text-foreground/80 text-base font-bold uppercase tracking-widest">
+            <ul className="space-y-6 lg:space-y-4 text-foreground/80 text-sm font-bold uppercase tracking-widest">
               {['Vitrine de Produtos', 'Processo de Compra', 'Segurança & Contrato', 'Acompanhar Pedido'].map((item) => (
                 <li key={item}>
                   <a href="#" className="hover:text-primary transition-colors flex items-center gap-1 group whitespace-nowrap">
@@ -112,12 +112,12 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="lg:col-span-2 space-y-8 lg:space-y-0">
-            <h4 className="text-base font-black uppercase tracking-[0.2em] mb-10 lg:mb-8 flex items-center gap-3 text-foreground/40">
+          <div className="lg:col-span-2 space-y-10 lg:space-y-0">
+            <h4 className="text-[11px] font-black uppercase tracking-[0.4em] mb-10 lg:mb-8 flex items-center gap-3 text-foreground/40">
               Categorias
               <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-6 lg:space-y-4 text-foreground/80 text-base font-bold uppercase tracking-widest">
+            <ul className="space-y-6 lg:space-y-4 text-foreground/80 text-sm font-bold uppercase tracking-widest">
               {['iPhones', 'MacBooks', 'iPads & Apple Watch', 'Acessórios Originais'].map((item) => (
                 <li key={item}>
                   <a href="#" className="hover:text-primary transition-colors flex items-center gap-1 group whitespace-nowrap">
@@ -130,11 +130,11 @@ export function Footer() {
           </div>
 
           <div className="lg:col-span-4 lg:pl-12 space-y-10 lg:space-y-0">
-            <h4 className="text-base font-black uppercase tracking-[0.2em] mb-10 lg:mb-8 flex items-center gap-3 text-foreground/40">
+            <h4 className="text-[11px] font-black uppercase tracking-[0.4em] mb-10 lg:mb-8 flex items-center gap-3 text-foreground/40">
               Contato
               <div className="h-[1px] flex-1 bg-black/5" />
             </h4>
-            <ul className="space-y-8 lg:space-y-6 text-foreground/80 text-base font-bold uppercase tracking-widest">
+            <ul className="space-y-8 lg:space-y-6 text-foreground/80 text-sm font-bold uppercase tracking-widest">
               <li className="flex items-start gap-5 group">
                 <div className="w-10 h-10 rounded-2xl bg-white shadow-sm border border-black/[0.03] flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                   <MapPin className="w-5 h-5" />
@@ -166,18 +166,18 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-8 text-muted-foreground/50 text-[10px] md:text-[11px] font-black uppercase tracking-[0.4em] text-center md:text-left">
+        <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-8 text-muted-foreground/50 text-[10px] font-black uppercase tracking-[0.4em] text-center md:text-left">
           <p>© 2026 VULP. EXCELÊNCIA EM APPLE. TODOS OS DIREITOS RESERVADOS.</p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-12">
-            <a href="#" className="hover:text-primary transition-colors relative group">
+            <a href="#" className="hover:text-primary transition-colors relative group text-[10px]">
               Termos
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full" />
             </a>
-            <a href="#" className="hover:text-primary transition-colors relative group">
+            <a href="#" className="hover:text-primary transition-colors relative group text-[10px]">
               Privacidade
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full" />
             </a>
-            <a href="#" className="hover:text-primary transition-colors relative group">
+            <a href="#" className="hover:text-primary transition-colors relative group text-[10px]">
               Cookies
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full" />
             </a>
