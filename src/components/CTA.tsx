@@ -16,7 +16,7 @@ export function CTA() {
                         Atendimento Personalizado
                     </motion.div>
 
-                    <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-[110px] font-black leading-[1.1] lg:leading-[0.8] mb-10 lg:mb-16 tracking-tight lg:tracking-tightest uppercase relative z-10">
+                    <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-[110px] font-black leading-[1.1] lg:leading-[0.8] mb-6 lg:mb-8 tracking-tight lg:tracking-tightest uppercase relative z-10">
                         <motion.span
                             initial={{ y: 40, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}

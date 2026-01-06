@@ -24,7 +24,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-transparent lg:bg-gradient-to-r lg:from-black/90 lg:via-black/20 lg:to-transparent" />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10 mt-32 lg:mt-0">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ export function Hero() {
               <span className="text-primary font-black uppercase text-[10px] tracking-[0.2em]">Hardware Selecionado</span>
             </motion.div>
 
-            <h1 className="mb-8 text-white tracking-tighter text-4xl sm:text-5xl md:text-7xl font-black leading-[1.1] drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
+            <h1 className="mb-6 text-white tracking-tighter text-4xl sm:text-5xl md:text-6xl font-black leading-[1.1] drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
               Seu Apple com segurança total e sem enrolação.
             </h1>
 

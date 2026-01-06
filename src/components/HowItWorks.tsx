@@ -47,7 +47,7 @@ export function HowItWorks() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="lg:w-1/2"
           >
-            <h2 className="text-4xl md:text-7xl font-black mb-0 leading-[1.2] lg:leading-[1.1] tracking-tight lg:tracking-tightest uppercase md:text-[64px]">
+            <h2 className="text-4xl md:text-6xl font-black mb-6 leading-[1.2] lg:leading-[1.1] tracking-tight lg:tracking-tightest uppercase">
               CONHEÇA NOSSO<br /><span className="text-primary">PROCESSO</span>
             </h2>
           </motion.div>
@@ -103,7 +103,7 @@ export function HowItWorks() {
                   {React.cloneElement(step.icon as React.ReactElement, { className: "w-6 h-6" })}
                 </div>
               </div>
-              <h3 className="text-xl md:text-2xl font-black mb-4 tracking-tightest uppercase">{step.title}</h3>
+              <h3 className="text-xl md:text-2xl font-black mb-6 tracking-tightest uppercase">{step.title}</h3>
               <p className="text-muted-foreground leading-relaxed max-w-full text-base font-bold uppercase tracking-widest opacity-80">
                 {step.description}
               </p>
