@@ -152,6 +152,20 @@
   }
 }
 
+
+/* Hide scrollbar but keep functionality */
+* {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
 @layer base {
 
   *,
@@ -438,6 +452,7 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
@@ -451,6 +466,8 @@
     --tw-duration: .5s;
     font-family: "Montserrat", sans-serif;
     transition-duration: .5s;
+    overflow-x: hidden;
+    width: 100%;
   }
 
   h1 {
