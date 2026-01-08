@@ -19,7 +19,7 @@ export function Footer() {
               Seu pedido vai com seguro total. Qualquer B.O. no caminho, a responsabilidade é minha, não sua.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110 cursor-pointer">
+              <a href="https://www.instagram.com/vulp.br/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110 cursor-pointer">
                 <Instagram className="w-4 h-4" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110 cursor-pointer">
@@ -83,11 +83,11 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-4 group">
-                <a href="mailto:contato@premiumstore.com" className="flex items-center gap-4 w-full">
+                <a href="mailto:vulpbr@gmail.com" className="flex items-center gap-4 w-full">
                   <div className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                     <Mail className="w-4 h-4" />
                   </div>
-                  <span className="lowercase">contato@premiumstore.com</span>
+                  <span className="lowercase">vulpbr@gmail.com</span>
                 </a>
               </li>
             </ul>

@@ -25,8 +25,18 @@ export function ProductCard({ product }: ProductCardProps) {
     e.preventDefault();
     if (isOutOfStock) return;
 
-    const message = encodeURIComponent(`Olá! Gostaria de saber mais sobre o ${product.name} que vi na Premium Store.`);
-    window.open(`https://wa.me/5565981274128?text=${message}`, '_blank');
+    // Mensagem personalizada com o nome do produto
+    const message = `Oi! 😊🦊
+Que bom te ver por aqui.
+
+Você chegou pelo site da Vulpe e se interessou pelo ${product.name}, certo?
+
+Aqui a gente trabalha com tudo bem certinho e transparente, pra você comprar tranquilo(a) do começo ao fim.
+
+Quer que eu te explique os próximos passos?`;
+
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/5565981274128?text=${encodedMessage}`, '_blank');
   };
 
   const formatCurrency = (value: number) => {
