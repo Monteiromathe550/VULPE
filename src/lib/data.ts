@@ -7,6 +7,32 @@ import ipadMini from '../assets/ipad-mini.png';
 import macbook from '../assets/macbook.png';
 import macMini from '../assets/mac-mini.png';
 import magicKeyboard from '../assets/magic-keyboard.png';
+import airPods4 from '../assets/airpods-4.png';
+import airPodsAnc from '../assets/airpods-anc.png';
+import airPodsPro from '../assets/airpods-pro.png';
+import airPodsMax from '../assets/airpods-max.png';
+import airPodsCase from '../assets/airpods-case.png';
+import iphone16ProMaxWhite from '../assets/iphone-16-pro-max-white.png';
+import ipadKeyboard from '../assets/ipad-keyboard.png';
+import magicMouse from '../assets/magic-mouse.png';
+import ipadBlue from '../assets/ipad-blue.png';
+import ipadProGray from '../assets/ipad-pro-gray.png';
+import applePencilPro from '../assets/apple-pencil-pro.png';
+import appleCharger20w from '../assets/apple-charger-20w.png';
+import appleWatchUltra from '../assets/apple-watch-ultra.png';
+import appleWatchSE from '../assets/apple-watch-se.png';
+import appleWatchUltraBlack from '../assets/apple-watch-ultra-black.png';
+import appleWatchUltraTitanium from '../assets/apple-watch-ultra-titanium.png';
+import appleWatchStarlight from '../assets/apple-watch-starlight.png';
+import appleWatchRoseGold from '../assets/apple-watch-rose-gold.png';
+import appleWatchSEWhite from '../assets/apple-watch-se-white.png';
+import iphone16PlusPurple from '../assets/iphone-16-plus-purple.png';
+import iphone16Black from '../assets/iphone-16-black.png';
+import ipadAirSpaceGray from '../assets/ipad-air-space-gray.png';
+import ipadAirStarlight from '../assets/ipad-air-starlight.png';
+import macbookProSpaceGray from '../assets/macbook-pro-space-gray.png';
+import macMiniBack from '../assets/mac-mini-back.png';
+import iphone16ProSpaceGray from '../assets/iphone-16-pro-space-gray.png';
 
 export type ProductStatus = 'Disponível' | 'Em falta';
 
@@ -34,6 +60,7 @@ const BASE_IMAGES: Record<string, string> = {
 
 // Mapeamento de produtos específicos para imagens customizadas
 const CUSTOM_PRODUCT_IMAGES: Record<string, string> = {
+  // iPhones 17
   'iPhone 17 128GB': iphone17Blue,
   'iPhone 17 Air 256GB': iphone17Black,
   'iPhone 17 Air 512GB': iphone17Black,
@@ -44,16 +71,66 @@ const CUSTOM_PRODUCT_IMAGES: Record<string, string> = {
   'iPhone 17 Pro Max 512GB': iphone17ProWhite,
   'iPhone 17 Pro Max 1TB': iphone17ProWhite,
   'iPhone 17 Pro Max 2TB': iphone17ProWhite,
+
+  // iPhones 16
+  'iPhone 16 Pro Max 256GB': iphone16ProMaxWhite,
+  'iPhone 16 Pro Max 512GB': iphone16ProMaxWhite,
+  'iPhone 16 Pro 128GB': iphone16ProSpaceGray,
+  'iPhone 16 Plus 128GB': iphone16PlusPurple,
+  'iPhone 16 128GB': iphone16Black,
+  'iPhone 16 256GB': iphone16Black,
+
+  // iPads
   'iPad Mini 128GB': ipadMini,
   'iPad Mini 256GB': ipadMini,
   'iPad Mini 512GB': ipadMini,
+  'iPad 11 A16 128GB': ipadBlue,
+  'iPad 11 A16 256GB': ipadBlue,
+  'iPad Air M3 11" 128GB': ipadKeyboard,
+  'iPad Air M3 11" 256GB': ipadKeyboard,
+  'iPad Air M3 13" 128GB': ipadAirStarlight,
+  'iPad Air M3 13" 256GB': ipadAirSpaceGray,
+  'iPad Pro M4 11" 256GB': ipadProGray,
+  'iPad Pro M4 13" 256GB': ipadProGray,
+  'iPad Pro M5 11" 256GB': ipadProGray,
+  'iPad Pro M5 13" 256GB': ipadProGray,
+
+  // MacBooks
   'MacBook Pro M4 14" 512GB': macbook,
   'MacBook Pro M4 14" 1TB': macbook,
   'MacBook Pro M4 16" 512GB': macbook,
   'MacBook Pro M4 16" 1TB': macbook,
+  'Macbook Pro M4 Pro 24/512GB 14"': macbookProSpaceGray,
+  'Macbook Pro M4 Max 36/1TB 14"': macbookProSpaceGray,
+  'Macbook Pro M4 Max 36/1TB 16"': macbookProSpaceGray,
+  'Macbook Pro M4 Max 48/1TB 16"': macbookProSpaceGray,
+
+  // Mac Mini
   'Mac Mini M4 256GB': macMini,
   'Mac Mini M4 512GB': macMini,
-  'Magic Keyboard': magicKeyboard
+
+  // Acessórios
+  'Magic Keyboard': magicKeyboard,
+  'Magic Keyboard para Mac': magicKeyboard,
+  'Magic Keyboard para Mac (iPad section)': ipadKeyboard,
+  'Magic Mouse': magicMouse,
+  'Apple Pencil Pro': applePencilPro,
+  'Carregador Apple 20w': appleCharger20w,
+
+  // Apple Watch
+  'Apple Watch Ultra 2': appleWatchUltraBlack,
+  'Apple Watch Ultra 3': appleWatchUltraTitanium,
+  'Apple Watch SE 2 44mm': appleWatchSE,
+  'Apple Watch SE 3 40mm': appleWatchStarlight,
+  'Apple Watch SE 3 44mm': appleWatchSEWhite,
+  'Apple Watch S11 42mm': appleWatchRoseGold,
+
+  // AirPods
+  'AirPods 4': airPods4,
+  'AirPods 4 ANC': airPodsAnc,
+  'AirPods Pro 2': airPodsPro,
+  'AirPods Pro 3': airPodsCase,
+  'AirPods Max USB-C': airPodsMax
 };
 
 const RAW_DATA = {
