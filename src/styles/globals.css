@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 @theme {
   --color-primary: #FF4D00;
@@ -7,17 +7,19 @@
   --color-card: var(--card);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
-  
+
   --tracking-tightest: -0.05em;
 }
 
 :root {
   --background: #ffffff;
   --foreground: #1d1d1f;
-  --card: #f9f9fb; /* Slightly warmer/softer grey for cards */
-  --muted-foreground: #515154; /* Darker for better legibility */
+  --card: #f9f9fb;
+  /* Slightly warmer/softer grey for cards */
+  --muted-foreground: #515154;
+  /* Darker for better legibility */
   --border: rgba(0, 0, 0, 0.06);
-  
+
   --radius: 2.5rem;
 }
 
@@ -34,14 +36,14 @@
   * {
     @apply border-border;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
 
   body {
     @apply bg-background text-foreground transition-colors duration-500 antialiased;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
   /* Refined Typography Hierarchy */
@@ -63,12 +65,16 @@
   }
 
   /* Interactive Elements */
-  input, textarea, select {
+  input,
+  textarea,
+  select {
     @apply bg-transparent text-foreground rounded-none border-b border-black/10 px-0 py-4;
     transition: all 0.4s ease;
   }
-  
-  input:focus, textarea:focus, select:focus {
+
+  input:focus,
+  textarea:focus,
+  select:focus {
     @apply outline-none border-primary shadow-none;
   }
 
@@ -83,7 +89,7 @@
   .subtle-border {
     @apply border border-black/[0.03];
   }
-  
+
   .luxury-spacing {
     @apply py-24 lg:py-48;
   }
