@@ -1,3 +1,5 @@
+import iphone17Orange from '../assets/iphone-17-orange.png';
+
 export type ProductStatus = 'Disponível' | 'Em falta';
 
 export interface Product {
@@ -20,6 +22,11 @@ const BASE_IMAGES: Record<string, string> = {
   'iPad': 'https://images.unsplash.com/photo-1516089996551-0fe8a38413b9',
   'AirPods': 'https://images.unsplash.com/photo-1621451766686-38d3f8964a0f',
   'Acessórios e Periféricos': 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0'
+};
+
+// Mapeamento de produtos específicos para imagens customizadas
+const CUSTOM_PRODUCT_IMAGES: Record<string, string> = {
+  'iPhone 17 128GB': iphone17Orange
 };
 
 const RAW_DATA = {
@@ -140,7 +147,7 @@ const RAW_DATA = {
 
 export const CATEGORIES = RAW_DATA.categories.map(c => c.name);
 
-export const PRODUCTS: Product[] = RAW_DATA.categories.flatMap((category, catIndex) => 
+export const PRODUCTS: Product[] = RAW_DATA.categories.flatMap((category, catIndex) =>
   category.products.map((product, prodIndex) => ({
     id: `${catIndex}-${prodIndex}`,
     name: product.model,
@@ -149,6 +156,6 @@ export const PRODUCTS: Product[] = RAW_DATA.categories.flatMap((category, catInd
     priceTotalInstallment: product.price_total_installment,
     installmentValue: product.installment_value,
     status: product.status === 'out_of_stock' ? 'Em falta' : 'Disponível',
-    image: BASE_IMAGES[category.name] || 'https://images.unsplash.com/photo-1616348436168-de43ad0db179'
+    image: CUSTOM_PRODUCT_IMAGES[product.model] || BASE_IMAGES[category.name] || 'https://images.unsplash.com/photo-1616348436168-de43ad0db179'
   }))
 );
