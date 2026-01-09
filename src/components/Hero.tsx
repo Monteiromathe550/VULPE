@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
-import heroDesktop from '../assets/hero-bg.png';
+import heroDesktop from '../assets/hero-iphones-orange.png';
 import heroMobile from '../assets/hero-mobile.png';
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen lg:min-h-[900px] pt-52 pb-20 flex items-center overflow-hidden">
+    <section className="relative min-h-screen lg:min-h-[900px] pt-24 pb-20 flex items-center overflow-hidden">
       {/* Background Images for Desktop and Mobile */}
       <div className="absolute inset-0 z-0">
         {/* Mobile Image */}
@@ -24,8 +24,8 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-transparent lg:bg-gradient-to-r lg:from-black/90 lg:via-black/20 lg:to-transparent" />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 mt-32 lg:mt-0">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

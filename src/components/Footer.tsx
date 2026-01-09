@@ -19,7 +19,7 @@ export function Footer() {
               Seu pedido vai com seguro total. Qualquer B.O. no caminho, a responsabilidade é minha, não sua.
             </p>
             <div className="flex gap-3">
-              <a href="https://www.instagram.com/vulp.br/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110 cursor-pointer">
+              <a href="https://www.instagram.com/vulp.apple/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110 cursor-pointer">
                 <Instagram className="w-4 h-4" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110 cursor-pointer">
