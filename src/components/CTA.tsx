@@ -45,7 +45,7 @@ export function CTA() {
                     </h2>
 
                     <p className="max-w-xl mx-auto text-muted-foreground text-sm md:text-xl md:leading-relaxed mb-12 font-medium px-4 opacity-80 uppercase tracking-widest leading-loose md:normal-case md:tracking-normal">
-                        Tô aqui pra resolver. Pode perguntar qualquer coisa antes de decidir. Nossa equipe está pronta para te guiar na melhor escolha.
+                        Pode perguntar antes de decidir. Sem compromisso. É só chamar e a gente conversa.
                     </p>
 
                     <motion.div

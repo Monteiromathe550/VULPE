@@ -50,8 +50,8 @@ export function Testimonials() {
             transition={{ delay: 0.2 }}
             className="text-4xl md:text-7xl font-black tracking-tightest mb-8 text-foreground"
           >
-            QUEM COMPROU,<br />
-            <span className="text-primary italic font-light">APROVOU.</span>
+            FEEDBACKS<br />
+            <span className="text-primary italic font-light">RECENTES.</span>
           </motion.h2>
 
           <motion.p
@@ -61,7 +61,7 @@ export function Testimonials() {
             transition={{ delay: 0.4 }}
             className="text-muted-foreground text-lg font-light max-w-xl"
           >
-            Histórias reais de clientes que elevaram seu padrão tecnológico com segurança e exclusividade.
+            Alguns relatos de quem já recebeu o produto e quis compartilhar a experiência.
           </motion.p>
         </div>
 

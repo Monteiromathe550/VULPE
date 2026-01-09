@@ -20,8 +20,8 @@ export function Hero() {
         </picture>
 
         {/* Neutral dark gradient to ensure text readability - Stronger on mobile */}
-        <div className="absolute inset-0 bg-black/40 lg:hidden" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-transparent lg:bg-gradient-to-r lg:from-black/90 lg:via-black/20 lg:to-transparent" />
+        <div className="absolute inset-0 bg-black/50 lg:hidden" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/50 to-black/20 lg:bg-gradient-to-r lg:from-black/90 lg:via-black/20 lg:to-transparent" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -33,12 +33,12 @@ export function Hero() {
             className="flex-1 text-center lg:text-left max-w-2xl flex flex-col items-center lg:items-start"
           >
 
-            <h1 className="mb-6 text-white tracking-tighter text-4xl sm:text-5xl md:text-6xl font-black leading-[1.1] drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
+            <h1 className="mb-6 text-white tracking-tighter text-4xl sm:text-5xl md:text-6xl font-black leading-[1.1] drop-shadow-[0_5px_6px_rgba(0,0,0,0.65)]">
               Seu Apple com segurança total e sem enrolação.
             </h1>
 
-            <p className="mb-8 text-white text-lg lg:text-xl font-medium max-w-lg mx-auto lg:mx-0 leading-relaxed drop-shadow-md">
-              Aqui na Vulp o papo é reto: contrato assinado com validade jurídica <strong>antes</strong> de você pagar. Atendimento humano, direto comigo, e garantia de entrega.
+            <p className="mb-8 text-white text-lg lg:text-xl font-medium max-w-lg mx-auto lg:mx-0 leading-relaxed drop-shadow-[0_3px_5px_rgba(0,0,0,0.6)]">
+              Na VULP o processo é simples: escolha o aparelho, receba o contrato, acompanhe tudo até a entrega. Sem surpresas, sem enrolação.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-8 justify-center lg:justify-start w-full relative z-20">
@@ -46,9 +46,9 @@ export function Hero() {
                 href="https://wa.me/5565981274128"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-black text-white px-8 py-4 rounded-full text-base font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-4 mx-auto lg:mx-0 shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] cursor-pointer pointer-events-auto z-20 relative overflow-hidden"
+                className="group bg-black text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full text-sm sm:text-base font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-3 sm:gap-4 mx-auto lg:mx-0 shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] cursor-pointer pointer-events-auto z-20 relative overflow-hidden"
               >
-                <span className="relative z-10">Chamar no WhatsApp</span>
+                <span className="relative z-10">Ver produtos</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform relative z-10" />
                 <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
               </a>

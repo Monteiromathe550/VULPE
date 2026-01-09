@@ -62,7 +62,7 @@ Quer que eu te explique os próximos passos?`;
           <ImageWithFallback
             src={product.image}
             alt={product.name}
-            className="w-full h-full object-cover mix-blend-multiply"
+            className="w-full h-full object-cover object-center"
           />
         </motion.div>
 
@@ -145,16 +145,20 @@ Quer que eu te explique os próximos passos?`;
             </div>
           )}
 
+          <p className="text-[14px] text-muted-foreground/50 font-normal italic tracking-wide leading-relaxed mt-1">
+            Valores confirmados no atendimento
+          </p>
+
           <button
             onClick={handlePurchase}
             disabled={isOutOfStock}
             className={`w-full h-12 rounded-full flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-widest transition-all duration-300 active:scale-95 relative overflow-hidden group ${isOutOfStock
-              ? 'bg-gray-100 text-gray-400 cursor-not-allowed pointer-events-none'
-              : 'bg-black text-white shadow-lg hover:shadow-xl cursor-pointer pointer-events-auto'
+              ? 'bg-gray-100 text-gray-400 cursor-not-allowed pointer-events-none border-2 border-gray-200'
+              : 'bg-transparent text-foreground border-2 border-foreground/20 hover:border-transparent shadow-sm hover:shadow-xl cursor-pointer pointer-events-auto'
               }`}
           >
-            <span className="relative z-10">{isOutOfStock ? 'Indisponível' : 'Comprar Agora'}</span>
-            {!isOutOfStock && <ArrowUpRight className="w-4 h-4 relative z-10" />}
+            <span className="relative z-10 group-hover:text-white transition-colors">{isOutOfStock ? 'Indisponível' : 'Conferir este modelo'}</span>
+            {!isOutOfStock && <ArrowUpRight className="w-4 h-4 relative z-10 group-hover:text-white transition-colors" />}
             {!isOutOfStock && <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />}
           </button>
         </div>

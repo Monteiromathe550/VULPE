@@ -5,33 +5,33 @@ import { motion } from 'motion/react';
 const steps = [
   {
     icon: <MessageCircle className="w-8 h-8" />,
-    title: "A gente troca ideia",
-    description: "Sem robô. Você me chama, diz o que precisa e eu te ajudo a escolher o melhor modelo pra você."
+    title: "1. Conversa inicial",
+    description: "Você me chama, fala o que precisa, e a gente define o modelo ideal. Sem pressão."
   },
   {
     icon: <UserCheck className="w-8 h-8" />,
-    title: "Zero empurroterapia",
-    description: "Eu entendo seu orçamento e uso. Só te ofereço o que faz sentido."
+    title: "2. Verificação de estoque",
+    description: "Confirmo disponibilidade real e te passo preço atualizado. Se tiver, a gente segue."
   },
   {
     icon: <FileSignature className="w-8 h-8" />,
-    title: "Segurança no Papel",
-    description: "O contrato vem antes do pix. Documento com validade jurídica pra você ficar tranquilo."
+    title: "3. Contrato digital",
+    description: "Antes de qualquer pagamento, você recebe o contrato. Lê, tira dúvida e assina."
   },
   {
     icon: <Smartphone className="w-8 h-8" />,
-    title: "Pagamento Transparente",
-    description: "Pix com desconto ou cartão em até 12x. Sem letras miúdas."
+    title: "4. Pagamento confirmado",
+    description: "Só depois do contrato assinado. Pix, cartão ou parcelado. A gente confirma o recebimento."
   },
   {
     icon: <Box className="w-8 h-8" />,
-    title: "Você acompanha tudo",
-    description: "Te mando foto e vídeo do seu pedido sendo embalado e o rastreio na hora."
+    title: "5. Preparação e envio",
+    description: "Te envio foto/vídeo do produto sendo embalado + rastreio. Você acompanha tudo."
   },
   {
     icon: <Truck className="w-8 h-8" />,
-    title: "Entrega Garantida",
-    description: "Seu pedido vai com seguro total. Qualquer B.O. no caminho, a responsabilidade é minha, não sua."
+    title: "6. Entrega com seguro",
+    description: "Chega na sua casa com seguro total. Qualquer problema no transporte, resolvemos."
   }
 ];
 
@@ -59,7 +59,7 @@ export function HowItWorks() {
             className="lg:w-1/2 flex flex-col justify-end"
           >
             <p className="text-muted-foreground max-w-lg mb-8 leading-relaxed font-medium uppercase tracking-widest text-base md:text-[16px]">
-              Descubra a jornada da sua compra, desde a escolha do hardware até a entrega segura em suas mãos.
+              Esse é o fluxo padrão da VULP. Nada acontece fora dessa ordem.
             </p>
             <button
               onClick={() => {
@@ -104,7 +104,7 @@ export function HowItWorks() {
                 </div>
               </div>
               <h3 className="text-xl md:text-2xl font-black mb-6 tracking-tightest uppercase">{step.title}</h3>
-              <p className="text-muted-foreground leading-relaxed max-w-full text-base font-bold uppercase tracking-widest opacity-80">
+              <p className="text-muted-foreground leading-relaxed max-w-full text-base font-bold uppercase tracking-widest opacity-90">
                 {step.description}
               </p>
             </motion.div>
@@ -123,9 +123,9 @@ export function HowItWorks() {
               <img src="https://images.unsplash.com/photo-1537183673931-f890242dbaef" alt="Productivity" className="w-full h-full object-cover mix-blend-multiply opacity-80 hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="w-full md:w-1/2">
-              <p className="text-primary text-[12px] md:text-[14px] font-black uppercase tracking-[0.4em] mb-4">Experiência</p>
-              <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">DO JEITO QUE VOCÊ MERECE</h4>
-              <p className="text-muted-foreground leading-relaxed text-[14px] md:text-[16px] font-bold uppercase tracking-widest opacity-70">Caixa preparada com cuidado, proteção e carinho. Pra chegar intacto aí.</p>
+              <p className="text-primary text-[12px] md:text-[14px] font-black uppercase tracking-[0.4em] mb-4">Embalagem</p>
+              <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">PROTEÇÃO ADEQUADA</h4>
+              <p className="text-muted-foreground leading-relaxed text-[14px] md:text-[16px] font-bold uppercase tracking-widest opacity-85">Caixas reforçadas, lacre e proteção interna para evitar qualquer dano.</p>
             </div>
           </motion.div>
           <motion.div
@@ -139,9 +139,9 @@ export function HowItWorks() {
               <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0" alt="Content" className="w-full h-full object-cover mix-blend-multiply opacity-80 hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="w-full md:w-1/2">
-              <p className="text-primary text-[12px] md:text-[14px] font-black uppercase tracking-[0.4em] mb-4">Logística</p>
-              <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">ENTREGA RÁPIDA</h4>
-              <p className="text-muted-foreground text-[14px] md:text-[16px] font-bold uppercase tracking-widest opacity-70 leading-relaxed">Quem é de SP recebe no dia. Outros estados com envio expresso e seguro.</p>
+              <p className="text-primary text-[12px] md:text-[14px] font-black uppercase tracking-[0.4em] mb-4">Envio</p>
+              <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">RASTREIO E SEGURO</h4>
+              <p className="text-muted-foreground text-[14px] md:text-[16px] font-bold uppercase tracking-widest opacity-85 leading-relaxed">Você recebe o código de rastreio assim que sai. Seguro completo até a entrega.</p>
             </div>
           </motion.div>
         </div>

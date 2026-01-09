@@ -1,4 +1,8 @@
 import iphone17Orange from '../assets/iphone-17-orange.png';
+import iphone17Black from '../assets/iphone-17-black.png';
+import iphone17ProOrange from '../assets/iphone-17-pro-orange.png';
+import iphone17ProWhite from '../assets/iphone-17-pro-white.png';
+import iphone17Blue from '../assets/iphone-17-blue.png';
 
 export type ProductStatus = 'Disponível' | 'Em falta';
 
@@ -26,7 +30,16 @@ const BASE_IMAGES: Record<string, string> = {
 
 // Mapeamento de produtos específicos para imagens customizadas
 const CUSTOM_PRODUCT_IMAGES: Record<string, string> = {
-  'iPhone 17 128GB': iphone17Orange
+  'iPhone 17 128GB': iphone17Blue,
+  'iPhone 17 Air 256GB': iphone17Black,
+  'iPhone 17 Air 512GB': iphone17Black,
+  'iPhone 17 Pro 256GB': iphone17ProOrange,
+  'iPhone 17 Pro 512GB': iphone17ProOrange,
+  'iPhone 17 Pro 1TB': iphone17ProOrange,
+  'iPhone 17 Pro Max 256GB': iphone17ProWhite,
+  'iPhone 17 Pro Max 512GB': iphone17ProWhite,
+  'iPhone 17 Pro Max 1TB': iphone17ProWhite,
+  'iPhone 17 Pro Max 2TB': iphone17ProWhite
 };
 
 const RAW_DATA = {

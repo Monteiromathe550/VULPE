@@ -16,8 +16,8 @@
   --foreground: #1d1d1f;
   --card: #f9f9fb;
   /* Slightly warmer/softer grey for cards */
-  --muted-foreground: #515154;
-  /* Darker for better legibility */
+  --muted-foreground: #3a3a3d;
+  /* Optimized contrast for outdoor mobile readability */
   --border: rgba(0, 0, 0, 0.06);
 
   --radius: 2.5rem;
@@ -28,7 +28,7 @@
   --background: #ffffff;
   --foreground: #1d1d1f;
   --card: #f9f9fb;
-  --muted-foreground: #515154;
+  --muted-foreground: #3a3a3d;
   --border: rgba(0, 0, 0, 0.06);
 }
 
