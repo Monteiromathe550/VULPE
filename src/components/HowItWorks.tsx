@@ -39,7 +39,7 @@ export function HowItWorks() {
   return (
     <section id="como-funciona" className="pt-32 pb-24 lg:pt-48 lg:pb-32 bg-white text-foreground relative">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-12 lg:mb-20">
+        <div className="flex flex-col lg:flex-row gap-6 mb-12 lg:mb-20">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -47,7 +47,7 @@ export function HowItWorks() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="lg:w-1/2"
           >
-            <h2 className="text-4xl md:text-6xl font-black mb-6 leading-[1.2] lg:leading-[1.1] tracking-tight lg:tracking-tightest uppercase">
+            <h2 className="text-4xl md:text-6xl font-black mb-2 md:mb-4 leading-[1.2] lg:leading-[1.1] tracking-tight lg:tracking-tightest uppercase">
               CONHEÇA NOSSO<br /><span className="text-primary">PROCESSO</span>
             </h2>
           </motion.div>
@@ -58,19 +58,9 @@ export function HowItWorks() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="lg:w-1/2 flex flex-col justify-end"
           >
-            <p className="text-muted-foreground max-w-lg mb-8 leading-relaxed font-medium uppercase tracking-widest text-base md:text-[16px]">
+            <p className="text-muted-foreground max-w-lg leading-relaxed font-medium uppercase tracking-widest text-base md:text-[16px]">
               Esse é o fluxo padrão da VULP. Nada acontece fora dessa ordem.
             </p>
-            <button
-              onClick={() => {
-                const element = document.getElementById('detalhes-processo');
-                element?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="group relative bg-black/5 border border-black/10 px-8 py-4 md:px-10 md:py-5 rounded-full text-[12px] font-black uppercase tracking-[0.3em] overflow-hidden transition-all hover:border-primary/50 self-start cursor-pointer"
-            >
-              <span className="relative z-10 text-foreground group-hover:text-white transition-colors text-[14px]">Ver detalhes do fluxo</span>
-              <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
-            </button>
           </motion.div>
         </div>
 

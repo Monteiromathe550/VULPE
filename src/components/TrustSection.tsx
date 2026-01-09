@@ -58,7 +58,7 @@ export function TrustSection() {
               <span className="text-sm font-black uppercase tracking-[0.2em] text-foreground">Compra Segura</span>
             </div>
 
-            <h2 className="mb-6 text-foreground tracking-tight lg:tracking-tightest leading-[1.2] lg:leading-[0.9] uppercase text-4xl lg:text-5xl font-black">
+            <h2 className="mb-2 md:mb-4 text-foreground tracking-tight lg:tracking-tightest leading-[1.2] lg:leading-[0.9] uppercase text-4xl lg:text-5xl font-black">
               Tranquilidade<br />
               <span className="text-primary">Absoluta.</span>
             </h2>

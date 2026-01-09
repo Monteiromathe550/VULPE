@@ -80,7 +80,7 @@ export function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             className="absolute top-0 left-0 right-0 min-h-screen bg-white p-8 md:hidden text-foreground pt-40 flex flex-col items-center justify-start z-40"
           >
-            <div className="flex flex-col gap-8 w-full max-w-xs text-center pt-8">
+            <div className="flex flex-col gap-10 w-full max-w-xs text-center pt-8">
               {navLinks.map((link) => (
                 <a
                   key={link.name}

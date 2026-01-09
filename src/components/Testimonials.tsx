@@ -48,7 +48,7 @@ export function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-4xl md:text-7xl font-black tracking-tightest mb-8 text-foreground"
+            className="text-4xl md:text-7xl font-black tracking-tightest mb-2 md:mb-6 text-foreground"
           >
             FEEDBACKS<br />
             <span className="text-primary italic font-light">RECENTES.</span>
