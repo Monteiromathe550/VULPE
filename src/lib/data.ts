@@ -3,6 +3,10 @@ import iphone17Black from '../assets/iphone-17-black.png';
 import iphone17ProOrange from '../assets/iphone-17-pro-orange.png';
 import iphone17ProWhite from '../assets/iphone-17-pro-white.png';
 import iphone17Blue from '../assets/iphone-17-blue.png';
+import ipadMini from '../assets/ipad-mini.png';
+import macbook from '../assets/macbook.png';
+import macMini from '../assets/mac-mini.png';
+import magicKeyboard from '../assets/magic-keyboard.png';
 
 export type ProductStatus = 'Disponível' | 'Em falta';
 
@@ -39,7 +43,17 @@ const CUSTOM_PRODUCT_IMAGES: Record<string, string> = {
   'iPhone 17 Pro Max 256GB': iphone17ProWhite,
   'iPhone 17 Pro Max 512GB': iphone17ProWhite,
   'iPhone 17 Pro Max 1TB': iphone17ProWhite,
-  'iPhone 17 Pro Max 2TB': iphone17ProWhite
+  'iPhone 17 Pro Max 2TB': iphone17ProWhite,
+  'iPad Mini 128GB': ipadMini,
+  'iPad Mini 256GB': ipadMini,
+  'iPad Mini 512GB': ipadMini,
+  'MacBook Pro M4 14" 512GB': macbook,
+  'MacBook Pro M4 14" 1TB': macbook,
+  'MacBook Pro M4 16" 512GB': macbook,
+  'MacBook Pro M4 16" 1TB': macbook,
+  'Mac Mini M4 256GB': macMini,
+  'Mac Mini M4 512GB': macMini,
+  'Magic Keyboard': magicKeyboard
 };
 
 const RAW_DATA = {
