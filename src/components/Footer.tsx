@@ -11,7 +11,7 @@ export function Footer() {
             <div className="flex items-center gap-3">
               <img
                 src={logoDark}
-                alt="Premium Store"
+                alt="VULP"
                 className="h-8 w-auto object-contain"
               />
             </div>
@@ -95,7 +95,7 @@ export function Footer() {
         </div>
 
         <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-muted-foreground/60 text-[10px] font-medium uppercase tracking-[0.2em]">
-          <p>© 2026 Premium Store. Hardware de elite selecionado.</p>
+          <p>© 2026 VULP. Produtos Apple com segurança e transparência.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-primary transition-colors">Termos</a>
             <a href="#" className="hover:text-foreground transition-colors">Privacidade</a>

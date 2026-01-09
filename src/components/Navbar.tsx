@@ -80,12 +80,12 @@ export function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             className="absolute top-0 left-0 right-0 min-h-screen bg-white p-8 md:hidden text-foreground pt-40 flex flex-col items-center justify-start z-40"
           >
-            <div className="flex flex-col gap-12 w-full max-w-xs text-center pt-8">
+            <div className="flex flex-col gap-8 w-full max-w-xs text-center pt-8">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-3xl font-black uppercase tracking-widest text-foreground hover:text-primary transition-colors"
+                  className="text-xl font-black uppercase tracking-widest text-foreground hover:text-primary transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
@@ -96,7 +96,7 @@ export function Navbar() {
                 href="https://wa.me/5565981274128"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-white text-center py-6 rounded-full font-bold uppercase tracking-widest shadow-2xl active:scale-95 transition-all text-[14px] cursor-pointer pointer-events-auto z-50 relative overflow-hidden group"
+                className="bg-black text-white text-center py-4 rounded-full font-bold uppercase tracking-widest shadow-2xl active:scale-95 transition-all text-sm cursor-pointer pointer-events-auto z-50 relative overflow-hidden group"
                 onClick={() => setIsOpen(false)}
               >
                 <span className="relative z-10">Falar no WhatsApp</span>
