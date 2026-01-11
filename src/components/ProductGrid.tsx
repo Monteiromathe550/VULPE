@@ -39,13 +39,13 @@ export function ProductGrid() {
             whileInView={{ opacity: 1, y: 0 }}
             className="inline-block mb-6 lg:mb-8"
           >
-            <span className="text-[10px] lg:text-[11px] font-black uppercase tracking-[0.4em] text-primary/90">
+            <span className="text-[14px] font-black uppercase tracking-[0.4em] text-primary/90">
               Tabela Oficial
             </span>
             <div className="h-[1px] w-full bg-primary/30 mt-3" />
           </motion.div>
 
-          <h2 className="text-4xl lg:text-7xl font-black text-foreground tracking-tight lg:tracking-tightest leading-[1.3] lg:leading-[1.1] uppercase mb-8 lg:mb-12">
+          <h2 className="text-[48px] font-black text-foreground tracking-tight lg:tracking-tightest leading-[1.3] lg:leading-[1.1] uppercase mb-4">
             Escolha o seu<br />
             <span className="text-primary">Próximo Nível.</span>
           </h2>
@@ -60,8 +60,8 @@ export function ProductGrid() {
           {/* Controls - Search and Sort */}
           <div className="flex flex-col gap-6 pb-6 border-b border-black/5">
             {/* Categories - Minimal Tabs */}
-            <div className="w-full overflow-x-auto pb-2 -mx-6 px-6 lg:mx-0 lg:px-0 lg:pb-0">
-              <div className="flex items-center gap-8 min-w-max lg:justify-center">
+            <div className="w-full overflow-x-auto pb-2 -mx-6 px-6 lg:mx-0 lg:px-0 lg:pb-0 lg:overflow-visible">
+              <div className="flex items-center gap-4 md:gap-6 lg:min-w-0 lg:flex-wrap lg:justify-center lg:gap-y-4">
                 {CATEGORIES.map((category) => {
                   const isActive = activeCategory === category;
                   return (

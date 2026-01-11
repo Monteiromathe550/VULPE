@@ -80,16 +80,20 @@ export function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             className="absolute top-0 left-0 right-0 min-h-screen bg-white p-8 md:hidden text-foreground pt-40 flex flex-col items-center justify-start z-40"
           >
-            <div className="flex flex-col gap-10 w-full max-w-xs text-center pt-8">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-xl font-black uppercase tracking-widest text-foreground hover:text-primary transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </a>
+            <div className="flex flex-col gap-6 w-full max-w-xs text-center pt-12">
+              {navLinks.map((link, index) => (
+                <React.Fragment key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-xl font-black uppercase tracking-widest text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                  {index < navLinks.length - 1 && (
+                    <div className="h-[1px] w-12 bg-black/10 mx-auto" />
+                  )}
+                </React.Fragment>
               ))}
               <div className="h-px w-20 bg-black/10 mx-auto" />
               <a

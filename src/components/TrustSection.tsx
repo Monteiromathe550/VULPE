@@ -58,12 +58,12 @@ export function TrustSection() {
               <span className="text-sm font-black uppercase tracking-[0.2em] text-foreground">Compra Segura</span>
             </div>
 
-            <h2 className="mb-2 md:mb-4 text-foreground tracking-tight lg:tracking-tightest leading-[1.2] lg:leading-[0.9] uppercase text-4xl lg:text-5xl font-black">
+            <h2 className="mb-4 text-foreground tracking-tight lg:tracking-tightest leading-[1.2] lg:leading-[0.9] uppercase text-[48px] font-black">
               Tranquilidade<br />
               <span className="text-primary">Absoluta.</span>
             </h2>
 
-            <p className="text-muted-foreground text-base font-bold uppercase tracking-widest opacity-80 leading-relaxed max-w-sm">
+            <p className="text-muted-foreground text-base font-bold uppercase tracking-wide opacity-80 leading-relaxed max-w-sm">
               Informações práticas sobre como trabalhamos. É assim que funciona em toda compra.
             </p>
           </div>
@@ -80,8 +80,8 @@ export function TrustSection() {
                 <div className="mb-6 inline-flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-sm text-black group-hover:text-primary group-hover:scale-110 transition-all duration-500">
                   {item.icon}
                 </div>
-                <h3 className="text-[14px] font-black text-foreground mb-6 uppercase tracking-widest group-hover:text-primary transition-colors">{item.title}</h3>
-                <p className="text-muted-foreground text-base leading-relaxed font-bold uppercase tracking-wide opacity-70">{item.description}</p>
+                <h3 className="text-[14px] font-black text-foreground mb-6 uppercase tracking-wide group-hover:text-primary transition-colors">{item.title}</h3>
+                <p className="text-muted-foreground text-base leading-relaxed font-bold uppercase opacity-70">{item.description}</p>
               </motion.div>
             ))}
           </div>

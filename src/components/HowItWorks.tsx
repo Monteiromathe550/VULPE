@@ -47,7 +47,7 @@ export function HowItWorks() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="lg:w-1/2"
           >
-            <h2 className="text-4xl md:text-6xl font-black mb-2 md:mb-4 leading-[1.2] lg:leading-[1.1] tracking-tight lg:tracking-tightest uppercase">
+            <h2 className="text-[48px] font-black mb-4 leading-[1.2] lg:leading-[1.1] tracking-tight lg:tracking-tightest uppercase">
               CONHEÇA NOSSO<br /><span className="text-primary">PROCESSO</span>
             </h2>
           </motion.div>
@@ -94,47 +94,14 @@ export function HowItWorks() {
                 </div>
               </div>
               <h3 className="text-xl md:text-2xl font-black mb-6 tracking-tightest uppercase">{step.title}</h3>
-              <p className="text-muted-foreground leading-relaxed max-w-full text-base font-bold uppercase tracking-widest opacity-90">
+              <p className="text-muted-foreground leading-relaxed max-w-full text-base font-bold uppercase tracking-wide opacity-90">
                 {step.description}
               </p>
             </motion.div>
           ))}
         </motion.div>
 
-        <div className="mt-12 md:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="bg-white rounded-[2rem] md:rounded-[3rem] p-8 md:p-12 border border-black/5 shadow-sm flex flex-col md:flex-row gap-8 md:gap-12 items-center"
-          >
-            <div className="w-full md:w-1/2 aspect-square rounded-[1.5rem] md:rounded-[2rem] overflow-hidden bg-[#F5F5F7]">
-              <img src="https://images.unsplash.com/photo-1537183673931-f890242dbaef" alt="Productivity" className="w-full h-full object-cover mix-blend-multiply opacity-80 hover:scale-105 transition-transform duration-700" />
-            </div>
-            <div className="w-full md:w-1/2">
-              <p className="text-primary text-[12px] md:text-[14px] font-black uppercase tracking-[0.4em] mb-4">Embalagem</p>
-              <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">PROTEÇÃO ADEQUADA</h4>
-              <p className="text-muted-foreground leading-relaxed text-[14px] md:text-[16px] font-bold uppercase tracking-widest opacity-85">Caixas reforçadas, lacre e proteção interna para evitar qualquer dano.</p>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="bg-white rounded-[2rem] md:rounded-[3rem] p-8 md:p-12 border border-black/5 shadow-sm flex flex-col md:flex-row-reverse gap-8 md:gap-12 items-center"
-          >
-            <div className="w-full md:w-1/2 aspect-square rounded-[1.5rem] md:rounded-[2rem] overflow-hidden bg-[#F5F5F7]">
-              <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0" alt="Content" className="w-full h-full object-cover mix-blend-multiply opacity-80 hover:scale-105 transition-transform duration-700" />
-            </div>
-            <div className="w-full md:w-1/2">
-              <p className="text-primary text-[12px] md:text-[14px] font-black uppercase tracking-[0.4em] mb-4">Envio</p>
-              <h4 className="font-black mb-4 md:mb-6 leading-none tracking-tightest uppercase text-[22px] md:text-[28px]">RASTREIO E SEGURO</h4>
-              <p className="text-muted-foreground text-[14px] md:text-[16px] font-bold uppercase tracking-widest opacity-85 leading-relaxed">Você recebe o código de rastreio assim que sai. Seguro completo até a entrega.</p>
-            </div>
-          </motion.div>
-        </div>
+
       </div>
     </section>
   );

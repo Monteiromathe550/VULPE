@@ -48,7 +48,7 @@ export function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-4xl md:text-7xl font-black tracking-tightest mb-2 md:mb-6 text-foreground"
+            className="text-[48px] font-black tracking-tightest mb-4 text-foreground"
           >
             FEEDBACKS<br />
             <span className="text-primary italic font-light">RECENTES.</span>
@@ -59,7 +59,7 @@ export function Testimonials() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="text-muted-foreground text-lg font-light max-w-xl"
+            className="text-muted-foreground text-lg font-medium max-w-xl"
           >
             Alguns relatos de quem já recebeu o produto e quis compartilhar a experiência.
           </motion.p>

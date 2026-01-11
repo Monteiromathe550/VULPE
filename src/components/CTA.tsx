@@ -16,7 +16,7 @@ export function CTA() {
                         Atendimento Personalizado
                     </motion.div>
 
-                    <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-[110px] font-black leading-[1.1] lg:leading-[0.8] mb-6 lg:mb-8 tracking-tight lg:tracking-tightest uppercase relative z-10">
+                    <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-[110px] font-black leading-[1.1] lg:leading-[0.8] mb-4 tracking-tight lg:tracking-tightest uppercase relative z-10">
                         <motion.span
                             initial={{ y: 40, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
@@ -44,7 +44,7 @@ export function CTA() {
                         </motion.span>
                     </h2>
 
-                    <p className="max-w-xl mx-auto text-muted-foreground text-sm md:text-xl md:leading-relaxed mb-12 font-medium px-4 opacity-80 uppercase tracking-widest leading-loose md:normal-case md:tracking-normal">
+                    <p className="max-w-xl mx-auto text-muted-foreground text-[18px] md:leading-relaxed mb-12 font-medium px-4">
                         Pode perguntar antes de decidir. Sem compromisso. É só chamar e a gente conversa.
                     </p>
 

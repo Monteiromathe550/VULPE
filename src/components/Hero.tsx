@@ -33,7 +33,7 @@ export function Hero() {
             className="flex-1 text-center lg:text-left max-w-2xl flex flex-col items-center lg:items-start"
           >
 
-            <h1 className="mb-6 text-white tracking-tighter text-4xl sm:text-5xl md:text-6xl font-black leading-[1.1] drop-shadow-[0_5px_6px_rgba(0,0,0,0.65)]">
+            <h1 className="mb-4 text-white tracking-tighter text-4xl sm:text-5xl md:text-6xl font-black leading-[1.1] drop-shadow-[0_5px_6px_rgba(0,0,0,0.65)]">
               Seu Apple com segurança total e sem enrolação.
             </h1>
 

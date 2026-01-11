@@ -21,11 +21,6 @@ import applePencilPro from '../assets/apple-pencil-pro.png';
 import appleCharger20w from '../assets/apple-charger-20w.png';
 import appleWatchUltra from '../assets/apple-watch-ultra.png';
 import appleWatchSE from '../assets/apple-watch-se.png';
-import appleWatchUltraBlack from '../assets/apple-watch-ultra-black.png';
-import appleWatchUltraTitanium from '../assets/apple-watch-ultra-titanium.png';
-import appleWatchStarlight from '../assets/apple-watch-starlight.png';
-import appleWatchRoseGold from '../assets/apple-watch-rose-gold.png';
-import appleWatchSEWhite from '../assets/apple-watch-se-white.png';
 import iphone16PlusPurple from '../assets/iphone-16-plus-purple.png';
 import iphone16Black from '../assets/iphone-16-black.png';
 import ipadAirSpaceGray from '../assets/ipad-air-space-gray.png';
@@ -33,6 +28,27 @@ import ipadAirStarlight from '../assets/ipad-air-starlight.png';
 import macbookProSpaceGray from '../assets/macbook-pro-space-gray.png';
 import macMiniBack from '../assets/mac-mini-back.png';
 import iphone16ProSpaceGray from '../assets/iphone-16-pro-space-gray.png';
+import appleWatchS11RoseGold from '../assets/apple-watch-s11-rose-gold.png';
+import appleWatchUltraBlack2 from '../assets/apple-watch-ultra-black-2.png';
+import appleWatchSEStarlight2 from '../assets/apple-watch-se-starlight-2.png';
+import appleWatchUltraTitanium2 from '../assets/apple-watch-ultra-titanium-2.png';
+import appleWatchSEBeige from '../assets/apple-watch-se-beige.png';
+import iphone13Starlight from '../assets/iphone-13-starlight.png';
+import iphone14Purple from '../assets/iphone-14-purple.png';
+import iphone15Blue from '../assets/iphone-15-blue.png';
+import iphone16ProDesert from '../assets/iphone-16-pro-desert.png';
+import iphoneSeWhite from '../assets/iphone-se-white.png';
+import appleWatchSE240mm from '../assets/apple-watch-se-2-40mm.png';
+import macbookAirM3 from '../assets/macbook-air-m3.png';
+import appleWatchS1146mm from '../assets/apple-watch-s11-46mm.png';
+import macbookProM5 from '../assets/macbook-pro-m5.png';
+import magicTrackpadWhite from '../assets/magic-trackpad-white.png';
+import applePencilPro2 from '../assets/apple-pencil-pro-2.png';
+import airtagPack4 from '../assets/airtag-pack-4.png';
+import applePencilUsbC from '../assets/apple-pencil-usb-c.png';
+import ipadAirM311SpaceGray from '../assets/ipad-air-m3-11-space-gray.png';
+import ipadMini7 from '../assets/ipad-mini-7.png';
+import macMiniM4 from '../assets/mac-mini-m4.png';
 
 export type ProductStatus = 'Disponível' | 'Em falta';
 
@@ -75,19 +91,27 @@ const CUSTOM_PRODUCT_IMAGES: Record<string, string> = {
   // iPhones 16
   'iPhone 16 Pro Max 256GB': iphone16ProMaxWhite,
   'iPhone 16 Pro Max 512GB': iphone16ProMaxWhite,
-  'iPhone 16 Pro 128GB': iphone16ProSpaceGray,
+  'iPhone 16 Pro 128GB': iphone16ProDesert,
+  'iPhone 16 Pro 256GB': iphone16ProDesert,
   'iPhone 16 Plus 128GB': iphone16PlusPurple,
   'iPhone 16 128GB': iphone16Black,
   'iPhone 16 256GB': iphone16Black,
+  'iPhone 16e 128GB': iphoneSeWhite,
+  'iPhone 16e 256GB': iphoneSeWhite,
+  'iPhone 15 128GB': iphone15Blue,
+  'iPhone 15 256GB': iphone15Blue,
+  'iPhone 14 128GB': iphone14Purple,
+  'iPhone 13 128GB': iphone13Starlight,
 
   // iPads
+  'iPad Mini 7th 128GB': ipadMini7,
   'iPad Mini 128GB': ipadMini,
   'iPad Mini 256GB': ipadMini,
   'iPad Mini 512GB': ipadMini,
   'iPad 11 A16 128GB': ipadBlue,
   'iPad 11 A16 256GB': ipadBlue,
-  'iPad Air M3 11" 128GB': ipadKeyboard,
-  'iPad Air M3 11" 256GB': ipadKeyboard,
+  'iPad Air M3 11" 128GB': ipadAirM311SpaceGray,
+  'iPad Air M3 11" 256GB': ipadAirM311SpaceGray,
   'iPad Air M3 13" 128GB': ipadAirStarlight,
   'iPad Air M3 13" 256GB': ipadAirSpaceGray,
   'iPad Pro M4 11" 256GB': ipadProGray,
@@ -96,6 +120,8 @@ const CUSTOM_PRODUCT_IMAGES: Record<string, string> = {
   'iPad Pro M5 13" 256GB': ipadProGray,
 
   // MacBooks
+  'MacBook Air 13" M3': macbookAirM3,
+  'MacBook Air 15" M3': macbookAirM3,
   'MacBook Pro M4 14" 512GB': macbook,
   'MacBook Pro M4 14" 1TB': macbook,
   'MacBook Pro M4 16" 512GB': macbook,
@@ -104,26 +130,36 @@ const CUSTOM_PRODUCT_IMAGES: Record<string, string> = {
   'Macbook Pro M4 Max 36/1TB 14"': macbookProSpaceGray,
   'Macbook Pro M4 Max 36/1TB 16"': macbookProSpaceGray,
   'Macbook Pro M4 Max 48/1TB 16"': macbookProSpaceGray,
+  'Macbook Pro M5 16/512GB 14"': macbookProM5,
+  'Macbook Pro M5 16/1TB 14"': macbookProM5,
+  'Macbook Pro M5 24/1TB 14"': macbookProM5,
 
   // Mac Mini
-  'Mac Mini M4 256GB': macMini,
-  'Mac Mini M4 512GB': macMini,
+  'Mac Mini M4 16/256': macMiniM4,
+  'Mac Mini M4 16/512': macMiniM4,
+  'Mac Mini M4 24/512': macMiniM4,
+  'Mac Mini M4 24/1TB': macMiniM4,
 
   // Acessórios
   'Magic Keyboard': magicKeyboard,
   'Magic Keyboard para Mac': magicKeyboard,
   'Magic Keyboard para Mac (iPad section)': ipadKeyboard,
   'Magic Mouse': magicMouse,
-  'Apple Pencil Pro': applePencilPro,
+  'Apple Pencil Pro': applePencilPro2,
+  'Apple Pencil USB-C': applePencilUsbC,
   'Carregador Apple 20w': appleCharger20w,
+  'Magic Trackpad': magicTrackpadWhite,
+  'AirTag Pack 4': airtagPack4,
 
   // Apple Watch
-  'Apple Watch Ultra 2': appleWatchUltraBlack,
-  'Apple Watch Ultra 3': appleWatchUltraTitanium,
+  'Apple Watch Ultra 2': appleWatchUltraBlack2,
+  'Apple Watch Ultra 3': appleWatchUltraTitanium2,
+  'Apple Watch SE 2 40mm': appleWatchSE240mm,
   'Apple Watch SE 2 44mm': appleWatchSE,
-  'Apple Watch SE 3 40mm': appleWatchStarlight,
-  'Apple Watch SE 3 44mm': appleWatchSEWhite,
-  'Apple Watch S11 42mm': appleWatchRoseGold,
+  'Apple Watch SE 3 40mm': appleWatchSEStarlight2,
+  'Apple Watch SE 3 44mm': appleWatchSEBeige,
+  'Apple Watch S11 42mm': appleWatchS11RoseGold,
+  'Apple Watch S11 46mm': appleWatchS1146mm,
 
   // AirPods
   'AirPods 4': airPods4,
@@ -141,16 +177,18 @@ const RAW_DATA = {
   },
   "categories": [
     {
-      "name": "Apple Watch",
+      "name": "iPhone Linha 17",
       "products": [
-        { "model": "Apple Watch SE 2 40mm", "price_pix": null, "installment_value": null, "price_total_installment": null, "status": "out_of_stock" },
-        { "model": "Apple Watch SE 2 44mm", "price_pix": 1990, "installment_value": 195, "price_total_installment": 2337, "status": "available" },
-        { "model": "Apple Watch SE 3 40mm", "price_pix": 2690, "installment_value": 261, "price_total_installment": 3135, "status": "available" },
-        { "model": "Apple Watch SE 3 44mm", "price_pix": 2890, "installment_value": 280, "price_total_installment": 3363, "status": "available" },
-        { "model": "Apple Watch S11 42mm", "price_pix": 3190, "installment_value": 309, "price_total_installment": 3705, "status": "available" },
-        { "model": "Apple Watch S11 46mm", "price_pix": null, "installment_value": null, "price_total_installment": null, "status": "out_of_stock" },
-        { "model": "Apple Watch Ultra 2", "price_pix": 5190, "installment_value": 499, "price_total_installment": 5985, "status": "available" },
-        { "model": "Apple Watch Ultra 3", "price_pix": 5990, "installment_value": 575, "price_total_installment": 6897, "status": "available" }
+        { "model": "iPhone 17 128GB", "price_pix": 6890, "installment_value": 660, "price_total_installment": 7923, "status": "available" },
+        { "model": "iPhone 17 Air 256GB", "price_pix": 6990, "installment_value": 670, "price_total_installment": 8037, "status": "available" },
+        { "model": "iPhone 17 Air 512GB", "price_pix": 7590, "installment_value": 727, "price_total_installment": 8721, "status": "available" },
+        { "model": "iPhone 17 Pro 256GB", "price_pix": 8990, "installment_value": 860, "price_total_installment": 10317, "status": "available" },
+        { "model": "iPhone 17 Pro 512GB", "price_pix": 9690, "installment_value": 936, "price_total_installment": 11115, "status": "available" },
+        { "model": "iPhone 17 Pro 1TB", "price_pix": 11590, "installment_value": 1107, "price_total_installment": 13281, "status": "available" },
+        { "model": "iPhone 17 Pro Max 256GB", "price_pix": 9790, "installment_value": 936, "price_total_installment": 11229, "status": "available" },
+        { "model": "iPhone 17 Pro Max 512GB", "price_pix": 10990, "installment_value": 1054, "price_total_installment": 12597, "status": "available" },
+        { "model": "iPhone 17 Pro Max 1TB", "price_pix": 12290, "installment_value": 1173, "price_total_installment": 14079, "status": "available" },
+        { "model": "iPhone 17 Pro Max 2TB", "price_pix": 15790, "installment_value": 1506, "price_total_installment": 18069, "status": "available" }
       ]
     },
     {
@@ -172,18 +210,23 @@ const RAW_DATA = {
       ]
     },
     {
-      "name": "iPhone Linha 17",
+      "name": "Apple Watch",
       "products": [
-        { "model": "iPhone 17 128GB", "price_pix": 6890, "installment_value": 660, "price_total_installment": 7923, "status": "available" },
-        { "model": "iPhone 17 Air 256GB", "price_pix": 6990, "installment_value": 670, "price_total_installment": 8037, "status": "available" },
-        { "model": "iPhone 17 Air 512GB", "price_pix": 7590, "installment_value": 727, "price_total_installment": 8721, "status": "available" },
-        { "model": "iPhone 17 Pro 256GB", "price_pix": 8990, "installment_value": 860, "price_total_installment": 10317, "status": "available" },
-        { "model": "iPhone 17 Pro 512GB", "price_pix": 9690, "installment_value": 936, "price_total_installment": 11115, "status": "available" },
-        { "model": "iPhone 17 Pro 1TB", "price_pix": 11590, "installment_value": 1107, "price_total_installment": 13281, "status": "available" },
-        { "model": "iPhone 17 Pro Max 256GB", "price_pix": 9790, "installment_value": 936, "price_total_installment": 11229, "status": "available" },
-        { "model": "iPhone 17 Pro Max 512GB", "price_pix": 10990, "installment_value": 1054, "price_total_installment": 12597, "status": "available" },
-        { "model": "iPhone 17 Pro Max 1TB", "price_pix": 12290, "installment_value": 1173, "price_total_installment": 14079, "status": "available" },
-        { "model": "iPhone 17 Pro Max 2TB", "price_pix": 15790, "installment_value": 1506, "price_total_installment": 18069, "status": "available" }
+        { "model": "Apple Watch SE 2 40mm", "price_pix": null, "installment_value": null, "price_total_installment": null, "status": "out_of_stock" },
+        { "model": "Apple Watch SE 2 44mm", "price_pix": 1990, "installment_value": 195, "price_total_installment": 2337, "status": "available" },
+        { "model": "Apple Watch SE 3 40mm", "price_pix": 2690, "installment_value": 261, "price_total_installment": 3135, "status": "available" },
+        { "model": "Apple Watch SE 3 44mm", "price_pix": 2890, "installment_value": 280, "price_total_installment": 3363, "status": "available" },
+        { "model": "Apple Watch S11 42mm", "price_pix": 3190, "installment_value": 309, "price_total_installment": 3705, "status": "available" },
+        { "model": "Apple Watch S11 46mm", "price_pix": null, "installment_value": null, "price_total_installment": null, "status": "out_of_stock" },
+        { "model": "Apple Watch Ultra 2", "price_pix": 5190, "installment_value": 499, "price_total_installment": 5985, "status": "available" },
+        { "model": "Apple Watch Ultra 3", "price_pix": 5990, "installment_value": 575, "price_total_installment": 6897, "status": "available" }
+      ]
+    },
+    {
+      "name": "MacBook Air",
+      "products": [
+        { "model": "MacBook Air 13\" M3", "price_pix": 7590, "installment_value": 724, "price_total_installment": 8690, "status": "available" },
+        { "model": "MacBook Air 15\" M3", "price_pix": 9590, "installment_value": 915, "price_total_installment": 10980, "status": "available" }
       ]
     },
     {
