@@ -1,5 +1,5 @@
 import React from 'react';
-import { Smartphone, MessageCircle, FileSignature, Box, Truck, UserCheck } from 'lucide-react';
+import { Smartphone, MessageCircle, FileSignature, Box, Truck, UserCheck, ListOrdered } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const steps = [
@@ -39,30 +39,25 @@ export function HowItWorks() {
   return (
     <section id="como-funciona" className="pt-32 pb-24 lg:pt-48 lg:pb-32 bg-white text-foreground relative">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row gap-6 mb-12 lg:mb-20">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="lg:w-1/2"
-          >
-            <h2 className="text-[48px] font-black mb-4 leading-[1.2] lg:leading-[1.1] tracking-tight lg:tracking-tightest uppercase">
-              CONHEÇA NOSSO<br /><span className="text-primary">PROCESSO</span>
-            </h2>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="lg:w-1/2 flex flex-col justify-end"
-          >
-            <p className="text-muted-foreground max-w-lg leading-relaxed font-medium uppercase tracking-widest text-base md:text-[16px]">
-              Esse é o fluxo padrão da VULP. Nada acontece fora dessa ordem.
-            </p>
-          </motion.div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mb-12 lg:mb-20 flex flex-col items-center text-center"
+        >
+          <div className="inline-flex items-center gap-3 mb-6 px-4 py-2 rounded-full bg-black/5 border border-black/5">
+            <ListOrdered className="w-4 h-4 text-primary" />
+            <span className="text-sm font-black uppercase tracking-[0.2em] text-foreground">Como Funciona</span>
+          </div>
+
+          <h2 className="text-[48px] font-black mb-6 leading-[1.2] lg:leading-[1.1] tracking-tight lg:tracking-tightest uppercase">
+            CONHEÇA NOSSO<br /><span className="text-primary">PROCESSO</span>
+          </h2>
+          <p className="text-muted-foreground max-w-lg mx-auto leading-relaxed font-medium uppercase tracking-widest text-base md:text-[16px]">
+            Esse é o fluxo padrão da VULP. Nada acontece fora dessa ordem.
+          </p>
+        </motion.div>
 
         <motion.div
           initial="hidden"
